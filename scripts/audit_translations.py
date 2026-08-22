@@ -12,9 +12,13 @@ from pathlib import Path
 
 from babel.messages.pofile import read_po
 
-BRACE_PLACEHOLDER = re.compile(r"(?<!\{)\{[^{}]+\}(?!\})")
+BRACE_PLACEHOLDER = re.compile(
+	r"(?<!\\{)\\{(?:\\d+|[A-Za-z_][\\w.]*)(?:![rsa])?(?::[^{}]+)?\\}(?!\\})"
+)
 NAMED_PERCENT_PLACEHOLDER = re.compile(r"%\([^)]+\)[#0 +\-]?(?:\d+|\*)?(?:\.\d+|\.\*)?[a-zA-Z]")
-POSITIONAL_PERCENT_PLACEHOLDER = re.compile(r"(?<!%)%(?:[#0 +\-]?(?:\d+|\*)?(?:\.\d+|\.\*)?)?[a-zA-Z]")
+POSITIONAL_PERCENT_PLACEHOLDER = re.compile(
+	r"(?<!%)%(?:[#0+\\-]?(?:\\d+|\\*)?(?:\\.\\d+|\\.\\*)?)[diouxXeEfFgGcrsa]"
+)
 ENGLISH_WORD = re.compile(r"\b[A-Za-z]{3,}\b")
 
 
