@@ -20,6 +20,10 @@ jobs:
           pip install babel
       - name: Validate all translation catalogs
         run: python scripts/check_catalogs.py
+      - name: Test translation audit
+        run: |
+          python -m unittest -v tests/test_audit_translations.py
+          python scripts/audit_translations.py --fail-on-placeholder
       - name: Lint python
         run: |
           pip install ruff
