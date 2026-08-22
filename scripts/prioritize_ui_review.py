@@ -6,7 +6,10 @@ import argparse
 import csv
 from pathlib import Path
 
-from prioritize_review import english_words, has_duplicated_source, read_csv
+try:
+	from scripts.prioritize_review import english_words, has_duplicated_source, read_csv
+except ModuleNotFoundError:  # Direct execution: python scripts/prioritize_ui_review.py
+	from prioritize_review import english_words, has_duplicated_source, read_csv
 
 CORE_UI_TERMS = {
 	"user",
