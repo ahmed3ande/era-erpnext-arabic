@@ -22,12 +22,15 @@ GitHub Actions uploads it in the `translation-audit` artifact and prints at most
 | Finding | Priority |
 |---|---:|
 | Approved/rejected glossary conflict | 100 |
+| English source duplicated inside Arabic translation | 95 |
 | Untranslated accounting string | 90 |
 | Fuzzy accounting string | 85 |
 | Accounting cross-app conflict | 80 |
-| Accounting string with English residue | 60 |
+| Meaningful English residue in an accounting string | 60 |
 
 The queue uses an explicit accounting keyword set, deterministic ordering, and deduplication by category, app, and source message.
+
+Before classifying residue, it removes HTML markup, URLs, Jinja expressions, placeholders, and code-like identifiers. Common technical tokens such as BOM, UOM, FIFO, DuckDB, POS, ERPNext, Frappe, and HRMS are allowed by themselves. If the complete English source is appended to an Arabic translation, the row is classified separately as `duplicated-source` so that this high-confidence defect is reviewed first.
 
 ## Review batches
 
