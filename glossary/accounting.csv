@@ -1,24 +1,40 @@
-source,approved_arabic,alternative,rejected,domain,context,status,reviewer,notes
-Journal Entry,قيد يومية,قيد اليومية,قيد دفتر,Accounting,Document title,accounting-review,,
-General Ledger,دفتر الأستاذ العام,الأستاذ العام,,Accounting,Report title,accounting-review,,
-Debit,مدين,,,Accounting,Ledger column,approved,,
-Credit,دائن,,,Accounting,Ledger column,approved,,
-Balance,الرصيد,,الموازنة,Accounting,Account and ledger balance,approved,,
-Budget,الموازنة التقديرية,الميزانية,الرصيد,Accounting,Budget control,accounting-review,,
-Cost Center,مركز تكلفة,مركز الكلفة,,Accounting,Accounting dimension,accounting-review,,
-Accounts Receivable,حسابات العملاء,الذمم المدينة,,Accounting,Receivables domain,needs-context,,
-Accounts Payable,حسابات الموردين,الذمم الدائنة,,Accounting,Payables domain,needs-context,,
-Outstanding Amount,المبلغ المستحق,الرصيد المستحق,,Accounting,Invoice balance,accounting-review,,
-Trial Balance,ميزان المراجعة,,,Accounting,Report title,approved,,
-Profit and Loss Statement,قائمة الدخل,قائمة الأرباح والخسائر,,Accounting,Financial statement,accounting-review,,
-Balance Sheet,قائمة المركز المالي,الميزانية العمومية,,Accounting,Financial statement,needs-context,,
-Submit,ترحيل,اعتماد,إرسال,Workflow,DocStatus action,accounting-review,,
-Cancel,إلغاء,,,Workflow,DocStatus action,approved,,
-Sales Invoice,فاتورة مبيعات,,,Selling,Document title,approved,,
-Purchase Invoice,فاتورة مشتريات,,,Buying,Document title,approved,,
-Payment Entry,سند دفع أو قبض,قيد دفع,إدخال الدفع,Accounting,Depends on payment direction,needs-context,,
-Stock Entry,حركة مخزون,قيد مخزون,,Stock,Document title,needs-context,,
-Write Off,شطب,إعدام,,Accounting,Debt or amount adjustment,needs-context,,
-Ledger Account,حساب أستاذ,حساب ترحيل,دفتر الأستاذ,Accounting,Posting account in Chart of Accounts,accounting-review,,ERPNext distinguishes posting ledgers from group accounts
-Expense Account,حساب المصروفات,حساب النفقات,,Accounting,Expense account field,accounting-review,,
-Closing Account,حساب الإقفال,الحساب الختامي,,Accounting,Period closing account,accounting-review,,
+source,approved_arabic,alternative,rejected,domain,context,status,reviewer,notes,reference
+Journal Entry,قيد يومية,قيد اليومية,قيد دفتر,Accounting,Document title,approved,Era,مصطلح محاسبي مصري مستقر,https://fra.gov.eg/wp-content/uploads/2024/03/معيار-المحاسبة-المصري-رقم-1-عرض-القوائم-المالية.pdf
+General Ledger,دفتر الأستاذ العام,الأستاذ العام,,Accounting,Report title,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Debit,مدين,,,Accounting,Ledger column,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Credit,دائن,,,Accounting,Ledger column,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Balance,الرصيد,,الموازنة,Accounting,Account and ledger balance,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Budget,الموازنة التقديرية,الميزانية,الرصيد,Accounting,Budget control,approved,Era,تمييزها عن قائمة المركز المالي,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Cost Center,مركز التكلفة,مركز تكلفة|مركز الكلفة,,Accounting,Accounting dimension,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Accounts Receivable,حسابات العملاء,الذمم المدينة,,Accounting,Receivables operations,approved,Era,البديل يصلح في الإفصاحات القانونية,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Accounts Payable,حسابات الموردين,الذمم الدائنة,,Accounting,Payables operations,approved,Era,البديل يصلح في الإفصاحات القانونية,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Outstanding Amount,المبلغ المستحق,الرصيد المستحق,,Accounting,Invoice balance,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Trial Balance,ميزان المراجعة,,,Accounting,Report title,approved,Era,,https://fra.gov.eg/معايير-المحاسبة-المصرية/
+Profit and Loss Statement,قائمة الدخل,قائمة الأرباح والخسائر,,Accounting,Financial statement,approved,Era,الاسم المعتمد للقائمة,https://fra.gov.eg/wp-content/uploads/2024/03/معيار-المحاسبة-المصري-رقم-1-عرض-القوائم-المالية.pdf
+Balance Sheet,قائمة المركز المالي,الميزانية العمومية,,Accounting,Financial statement,approved,Era,الاسم المعتمد للقائمة,https://fra.gov.eg/wp-content/uploads/2024/03/معيار-المحاسبة-المصري-رقم-1-عرض-القوائم-المالية.pdf
+Cash Flow Statement,قائمة التدفقات النقدية,,,Accounting,Financial statement,approved,Era,,https://fra.gov.eg/wp-content/uploads/2024/03/تعديلات-معايير-المحاسبة69-لسنة-2019.pdf
+Statement of Changes in Equity,قائمة التغيرات في حقوق الملكية,,,Accounting,Financial statement,approved,Era,,https://fra.gov.eg/wp-content/uploads/2024/03/معيار-المحاسبة-المصري-رقم-1-عرض-القوائم-المالية.pdf
+Submit,اعتماد,ترحيل,إرسال,Workflow,DocStatus action,approved,Era,الترحيل أثر محاسبي أما Submit فهو اعتماد المستند,
+Cancel,إلغاء,,,Workflow,DocStatus action,approved,Era,,
+Sales Invoice,فاتورة مبيعات,,,Selling,Document title,approved,Era,,
+Purchase Invoice,فاتورة مشتريات,,,Buying,Document title,approved,Era,,
+Sales Order,أمر بيع,طلب بيع,,Selling,Document title,approved,Era,,
+Purchase Order,أمر شراء,طلب شراء,,Buying,Document title,approved,Era,,
+Quotation,عرض سعر,عرض أسعار,,Selling,Document title,approved,Era,,
+Supplier Quotation,عرض سعر مورد,,,Buying,Document title,approved,Era,,
+Payment Entry,سند دفع أو قبض,قيد دفع,إدخال الدفع,Accounting,Document title,approved,Era,يغطي نوعي Receive وPay,
+Stock Entry,حركة مخزون,قيد مخزون|إدخال المخزون,,Stock,Document title,approved,Era,اسم جامع لكل أغراض الحركة,
+Delivery Note,إذن تسليم,إشعار تسليم,,Stock,Document title,approved,Era,مصطلح تشغيلي مصري,
+Purchase Receipt,إذن استلام مشتريات,استلام مشتريات,,Stock,Document title,approved,Era,مصطلح تشغيلي مصري,
+Work Order,أمر إنتاج,أمر عمل,,Manufacturing,Document title,approved,Era,السياق داخل وحدة التصنيع,
+Bill of Materials,قائمة مكونات الصنف,قائمة المواد,فاتورة المواد,Manufacturing,Document title,approved,Era,BOM ليست فاتورة مالية,
+Timesheet,كشف ساعات العمل,سجل ساعات العمل,ورقة الوقت,Projects,Document title,approved,Era,,
+Warehouse,المخزن,المستودع,,Stock,User-facing label,approved,Era,مصطلح السوق المصري,
+Item,الصنف,المنتج,السلعة|العنصر,Stock,Master and transaction row,approved,Era,يُراجع «العنصر» إذا كان سياق واجهة عامًا,
+Voucher,سند,مستند محاسبي,قسيمة,Accounting,Accounting document,approved,Era,,
+Posting Date,تاريخ الترحيل,,,Accounting,Ledger posting date,approved,Era,,
+Posting Time,وقت الترحيل,توقيت الترحيل,نشر التوقيت,Accounting,Ledger posting time,approved,Era,,
+Write Off,شطب,تسوية,إعدام,Accounting,Debt or amount adjustment,needs-context,Era,يختلف حسب شطب دين أو تسوية فرق,
+Ledger Account,حساب أستاذ,حساب ترحيل,دفتر الأستاذ,Accounting,Posting account in Chart of Accounts,approved,Era,الحساب وليس الدفتر نفسه,
+Expense Account,حساب المصروفات,حساب النفقات,,Accounting,Expense account field,approved,Era,,
+Closing Account,حساب الإقفال,الحساب الختامي,,Accounting,Period closing account,approved,Era,,

@@ -981,9 +981,7 @@ msgstr "فترة الطلب لا يمكن ان تكون خلال سجلين مخ
 
 #: hrms/hr/doctype/leave_application/leave_application.py:214
 msgid "Application period cannot be outside leave allocation period"
-msgstr ""
-"فترة الاجازة لا يمكن أن تكون خارج فترة الاجازة المسموحة للموظف.\\n<br>\\nApplication "
-"period cannot be outside leave allocation period"
+msgstr "فترة الاجازة لا يمكن أن تكون خارج فترة الاجازة المسموحة للموظف."
 
 #: hrms/templates/generators/job_opening.html:162
 msgid "Applications Received"
@@ -1185,7 +1183,7 @@ msgstr "يعتمد"
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/shift_request/shift_request.json
 msgid "Approved"
-msgstr "موافقة"
+msgstr "معتمد"
 
 #. Label of the approver (Link) field in DocType 'Department Approver'
 #. Label of the approver (Link) field in DocType 'Shift Assignment Tool'
@@ -1387,9 +1385,7 @@ msgstr "الحضور من تاريخ"
 
 #: hrms/hr/doctype/upload_attendance/upload_attendance.js:20
 msgid "Attendance From Date and Attendance To Date is mandatory"
-msgstr ""
-"الحقل الحضور من تاريخ والحضور إلى تاريخ إلزامية\\n<br>\\nAttendance From Date and "
-"Attendance To Date is mandatory"
+msgstr "الحقل الحضور من تاريخ والحضور إلى تاريخ إلزامية"
 
 #: hrms/hr/report/shift_attendance/shift_attendance.py:126
 msgid "Attendance ID"
@@ -2499,7 +2495,7 @@ msgstr "تم تجاوز نطاق التاريخ"
 
 #: hrms/hr/doctype/leave_block_list/leave_block_list.py:19
 msgid "Date is repeated"
-msgstr "تاريخ متكرر\\n<br>\\nDate is repeated"
+msgstr "تاريخ متكرر"
 
 #: hrms/hr/doctype/overtime_slip/overtime_slip.py:59
 msgid "Date {0} is repeated in Overtime Details"
@@ -3525,7 +3521,7 @@ msgstr ""
 
 #: hrms/hr/doctype/attendance/attendance.py:216
 msgid "Employee {0} is not active or does not exist"
-msgstr "الموظف {0} غير نشط أو غير موجود\\n<br>\\nEmployee {0} is not active or does not exist"
+msgstr "الموظف {0} غير نشط أو غير موجود"
 
 #: hrms/hr/doctype/attendance/attendance.py:192
 msgid "Employee {0} is on Leave on {1}"
@@ -4402,7 +4398,7 @@ msgstr "الاسم الأول "
 
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1532
 msgid "Fiscal Year {0} not found"
-msgstr "السنة المالية {0} غير موجودة\\n<br>\\nFiscal Year {0} not found"
+msgstr "السنة المالية {0} غير موجودة"
 
 #. Option for the 'Overtime Amount Calculation' (Select) field in DocType
 #. 'Overtime Type'
@@ -4899,9 +4895,7 @@ msgstr "تاريخ نصف اليوم إلزامي"
 
 #: hrms/hr/doctype/leave_application/leave_application.py:201
 msgid "Half Day Date should be between From Date and To Date"
-msgstr ""
-"تاريخ نصف اليوم ينبغي أن يكون بين 'من تاريخ' و 'الى تاريخ'\\n<br>\\nHalf Day Date "
-"should be between From Date and To Date"
+msgstr "تاريخ نصف اليوم ينبغي أن يكون بين 'من تاريخ' و 'الى تاريخ'"
 
 #: hrms/hr/doctype/compensatory_leave_request/compensatory_leave_request.py:29
 msgid "Half Day Date should be in between Work From Date and Work End Date"
@@ -6415,9 +6409,7 @@ msgstr "نوع الإجازة إلزامي"
 
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:185
 msgid "Leave Type {0} cannot be allocated since it is leave without pay"
-msgstr ""
-"لا يمكن تخصيص نوع الاجازه {0}, لأنها إجازة بدون راتب\\n<br>\\nLeave Type {0} cannot "
-"be allocated since it is leave without pay"
+msgstr "لا يمكن تخصيص نوع الاجازه {0}, لأنها إجازة بدون راتب"
 
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:563
 msgid "Leave Type {0} cannot be carry-forwarded"
@@ -7071,7 +7063,7 @@ msgstr "صافي الراتب المبلغ"
 
 #: hrms/payroll/doctype/salary_structure/salary_structure.py:94
 msgid "Net pay cannot be negative"
-msgstr "صافي الأجر لا يمكن أن يكون بالسالب\\n<br>\\nNet pay cannot be negative"
+msgstr "صافي الأجر لا يمكن أن يكون بالسالب"
 
 #. Label of the new_employee_id (Link) field in DocType 'Employee Transfer'
 #: hrms/hr/doctype/employee_transfer/employee_transfer.json
@@ -7206,10 +7198,7 @@ msgstr ""
 
 #: hrms/payroll/doctype/salary_slip/salary_slip.py:440
 msgid "No active or default Salary Structure found for employee {0} for the given dates"
-msgstr ""
-"لم يتم العثور على أي نشاط أو هيكل راتب إفتراضي للموظف {0} للتواريخ "
-"المدخلة\\n<br>\\nNo active or default Salary Structure found for employee {0} for the"
-" given dates"
+msgstr "لم يتم العثور على أي نشاط أو هيكل راتب إفتراضي للموظف {0} للتواريخ المدخلة"
 
 #: hrms/hr/doctype/vehicle_log/vehicle_log.py:43
 msgid "No additional expenses has been added"
@@ -7574,9 +7563,7 @@ msgstr "لا يمكن تقديم سوى المقابلات ذات الحالة '
 
 #: hrms/hr/doctype/leave_application/leave_application.py:105
 msgid "Only Leave Applications with status 'Approved' and 'Rejected' can be submitted"
-msgstr ""
-"يمكن إعتماد الطلبات التي حالتها 'معتمدة' و 'مرفوضة' فقط\\n<br>\\nOnly Leave "
-"Applications with status 'Approved' and 'Rejected' can be submitted"
+msgstr "يمكن إعتماد الطلبات التي حالتها 'معتمدة' و 'مرفوضة' فقط"
 
 #: hrms/hr/doctype/shift_request/shift_request.py:46
 msgid "Only Shift Request with status 'Approved' and 'Rejected' can be submitted"
@@ -7903,7 +7890,7 @@ msgstr "مضاعِفات معدل الأجر"
 #. Encashment'
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
 msgid "Pay Via Payment Entry"
-msgstr "الدفع عن طريق إدخال الدفعة"
+msgstr "السداد من خلال سند دفع أو قبض"
 
 #. Label of the pay_via_salary_slip (Check) field in DocType 'Gratuity'
 #: hrms/payroll/doctype/gratuity/gratuity.json
@@ -9529,10 +9516,7 @@ msgstr "حجز الراتب {0} موجود بالفعل للموظف {1} للف�
 msgid ""
 "Salary already processed for period between {0} and {1}, Leave application period "
 "cannot be between this date range."
-msgstr ""
-"تمت معالجة الراتب بالفعل للفترة بين {0} و {1} ، لا يمكن أن تكون فترة طلب اﻹجازة بين "
-"نطاق هذا التاريخ.\\n<br>\\nSalary already processed for period between {0} and {1}, "
-"Leave application period cannot be between this date range."
+msgstr "تمت معالجة الراتب بالفعل للفترة بين {0} و {1} ، لا يمكن أن تكون فترة طلب اﻹجازة بين نطاق هذا التاريخ."
 
 #. Description of the 'Earnings & Deductions' (Tab Break) field in DocType
 #. 'Salary Structure'
@@ -9589,7 +9573,7 @@ msgstr "نقاط المكتسبة"
 
 #: hrms/hr/doctype/appraisal/appraisal.js:131
 msgid "Score must be less than or equal to 5"
-msgstr "يجب أن تكون النقاط أقل من أو تساوي 5\\n<br>\\nScore must be less than or equal to 5"
+msgstr "يجب أن تكون النقاط أقل من أو تساوي 5"
 
 #: hrms/hr/doctype/appraisal/appraisal.js:104
 msgid "Scores"
@@ -10625,9 +10609,7 @@ msgstr "يوم الشهر الذي يجب فيه تخصيص الإجازات"
 msgid ""
 "The day(s) on which you are applying for leave are holidays. You need not apply for "
 "leave."
-msgstr ""
-"فترة طلب اﻹجازة تقع في فترة عطلة رسمية، يجب إختيار فترة أخرى.\\n<br>\\nThe day(s) on "
-"which you are applying for leave are holidays. You need not apply for leave."
+msgstr "فترة طلب اﻹجازة تقع في فترة عطلة رسمية، يجب إختيار فترة أخرى."
 
 #: hrms/hr/doctype/compensatory_leave_request/compensatory_leave_request.py:64
 msgid "The days between {0} to {1} are not valid holidays."
@@ -10692,9 +10674,7 @@ msgstr "نظرية"
 
 #: hrms/payroll/doctype/salary_slip/salary_slip.py:495
 msgid "There are more holidays than working days this month."
-msgstr ""
-"أيام العطل لهذا الشهر أكثر من أيام العمل.\\n<br>\\nThere are more holidays than "
-"working days this month."
+msgstr "أيام العطل لهذا الشهر أكثر من أيام العمل."
 
 #: hrms/hr/doctype/attendance_request/attendance_request.py:64
 msgid ""
@@ -11743,9 +11723,7 @@ msgstr "تحذير: رصيد الإجازات غير كافٍ لنوع الإج�
 
 #: hrms/hr/doctype/leave_application/leave_application.py:387
 msgid "Warning: Leave application contains following block dates"
-msgstr ""
-"تحذير: طلب اﻹجازة يحتوي على الايام التالية الّتي يمنع فيها اﻹجازة\\n<br>\\nWarning: "
-"Leave application contains following block dates"
+msgstr "تحذير: طلب اﻹجازة يحتوي على الايام التالية الّتي يمنع فيها اﻹجازة"
 
 #: hrms/hr/doctype/shift_assignment/shift_assignment.py:91
 msgid "Warning: {0} already has an active Shift Assignment {1} for some/all of these dates."
@@ -12045,7 +12023,7 @@ msgstr "إلغاء"
 
 #: frontend/src/components/RequestActionSheet.vue:291
 msgid "cancelled"
-msgstr "ألغيت"
+msgstr "ملغى"
 
 #: hrms/public/js/utils/index.js:131
 msgid "create/submit"
@@ -12094,7 +12072,7 @@ msgstr "التعليقات"
 
 #: frontend/src/components/RequestActionSheet.vue:291
 msgid "submitted"
-msgstr "مسجلة"
+msgstr "معتمد"
 
 #: hrms/payroll/doctype/salary_component/salary_component.py:141
 msgid "via Salary Component sync"
@@ -12329,3 +12307,175 @@ msgstr "المستخدم"
 #. source: hrms
 msgid "Users"
 msgstr "المستخدمون"
+
+#. source: hrms
+msgid "Accounts Receivable"
+msgstr "حسابات العملاء"
+
+#. source: hrms
+msgid "Accounts Payable"
+msgstr "حسابات الموردين"
+
+#. source: hrms
+msgid "Chart of Accounts"
+msgstr "دليل الحسابات"
+
+#. source: hrms
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. source: hrms
+msgid "Payment Entry"
+msgstr "سند دفع أو قبض"
+
+#. source: hrms
+msgid "Time Sheet"
+msgstr "كشف ساعات العمل"
+
+#. source: hrms
+msgid "Timesheet"
+msgstr "كشف ساعات العمل"
+
+#. source: hrms
+msgid "Create Payment Entry"
+msgstr "إنشاء سند دفع أو قبض"
+
+#. source: hrms
+msgid "Role"
+msgstr "دور"
+
+#. source: hrms
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. source: hrms
+msgid "Draft"
+msgstr "مسودة"
+
+#. source: hrms
+msgid "Submitted"
+msgstr "معتمد"
+
+#. source: hrms
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. source: hrms
+msgid "Edit"
+msgstr "تعديل"
+
+#. source: hrms
+msgid "Submit"
+msgstr "اعتماد"
+
+#. source: hrms
+msgid "Close"
+msgstr "إغلاق"
+
+#. source: hrms
+msgid "Completed"
+msgstr "مكتمل"
+
+#. source: hrms
+msgid "Description"
+msgstr "الوصف"
+
+#. source: hrms
+msgid "Enabled"
+msgstr "مفعّل"
+
+#. source: hrms
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. source: hrms
+msgid "Name"
+msgstr "الاسم"
+
+#. source: hrms
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#. source: hrms
+msgid "Title"
+msgstr "العنوان"
+
+#. source: hrms
+msgid "Not Started"
+msgstr "لم يبدأ"
+
+#. source: hrms
+msgid "Same Company is entered more than once"
+msgstr "تم إدخال نفس الشركة أكثر من مره"
+
+#. source: hrms
+msgid "Cost Center"
+msgstr "مركز التكلفة"
+
+#. source: hrms
+msgid "Expense Account"
+msgstr "حساب المصروفات"
+
+#. source: hrms
+msgid "<span class=\"h4\"><b>Your Shortcuts</b></span>"
+msgstr "<span class=\"h4\"><b>اختصاراتك</b></span>"
+
+#. source: hrms
+msgid "Added On"
+msgstr "تاريخ الإضافة"
+
+#. source: hrms
+msgid "Apply Filters"
+msgstr "تطبيق عوامل التصفية"
+
+#. source: hrms
+msgid "Archive"
+msgstr "أرشفة"
+
+#. source: hrms
+msgid "Assigning..."
+msgstr "جارٍ الإسناد..."
+
+#. source: hrms
+msgid "Campaign"
+msgstr "الحملة"
+
+#. source: hrms
+msgid "Completed On"
+msgstr "تاريخ الاكتمال"
+
+#. source: hrms
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. source: hrms
+msgid "Date Range"
+msgstr "نطاق التاريخ"
+
+#. source: hrms
+msgid "Fortnightly"
+msgstr "كل أسبوعين"
+
+#. source: hrms
+msgid "Is Group"
+msgstr "مجموعة"
+
+#. source: hrms
+msgid "Result"
+msgstr "النتيجة"
+
+#. source: hrms
+msgid "Series"
+msgstr "سلسلة التسمية"
+
+#. source: hrms
+msgid "Service Item"
+msgstr "صنف خدمي"
+
+#. source: hrms
+msgid "This method is only meant for developer mode"
+msgstr "هذه الطريقة مخصصة لوضع المطوّر فقط."
+
+#. source: hrms
+msgid "Uploading..."
+msgstr "جارٍ الرفع..."
