@@ -108,10 +108,12 @@ def rewrite_po_entries(
 	text = path.read_text(encoding="utf-8")
 	separator = "\r\n\r\n" if "\r\n" in text else "\n\n"
 	blocks = text.split(separator)
-	by_msgid = {block_msgid(block): index for index, block in enumerate(blocks)}
+	by_msgid: dict[str | None, list[int]] = defaultdict(list)
+	for index, block in enumerate(blocks):
+		by_msgid[block_msgid(block)].append(index)
 	for row in rows:
-		index = by_msgid.get(row["msgid"])
-		if index is None:
+		indices = by_msgid.get(row["msgid"], [])
+		if not indices:
 			if append_missing:
 				blocks.append(
 					f"#. source: {row['app']}\n"
@@ -121,7 +123,8 @@ def rewrite_po_entries(
 			elif not allow_missing:
 				raise BatchError(f"{path}: missing msgid {row['msgid']!r}")
 			continue
-		blocks[index] = render_translation(blocks[index], row["approved_arabic"])
+		for index in indices:
+			blocks[index] = render_translation(blocks[index], row["approved_arabic"])
 	path.write_text(separator.join(blocks), encoding="utf-8", newline="")
 
 
@@ -138,15 +141,16 @@ def apply_po(
 		raise BatchError(f"required catalog is missing: {path}")
 	with path.open(encoding="utf-8") as handle:
 		catalog = read_po(handle)
-	messages = {
-		(message.id if isinstance(message.id, str) else message.id[0]): message
-		for message in catalog
-		if message.id
-	}
+	messages: dict[str, list[object]] = defaultdict(list)
+	for message in catalog:
+		if not message.id:
+			continue
+		msgid = message.id if isinstance(message.id, str) else message.id[0]
+		messages[msgid].append(message)
 	changed = 0
 	for row in rows:
-		message = messages.get(row["msgid"])
-		if message is None:
+		matches = messages.get(row["msgid"], [])
+		if not matches:
 			if append_missing:
 				if not write:
 					raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
@@ -155,17 +159,18 @@ def apply_po(
 			if require_all:
 				raise BatchError(f"{path}: missing msgid {row['msgid']!r}")
 			continue  # Older generated version bundles may not contain a newer source key.
-		current = message.string if isinstance(message.string, str) else ""
-		if guard_current and current not in {row["current_arabic"], row["approved_arabic"]}:
-			raise BatchError(
-				f"{path}: stale current_arabic guard for {row['msgid']!r}; found {current!r}"
-			)
-		if current != row["approved_arabic"] or "fuzzy" in message.flags:
-			if not write:
-				raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
-			message.string = row["approved_arabic"]
-			message.flags.discard("fuzzy")
-			changed += 1
+		for message in matches:
+			current = message.string if isinstance(message.string, str) else ""
+			if guard_current and current not in {row["current_arabic"], row["approved_arabic"]}:
+				raise BatchError(
+					f"{path}: stale current_arabic guard for {row['msgid']!r}; found {current!r}"
+				)
+			if current != row["approved_arabic"] or "fuzzy" in message.flags:
+				if not write:
+					raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
+				message.string = row["approved_arabic"]
+				message.flags.discard("fuzzy")
+				changed += 1
 	if write and changed:
 		rewrite_po_entries(
 			path,
@@ -194,7 +199,7 @@ def apply_csv(path: Path, rows: list[dict[str, str]], *, write: bool) -> int:
 			changed += 1
 	if write and changed:
 		with path.open("w", encoding="utf-8", newline="") as handle:
-			csv.writer(handle).writerows(catalog_rows)
+			csv.writer(handle, lineterminator="\n").writerows(catalog_rows)
 	return changed
 
 
@@ -206,25 +211,28 @@ def apply_overlay(root: Path, rows: list[dict[str, str]], *, write: bool) -> int
 	path = root / "arabic_translations/locale/ar.po"
 	with path.open(encoding="utf-8") as handle:
 		catalog = read_po(handle)
-	messages = {
-		(message.id if isinstance(message.id, str) else message.id[0]): message
-		for message in catalog
-		if message.id
-	}
+	messages: dict[str, list[object]] = defaultdict(list)
+	for message in catalog:
+		if not message.id:
+			continue
+		msgid = message.id if isinstance(message.id, str) else message.id[0]
+		messages[msgid].append(message)
 	changed = 0
 	for row in effective.values():
-		message = messages.get(row["msgid"])
-		if message is None:
+		matches = messages.get(row["msgid"], [])
+		if not matches:
 			if not write:
 				raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
 			catalog.add(row["msgid"], row["approved_arabic"], auto_comments=[f"source: {row['app']}"])
 			changed += 1
-		elif message.string != row["approved_arabic"] or "fuzzy" in message.flags:
-			if not write:
-				raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
-			message.string = row["approved_arabic"]
-			message.flags.discard("fuzzy")
-			changed += 1
+		else:
+			for message in matches:
+				if message.string != row["approved_arabic"] or "fuzzy" in message.flags:
+					if not write:
+						raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
+					message.string = row["approved_arabic"]
+					message.flags.discard("fuzzy")
+					changed += 1
 	if write and changed:
 		rewrite_po_entries(
 			path,

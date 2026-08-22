@@ -74,6 +74,22 @@ msgstr "مشتركة"
 				json.loads((output / "audit-summary.json").read_text(encoding="utf-8")), summary
 			)
 
+	def test_expected_context_conflict_is_reported_separately(self):
+		with tempfile.TemporaryDirectory() as temp_dir:
+			root = Path(temp_dir)
+			locale_root = root / "source"
+			for app, translation in (("frappe", "تطبيق"), ("hrms", "التقدم للوظيفة")):
+				(locale_root / app).mkdir(parents=True)
+				(locale_root / app / "ar.po").write_text(
+					PO_HEADER + f'msgid "Apply"\nmsgstr "{translation}"\n', encoding="utf-8"
+				)
+			glossary = root / "accounting.csv"
+			glossary.write_text("source,approved_arabic,rejected,status\n", encoding="utf-8")
+
+			summary = audit(locale_root, glossary, root / "reports")
+			self.assertEqual(summary["findings"]["cross_app_conflicts"], 0)
+			self.assertEqual(summary["findings"]["expected_cross_app_conflicts"], 1)
+
 
 if __name__ == "__main__":
 	unittest.main()

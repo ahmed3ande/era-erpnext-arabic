@@ -12,13 +12,13 @@ This file is the single resume point for the Era Arabic translation project.
 
 ## Current position
 
-- Milestone: M2 — Accounting terminology review
-- Checkpoint: CP-03B — First accounting correction batch
-- Active issue: #7
-- Active branch: `feature/accounting-batch-001`
+- Milestone: M3 — Egyptian terminology and core UI quality sweep
+- Checkpoint: CP-04 — Broad V16 Egyptian release candidate
+- Active issue: #9
+- Active branch: `feature/egypt-v16-core-001`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: Draft PR #8 is v16-complete; validation commit `701df721` passed GitHub Actions run 26
+- Status: PR #8 merged as `0bbd60c`; broad Egyptian terminology batch is in progress
 
 ## Completed
 
@@ -44,10 +44,14 @@ This file is the single resume point for the Era Arabic translation project.
 - [x] Arabic wording independently reviewed against accounting and ERPNext context
 - [x] Draft PR #8 opened
 - [x] GitHub catalog, msgfmt, batch, audit, placeholder, and Ruff checks passed
+- [x] PR #8 merged and deployed to the shared V16 bench
+- [x] Egyptian Accounting Standards selected as the primary terminology authority
+- [x] Broad core batch prepared for accounting, manufacturing, stock, projects, workflow, and common UI labels
+- [x] Exact duplicated English-source cleanup converted into a guarded batch
 
 ## Next action
 
-Perform the final human review of Draft PR #8, then decide whether to merge Batch 001. Do not deploy to production until the merged commit is separately verified.
+Validate the two CP-04 batches, generate the complete Excel change register, open a pull request, and test the merged candidate on `bonomar16live.local` before promoting it to the rebuild site.
 
 ## Resume protocol
 
