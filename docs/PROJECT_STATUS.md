@@ -18,7 +18,7 @@ This file is the single resume point for the Era Arabic translation project.
 - Active branch: `feature/accounting-batch-001`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: Batch 001 implemented locally; GitHub draft PR and CI pending
+- Status: Draft PR #8 validated in GitHub Actions run 24
 
 ## Completed
 
@@ -39,10 +39,13 @@ This file is the single resume point for the Era Arabic translation project.
 - [x] Batch 001 review CSV created with 33 guarded rows
 - [x] Deterministic batch application and idempotency checks implemented
 - [x] Local audit delta verified with zero placeholder errors
+- [x] ERPNext v16 source, runtime overlay, and v16 overwrite bundle synchronized
+- [x] Draft PR #8 opened with 13 changed files
+- [x] GitHub catalog, msgfmt, batch, audit, placeholder, and Ruff checks passed
 
 ## Next action
 
-Publish Batch 001 as a draft PR, validate all catalogs in GitHub Actions, and review the audit delta before any merge or production deployment.
+Review the Arabic wording in Draft PR #8, then decide whether to merge Batch 001. Do not deploy to production until the merged commit is separately verified.
 
 ## Resume protocol
 
