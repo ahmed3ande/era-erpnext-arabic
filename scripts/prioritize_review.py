@@ -47,11 +47,40 @@ ACCOUNTING_TERMS = {
 
 CATEGORY_PRIORITY = {
 	"glossary-conflict": 100,
+	"duplicated-source": 95,
 	"untranslated": 90,
 	"fuzzy": 85,
 	"cross-app-conflict": 80,
 	"english-residue": 60,
 }
+
+TECHNICAL_TOKENS = {
+	"api",
+	"bom",
+	"csv",
+	"duckdb",
+	"erpnext",
+	"fifo",
+	"frappe",
+	"hrms",
+	"html",
+	"iban",
+	"jinja",
+	"json",
+	"pdf",
+	"pos",
+	"swift",
+	"uom",
+	"url",
+	"xml",
+}
+
+HTML_TAG_RE = re.compile(r"<[^>]+>")
+JINJA_RE = re.compile(r"{{.*?}}|{%.*?%}|{#.*?#}", re.DOTALL)
+URL_RE = re.compile(r"(?:https?://|www\.)\S+|\b\S+@\S+\.\S+\b", re.IGNORECASE)
+CODE_RE = re.compile(r"`[^`]+`|\b[A-Za-z][A-Za-z0-9]*[_./:][A-Za-z0-9_.:/-]*\b")
+PLACEHOLDER_RE = re.compile(r"%\([^)]+\)[a-zA-Z]|%[a-zA-Z]|{[^{}]+}")
+ENGLISH_WORD_RE = re.compile(r"[A-Za-z][A-Za-z'-]*")
 
 OUTPUT_FIELDS = ["priority", "category", "app", "msgid", "msgstr", "reason", "source_report"]
 
@@ -63,6 +92,37 @@ def normalized(value: str) -> str:
 def is_accounting_related(*values: str) -> bool:
 	text = " ".join(normalized(value) for value in values if value)
 	return any(term in text for term in ACCOUNTING_TERMS)
+
+
+def visible_text(value: str) -> str:
+	"""Remove markup and machine tokens while preserving user-facing words."""
+	value = JINJA_RE.sub(" ", value)
+	value = HTML_TAG_RE.sub(" ", value)
+	value = URL_RE.sub(" ", value)
+	value = CODE_RE.sub(" ", value)
+	return PLACEHOLDER_RE.sub(" ", value)
+
+
+def english_words(value: str) -> list[str]:
+	"""Return meaningful English residue, excluding approved technical tokens."""
+	return [
+		word
+		for word in ENGLISH_WORD_RE.findall(visible_text(value))
+		if word.casefold() not in TECHNICAL_TOKENS
+	]
+
+
+def has_duplicated_source(msgid: str, msgstr: str) -> bool:
+	"""Detect an English source sentence appended to an Arabic translation."""
+	source_words = [word.casefold() for word in english_words(msgid)]
+	translation_words = [word.casefold() for word in english_words(msgstr)]
+	if len(source_words) < 2 or sum(len(word) for word in source_words) < 8:
+		return False
+	window = len(source_words)
+	return any(
+		translation_words[index : index + window] == source_words
+		for index in range(len(translation_words) - window + 1)
+	)
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -127,11 +187,26 @@ def build_queue(audit_dir: Path) -> list[dict[str, object]]:
 	for row in read_csv(audit_dir / "english-residue.csv"):
 		if not is_accounting_related(row.get("msgid", "")):
 			continue
+		msgid = row.get("msgid", "")
+		msgstr = row.get("msgstr", "")
+		if has_duplicated_source(msgid, msgstr):
+			queue.append(
+				finding(
+					"duplicated-source",
+					row,
+					"English source text is duplicated inside the Arabic translation",
+					"english-residue.csv",
+				)
+			)
+			continue
+		residue = english_words(msgstr)
+		if not residue:
+			continue
 		queue.append(
 			finding(
 				"english-residue",
 				row,
-				f"English candidates: {row.get('english_words', '')}",
+				f"English candidates: {' | '.join(residue)}",
 				"english-residue.csv",
 			)
 		)
