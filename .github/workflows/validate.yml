@@ -29,7 +29,8 @@ jobs:
       - name: Verify approved review batches are applied
         run: |
           python scripts/apply_review_batch.py review_batches/accounting-001.csv
-          python scripts/apply_review_batch.py review_batches/ui-core-001.csv
+          python scripts/apply_review_batch.py review_batches/egypt-core-001.csv
+          python scripts/apply_review_batch.py review_batches/quality-sweep-001.csv
       - name: Generate translation audit reports
         run: python scripts/audit_translations.py
       - name: Generate accounting review queue

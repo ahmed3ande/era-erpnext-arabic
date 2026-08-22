@@ -1,0 +1,183 @@
+﻿batch_id,app,msgid,current_arabic,approved_arabic,rationale
+egypt-core-001,frappe,Add Child,إضافة الطفل,إضافة عنصر فرعي,مصطلح شجري في الواجهة وليس طفلًا بشريًا.
+egypt-core-001,frappe,Add script for Child Table,إضافة البرنامج النصي لجدول الطفل,إضافة برنامج نصي لجدول فرعي,Child Table هو جدول فرعي في نموذج البيانات.
+egypt-core-001,frappe,Cannot create a {0} against a child document: {1},لا يمكن إنشاء {0} ضد مستند طفل: {1},لا يمكن إنشاء {0} مرتبط بمستند فرعي: {1},Child Document هو مستند فرعي.
+egypt-core-001,frappe,Select Child Table,حدد جدول الطفل,اختر الجدول الفرعي,Child Table هو جدول فرعي في نموذج البيانات.
+egypt-core-001,frappe,Permission,إذن,صلاحية,المصطلح القياسي في إدارة الوصول.
+egypt-core-001,frappe,Role,صلاحية,دور,التمييز بين الدور والصلاحية في RBAC.
+egypt-core-001,frappe,Dashboard,لوحة القيادة,لوحة المعلومات,مصطلح واجهات مستخدم شائع بدل الترجمة الحرفية «لوحة القيادة».
+egypt-core-001,frappe,dashboard,لوحة القيادة,لوحة المعلومات,توحيد حالة الأحرف للمصطلح نفسه.
+egypt-core-001,frappe,Dashboard View,لوحة المعلومات,عرض لوحة المعلومات,صياغة اسم نمط العرض.
+egypt-core-001,frappe,List View,القائمة,عرض القائمة,صياغة اسم نمط العرض.
+egypt-core-001,frappe,Report View,التقرير,عرض التقرير,صياغة اسم نمط العرض.
+egypt-core-001,frappe,Kanban View,لوحة كانبان,عرض كانبان,صياغة اسم نمط العرض.
+egypt-core-001,frappe,Image View,الصور,عرض الصور,صياغة اسم نمط العرض.
+egypt-core-001,frappe,Draft,مشروع,مسودة,حالة مستند وليست مشروعًا.
+egypt-core-001,frappe,Submitted,مسجلة,معتمد,حالة مستند بعد الاعتماد.
+egypt-core-001,frappe,Cancelled,ألغيت,ملغى,حالة مستند بصياغة عربية صحيحة.
+egypt-core-001,frappe,Duplicate,مكررة,إنشاء نسخة,فعل واجهة وليس صفة «مكررة».
+egypt-core-001,frappe,Edit,تصحيح,تعديل,فعل واجهة؛ «تصحيح» يغيّر المعنى.
+egypt-core-001,frappe,report,أبلغ عن,تقرير,اسم كائن وليس فعل الإبلاغ.
+egypt-core-001,frappe,Submit,تسجيل,اعتماد,فعل دورة حياة المستند في ERPNext.
+egypt-core-001,frappe,submit,تسجيل,اعتماد,توحيد حالة الأحرف لفعل اعتماد المستند.
+egypt-core-001,frappe,Assigned To,كلف إلى,مسند إلى,المقصود إسناد مهمة أو مستند.
+egypt-core-001,frappe,Clear Filters,مسح المرشحات,مسح عوامل التصفية,مصطلح واجهة قياسي.
+egypt-core-001,frappe,Close,أغلق,إغلاق,صياغة اسم فعل للأزرار.
+egypt-core-001,frappe,Completed,أكتمل,مكتمل,حالة عمل صحيحة.
+egypt-core-001,frappe,Created By,منشئه بواسطه,أنشأه,صياغة مختصرة سليمة لبيانات التدقيق.
+egypt-core-001,frappe,Description,وصف,الوصف,اسم حقل معرّف.
+egypt-core-001,frappe,Enabled,تمكين,مفعّل,حالة وليست فعل «تمكين».
+egypt-core-001,frappe,Filter,منقي,عامل تصفية,اسم الأداة في الواجهة.
+egypt-core-001,frappe,In Progress,في تَقَدم,قيد التنفيذ,حالة عمل شائعة.
+egypt-core-001,frappe,Modified By,عدل من قبل,عُدّل بواسطة,صياغة سليمة لبيانات التدقيق.
+egypt-core-001,frappe,Name,اسم,الاسم,اسم حقل معرّف.
+egypt-core-001,frappe,Owner,مالك,المالك,اسم حقل معرّف.
+egypt-core-001,frappe,Pending,معلق,قيد الانتظار,حالة عمل أو موافقة.
+egypt-core-001,frappe,Title,اللقب,العنوان,اسم الحقل وليس اللقب الشخصي.
+egypt-core-001,frappe,Warehouse,المستودعات,المخزن,مصطلح السوق المصري لإدارة المخزون.
+egypt-core-001,erpnext,Accounts Receivable,الحسابات المدينة,حسابات العملاء,مصطلح تشغيلي مصري للحسابات المدينة التجارية.
+egypt-core-001,erpnext,Accounts Payable,الحسابات الدائنة,حسابات الموردين,مصطلح تشغيلي مصري للحسابات الدائنة التجارية.
+egypt-core-001,erpnext,Balance Sheet,المركز المالي,قائمة المركز المالي,الاسم المستخدم في معايير المحاسبة المصرية.
+egypt-core-001,erpnext,Budget,الميزانية,الموازنة التقديرية,تمييز الموازنة التخطيطية عن قائمة المركز المالي.
+egypt-core-001,erpnext,Chart of Accounts,الشجرة المحاسبية,دليل الحسابات,المصطلح المحاسبي المصري الشائع.
+egypt-core-001,erpnext,Item,السلعة,الصنف,مصطلح المخزون والمبيعات في السوق المصري.
+egypt-core-001,erpnext,Profit and Loss Statement,الأرباح والخسائر,قائمة الدخل,الاسم المستخدم في معايير المحاسبة المصرية.
+egypt-core-001,erpnext,Quotation,عرض أسعار,عرض سعر,اسم المستند التجاري الشائع.
+egypt-core-001,erpnext,Supplier Quotation,التسعيرة من المورد,عرض سعر مورد,اسم المستند التجاري الشائع.
+egypt-core-001,erpnext,Sales Order,طلب المبيعات,أمر بيع,اسم المستند التجاري الشائع.
+egypt-core-001,erpnext,Purchase Order,أمر الشراء,أمر شراء,اسم المستند التجاري الشائع.
+egypt-core-001,erpnext,Journal Entry,القيود اليومية,قيد يومية,المصطلح المحاسبي الصحيح للمستند.
+egypt-core-001,erpnext,Payment Entry,تدوينات المدفوعات,سند دفع أو قبض,المستند يخدم اتجاهي الدفع والقبض.
+egypt-core-001,erpnext,Stock Entry,قيد مخزون,حركة مخزون,مصطلح جامع لأنواع حركات المخزون المختلفة.
+egypt-core-001,erpnext,Delivery Note,إشعار التسليم,إذن تسليم,اسم مستند التسليم المتداول في مصر.
+egypt-core-001,erpnext,Purchase Receipt,إستلام المشتريات,إذن استلام مشتريات,اسم مستند استلام المشتريات.
+egypt-core-001,erpnext,Work Order,أمر العمل,أمر إنتاج,السياق تصنيع وليس أمر صيانة عام.
+egypt-core-001,erpnext,Voucher,قسيمة,سند,المصطلح المحاسبي المناسب بدل «قسيمة».
+egypt-core-001,erpnext,Posting Time,نشر التوقيت,وقت الترحيل,مصطلح محاسبي متسق مع تاريخ الترحيل.
+egypt-core-001,erpnext,Time Sheet,ورقة الوقت,كشف ساعات العمل,مصطلح تشغيلي واضح بدل الترجمة الحرفية.
+egypt-core-001,erpnext,Timesheet,ساعات العمل,كشف ساعات العمل,توحيد المصطلح في المشاريع والموارد البشرية.
+egypt-core-001,erpnext,Direct return is not allowed for Timesheet.,المرتجع المباشر غير مسموح به لورقة الوقت.,لا يُسمح بإنشاء مرتجع مباشر من كشف ساعات العمل.,صياغة سياقية لمستند كشف ساعات العمل.
+egypt-core-001,erpnext,Actual End Date (via Timesheet),تاريخ الإنتهاء الفعلي (عبر ورقة الوقت),تاريخ الانتهاء الفعلي (من واقع كشف ساعات العمل),صياغة سياقية لمصدر التاريخ.
+egypt-core-001,erpnext,Actual Start Date (via Timesheet),تاريخ البدء الفعلي (عبر ورقة الوقت),تاريخ البدء الفعلي (من واقع كشف ساعات العمل),صياغة سياقية لمصدر التاريخ.
+egypt-core-001,erpnext,Child Docname,اسم الطفل,اسم المستند الفرعي,Child هنا علاقة بيانات وليست طفلًا.
+egypt-core-001,erpnext,Invalid Child Procedure,إجراء الطفل غير صالح,الإجراء الفرعي غير صالح,Child هنا عقدة فرعية.
+egypt-core-001,erpnext,Stock Entry Child,الأسهم دخول الطفل,تفاصيل حركة المخزون,اسم نوع مستند فرعي لحركة المخزون.
+egypt-core-001,erpnext,Stock Entry Item,بند إدخال المخزون,صنف حركة المخزون,اسم صف الصنف داخل حركة المخزون.
+egypt-core-001,erpnext,Bill of Materials,فاتورة المواد,قائمة مكونات الصنف,BOM قائمة مكونات إنتاج وليست فاتورة مالية.
+egypt-core-001,erpnext,BOM Stock Report,تقرير مخزون فاتورة المواد,تقرير مخزون قائمة مكونات الصنف,BOM قائمة مكونات إنتاج وليست فاتورة.
+egypt-core-001,erpnext,Default BOM,الافتراضي BOM,قائمة مكونات الصنف الافتراضية,توسيع الاختصار بصياغة صناعية عربية.
+egypt-core-001,erpnext,BOM Comparison Tool,أداة مقارنة BOM,أداة مقارنة قوائم مكونات الأصناف,توسيع الاختصار بصياغة صناعية عربية.
+egypt-core-001,erpnext,BOM ID,معرف BOM,معرّف قائمة مكونات الصنف,توسيع الاختصار للمستخدم.
+egypt-core-001,erpnext,BOM Operations Time,وقت عمليات BOM,زمن عمليات قائمة مكونات الصنف,توسيع الاختصار للمستخدم.
+egypt-core-001,erpnext,BOM Qty,BOM الكمية,كمية قائمة مكونات الصنف,تصحيح ترتيب الكلمات.
+egypt-core-001,erpnext,BOM Search,BOM البحث,البحث في قوائم مكونات الأصناف,تصحيح ترتيب الكلمات.
+egypt-core-001,erpnext,BOM Stock Calculated,BOM Stock محتسب,تم احتساب مخزون قائمة مكونات الصنف,إزالة الإنجليزية من الواجهة.
+egypt-core-001,erpnext,BOM Variance Report,تقرير الفرق BOM,تقرير انحرافات قائمة مكونات الصنف,مصطلح تقريري صناعي.
+egypt-core-001,erpnext,From BOM,من BOM,من قائمة مكونات الصنف,توسيع الاختصار للمستخدم.
+egypt-core-001,erpnext,From BOM No,من رقم BOM,من رقم قائمة مكونات الصنف,توسيع الاختصار للمستخدم.
+egypt-core-001,erpnext,Get Items from BOM,تنزيل الاصناف من BOM,جلب الأصناف من قائمة مكونات الصنف,توسيع الاختصار وتصحيح الفعل.
+egypt-core-001,erpnext,Use Multi-Level BOM,استخدام متعدد المستويات BOM,استخدام قائمة مكونات صنف متعددة المستويات,توسيع الاختصار للمستخدم.
+egypt-core-001,erpnext,Variant BOM,المتغير BOM,قائمة مكونات صنف متغير,تصحيح ترتيب الكلمات.
+egypt-core-001,erpnext,Select BOM and Qty for Production,اختر فاتورة المواد و الكمية للانتاج,اختر قائمة مكونات الصنف والكمية المطلوب إنتاجها,صياغة تصنيع واضحة.
+egypt-core-001,erpnext,Current BOM and New BOM can not be same,فاتورة المواد الحالية وفاتورة المواد الجديدة لايمكن أن يكونوا نفس الفاتورة\n<br>\nCurrent BOM and New BOM can not be same,لا يمكن أن تكون قائمة مكونات الصنف الحالية والجديدة متماثلتين.,إزالة الترجمة الحرفية والنص الإنجليزي المكرر.
+egypt-core-001,erpnext,Default BOM for {0} not found,فاتورة المواد ل {0} غير موجودة\n<br>\nDefault BOM for {0} not found,لم يتم العثور على قائمة مكونات صنف افتراضية لـ {0}.,صياغة تصنيع واضحة وحذف تكرار المصدر.
+egypt-core-001,erpnext,"According to the BOM {0}, the Item '{1}' is missing in the stock entry.",وفقًا لقائمة المواد {0}، الصنف '{1}' مفقود في إدخال المخزون.,وفقًا لقائمة مكونات الصنف {0}، الصنف «{1}» غير موجود في حركة المخزون.,توحيد مصطلحات التصنيع والمخزون.
+egypt-core-001,erpnext,"While creating account for Child Company {0}, parent account {1} not found. Please create the parent account in corresponding COA",أثناء إنشاء حساب Child Company {0} ، لم يتم العثور على الحساب الرئيسي {1}. الرجاء إنشاء الحساب الرئيسي في شهادة توثيق البرامج المقابلة,أثناء إنشاء حساب للشركة التابعة {0}، لم يتم العثور على الحساب الرئيسي {1}. أنشئ الحساب الرئيسي في دليل الحسابات المقابل.,Child Company شركة تابعة وCOA دليل الحسابات.
+egypt-core-001,erpnext,Create Payment Entry,إنشاء إدخال الدفع,إنشاء سند دفع أو قبض,اسم إجراء إنشاء المستند.
+egypt-core-001,erpnext,Account: {0} is not permitted under Payment Entry,الحساب: {0} غير مسموح به بموجب إدخال الدفع,لا يجوز استخدام الحساب {0} في سند الدفع أو القبض.,صياغة محاسبية واضحة.
+egypt-core-001,erpnext,Price List Country,قائمة الأسعار البلد,بلد قائمة الأسعار,تصحيح ترتيب الإضافة.
+egypt-core-001,erpnext,Price List Currency,قائمة الأسعار العملات,عملة قائمة الأسعار,تصحيح ترتيب الإضافة.
+egypt-core-001,erpnext,Price List Name,قائمة الأسعار اسم,اسم قائمة الأسعار,تصحيح ترتيب الإضافة.
+egypt-core-001,erpnext,Price List Rate,سعر السلعة حسب قائمة الأسعار,سعر قائمة الأسعار,توحيد المصطلح في مستندات البيع والشراء.
+egypt-core-001,erpnext,Price List Rate (Company Currency),قائمة الأسعار معدل (عملة الشركة),سعر قائمة الأسعار (بعملة الشركة),تصحيح ترتيب الكلمات.
+egypt-core-001,erpnext,Default Price List,قائمة الأسعار الافتراضي,قائمة الأسعار الافتراضية,مطابقة الصفة والموصوف.
+egypt-core-001,erpnext,Price List must be applicable for Buying or Selling,يجب ان تكون قائمة الأسعار منطبقه للشراء او البيع,يجب أن تكون قائمة الأسعار مخصصة للشراء أو البيع.,صياغة عربية طبيعية.
+egypt-core-001,erpnext,Price List {0} is disabled or does not exist,قائمة الأسعار {0} تعطيل أو لا وجود لها,قائمة الأسعار {0} معطلة أو غير موجودة.,صياغة عربية طبيعية.
+egypt-core-001,erpnext,Price not found for item {0} in price list {1},لم يتم العثور على السعر للعنصر {0} في قائمة الأسعار {1},لم يُعثر على سعر للصنف {0} في قائمة الأسعار {1}.,توحيد «الصنف» وتحسين الصياغة.
+egypt-core-001,erpnext,Item Price added for {0} in Price List {1},تم اضافتة سعر الصنف لـ {0} في قائمة الأسعار {1},تمت إضافة سعر للصنف {0} في قائمة الأسعار {1}.,تصحيح الصياغة النحوية.
+egypt-core-001,erpnext,Item Price updated for {0} in Price List {1},سعر الصنف محدث ل{0} في قائمة الأسعار {1},تم تحديث سعر الصنف {0} في قائمة الأسعار {1}.,تصحيح الصياغة النحوية.
+egypt-core-001,erpnext,As per Stock UOM,وفقا للأوراق UOM,وفقًا لوحدة قياس المخزون,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Batch UOM,دفعة UOM,وحدة قياس الدفعة,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Distance UOM,المسافة UOM,وحدة قياس المسافة,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Gross Weight UOM,الوزن الإجمالي UOM,وحدة قياس الوزن الإجمالي,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Include UOM,تضمين UOM,تضمين وحدة القياس,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Price Not UOM Dependent,السعر لا يعتمد على UOM,السعر غير مرتبط بوحدة القياس,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Price per Unit (Stock UOM),السعر لكل وحدة (المخزون UOM),السعر لكل وحدة (بوحدة قياس المخزون),توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Print UOM after Quantity,اطبع UOM بعد الكمية,طباعة وحدة القياس بعد الكمية,توسيع اختصار UOM للمستخدم العربي.
+egypt-core-001,erpnext,Modified By,عدل من قبل,عُدّل بواسطة,توحيد بيانات التدقيق في الواجهة.
+egypt-core-001,erpnext,Owner,مالك,المالك,اسم حقل معرّف.
+egypt-core-001,erpnext,Not Started,لم تبدأ,لم يبدأ,مطابقة الفعل مع اسم الحالة.
+egypt-core-001,erpnext,title,عنوان,العنوان,اسم الحقل وليس اللقب الشخصي.
+egypt-core-001,hrms,Accounts Receivable,الحسابات المدينة,حسابات العملاء,توحيد المصطلح المحاسبي عبر التطبيقات.
+egypt-core-001,hrms,Accounts Payable,الحسابات الدائنة,حسابات الموردين,توحيد المصطلح المحاسبي عبر التطبيقات.
+egypt-core-001,hrms,Chart of Accounts,الشجرة المحاسبية,دليل الحسابات,توحيد المصطلح المحاسبي عبر التطبيقات.
+egypt-core-001,hrms,Journal Entry,القيود اليومية,قيد يومية,توحيد اسم المستند المحاسبي.
+egypt-core-001,hrms,Payment Entry,تدوينات المدفوعات,سند دفع أو قبض,توحيد اسم المستند المحاسبي.
+egypt-core-001,hrms,Time Sheet,ورقة الوقت,كشف ساعات العمل,مصطلح تشغيلي واضح.
+egypt-core-001,hrms,Timesheet,ساعات العمل,كشف ساعات العمل,توحيد المصطلح.
+egypt-core-001,hrms,Create Payment Entry,إنشاء إدخال الدفع,إنشاء سند دفع أو قبض,اسم إجراء إنشاء المستند.
+egypt-core-001,hrms,Pay Via Payment Entry,الدفع عن طريق إدخال الدفعة,السداد من خلال سند دفع أو قبض,صياغة محاسبية واضحة.
+egypt-core-001,hrms,Role,صلاحية,دور,التمييز بين الدور والصلاحية.
+egypt-core-001,hrms,Dashboard,لوحة القيادة,لوحة المعلومات,مصطلح واجهة قياسي.
+egypt-core-001,hrms,Draft,مشروع,مسودة,حالة مستند وليست مشروعًا.
+egypt-core-001,hrms,Submitted,مسجلة,معتمد,حالة مستند بعد الاعتماد.
+egypt-core-001,hrms,submitted,مسجلة,معتمد,توحيد حالة الأحرف.
+egypt-core-001,hrms,Cancelled,ألغيت,ملغى,حالة مستند بصياغة صحيحة.
+egypt-core-001,hrms,cancelled,ألغيت,ملغى,توحيد حالة الأحرف.
+egypt-core-001,hrms,Edit,تصحيح,تعديل,فعل واجهة قياسي.
+egypt-core-001,hrms,Submit,تسجيل,اعتماد,فعل دورة حياة المستند.
+egypt-core-001,hrms,Close,أغلق,إغلاق,صياغة اسم فعل للأزرار.
+egypt-core-001,hrms,Completed,أكتمل,مكتمل,حالة عمل صحيحة.
+egypt-core-001,hrms,Description,وصف,الوصف,اسم حقل معرّف.
+egypt-core-001,hrms,Enabled,تمكين,مفعّل,حالة وليست فعلًا.
+egypt-core-001,hrms,In Progress,في تَقَدم,قيد التنفيذ,حالة عمل شائعة.
+egypt-core-001,hrms,Name,اسم,الاسم,اسم حقل معرّف.
+egypt-core-001,hrms,Pending,معلق,قيد الانتظار,حالة عمل أو موافقة.
+egypt-core-001,hrms,Title,اللقب,العنوان,اسم الحقل وليس اللقب الشخصي.
+egypt-core-001,hrms,Approved,موافقة,معتمد,حالة موافقة وليست اسم عملية.
+egypt-core-001,hrms,Not Started,لم تبدأ,لم يبدأ,مطابقة الفعل مع اسم الحالة.
+egypt-core-001,erpnext,Cash Flow Statement,بيان التدفق النقدي,قائمة التدفقات النقدية,الاسم المستخدم في معايير المحاسبة المصرية.
+egypt-core-001,erpnext,Cost Center,مركز التكلفة,مركز التكلفة,توحيد المصطلح المحاسبي مع أداة التعريف.
+egypt-core-001,erpnext,Expense Account,حساب النفقات,حساب المصروفات,المصطلح المحاسبي المصري الأكثر تداولًا.
+egypt-core-001,hrms,Cost Center,مركز التكلفة,مركز التكلفة,توحيد المصطلح المحاسبي عبر التطبيقات.
+egypt-core-001,hrms,Expense Account,حساب النفقات,حساب المصروفات,توحيد المصطلح المحاسبي عبر التطبيقات.
+egypt-core-001,hrms,"<span class=""h4""><b>Your Shortcuts</b></span>","<span class = ""h4""> <b> اختصاراتك </b> </span>","<span class=""h4""><b>اختصاراتك</b></span>",تنظيف تنسيق HTML مع الحفاظ على النص.
+egypt-core-001,erpnext,Added On,أضيف في,تاريخ الإضافة,صياغة اسم حقل تاريخ واضحة.
+egypt-core-001,hrms,Added On,تمت إضافة على,تاريخ الإضافة,توحيد اسم الحقل عبر التطبيقات.
+egypt-core-001,hrms,Apply Filters,تطبيق المرشحات,تطبيق عوامل التصفية,مصطلح واجهة أوضح.
+egypt-core-001,hrms,Archive,أرشيف,أرشفة,فعل واجهة وليس اسم مكان.
+egypt-core-001,frappe,Assigning...,جارٍ التعيين...,جارٍ الإسناد...,صياغة حالة جارية سليمة.
+egypt-core-001,hrms,Assigning...,تعيين ...,جارٍ الإسناد...,توحيد مصطلح الإسناد.
+egypt-core-001,hrms,Campaign,حملة,الحملة,توحيد اسم السجل.
+egypt-core-001,erpnext,Completed On,تم الإكمال في,تاريخ الاكتمال,صياغة اسم حقل تاريخ واضحة.
+egypt-core-001,hrms,Completed On,اكتمل في,تاريخ الاكتمال,توحيد اسم الحقل عبر التطبيقات.
+egypt-core-001,frappe,Confirm,أكد,تأكيد,صياغة زر واجهة قياسية.
+egypt-core-001,hrms,Confirm,أكد,تأكيد,توحيد صياغة زر التأكيد.
+egypt-core-001,hrms,Date Range,النطاق الزمني,نطاق التاريخ,مصطلح مرشح تاريخ واضح.
+egypt-core-001,hrms,Fortnightly,مرة كل اسبوعين,كل أسبوعين,تصحيح إملائي واختصار الصياغة.
+egypt-core-001,erpnext,Full and Final Statement,الكشف الكامل والنهائي,كشف التسوية النهائية,المصطلح المستخدم لتسوية مستحقات نهاية الخدمة.
+egypt-core-001,frappe,Is Group,هل مجموعة؟,مجموعة,اسم حقل منطقي مختصر.
+egypt-core-001,hrms,Is Group,هل مجموعة,مجموعة,توحيد اسم الحقل المنطقي.
+egypt-core-001,erpnext,Minutes,الدقائق,دقائق,اسم وحدة قياس دون تعريف.
+egypt-core-001,frappe,Minutes,دقائق,دقائق,حماية توحيد المصطلح.
+egypt-core-001,erpnext,N/A,N / A,غير متاح,تعريب حالة عدم توفر البيانات.
+egypt-core-001,frappe,N/A,غير متوفر,غير متاح,توحيد حالة عدم توفر البيانات.
+egypt-core-001,erpnext,No.,لا.,رقم,اختصار عنوان العمود وإصلاح المعنى.
+egypt-core-001,frappe,No.,الرقم,رقم,توحيد اختصار عنوان العمود.
+egypt-core-001,frappe,Result,نتيجة,النتيجة,توحيد اسم الحقل.
+egypt-core-001,hrms,Result,النتيجة,النتيجة,حماية توحيد المصطلح.
+egypt-core-001,erpnext,Series,سلسلة التسمية,سلسلة التسمية,حماية توحيد المصطلح.
+egypt-core-001,frappe,Series,التسلسل,سلسلة التسمية,المقصود Naming Series وليس تسلسلًا عامًا.
+egypt-core-001,hrms,Series,سلسلة التسمية,سلسلة التسمية,حماية توحيد المصطلح.
+egypt-core-001,erpnext,Service Item,صنف الخدمة,صنف خدمي,توحيد Item إلى صنف.
+egypt-core-001,hrms,Service Item,بند الخدمة,صنف خدمي,توحيد الصياغة عبر التطبيقات.
+egypt-core-001,erpnext,This method is only meant for developer mode,هذه الطريقة مخصصة لوضع المطوّر فقط,هذه الطريقة مخصصة لوضع المطوّر فقط.,إضافة علامة الترقيم.
+egypt-core-001,hrms,This method is only meant for developer mode,هذه الطريقة مخصصة لوضع المطور فقط,هذه الطريقة مخصصة لوضع المطوّر فقط.,تصحيح الضبط وتوحيد الصياغة.
+egypt-core-001,erpnext,Tools,الأدوات,الأدوات,حماية توحيد المصطلح.
+egypt-core-001,frappe,Tools,أدوات,الأدوات,توحيد اسم القسم.
+egypt-core-001,erpnext,Uploading...,جارٍ الرفع...,جارٍ الرفع...,حماية توحيد المصطلح.
+egypt-core-001,hrms,Uploading...,جاري التحميل...,جارٍ الرفع...,تمييز رفع الملفات عن تنزيلها.
+egypt-core-001,erpnext,Used,مستخدم,مستخدَم,ضبط اسم المفعول.
+egypt-core-001,frappe,Used,مستخدَم,مستخدَم,حماية توحيد المصطلح.
+egypt-core-001,erpnext,Weight,وزن,الوزن,توحيد اسم الحقل.
+egypt-core-001,frappe,Weight,الوزن,الوزن,حماية توحيد المصطلح.

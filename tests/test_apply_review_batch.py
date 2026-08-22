@@ -90,6 +90,20 @@ class ApplyReviewBatchTest(unittest.TestCase):
 		with self.assertRaisesRegex(BatchError, "placeholder mismatch"):
 			read_batch(self.batch)
 
+	def test_all_contexts_with_same_msgid_are_updated(self):
+		path = self.root / "arabic_translations/locale/source/erpnext/ar.po"
+		catalog = Catalog(locale="ar")
+		catalog.add("Purchase Invoice", "فاتورة شراء", context="menu")
+		catalog.add("Purchase Invoice", "فاتورة شراء", context="doctype")
+		with path.open("wb") as handle:
+			write_po(handle, catalog)
+
+		apply_batch(self.root, self.batch, write=True)
+		with path.open(encoding="utf-8") as handle:
+			updated = read_po(handle)
+		self.assertEqual(updated.get("Purchase Invoice", context="menu").string, "فاتورة مشتريات")
+		self.assertEqual(updated.get("Purchase Invoice", context="doctype").string, "فاتورة مشتريات")
+
 
 if __name__ == "__main__":
 	unittest.main()

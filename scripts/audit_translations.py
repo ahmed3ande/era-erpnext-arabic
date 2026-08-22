@@ -21,6 +21,19 @@ POSITIONAL_PERCENT_PLACEHOLDER = re.compile(
 )
 ENGLISH_WORD = re.compile(r"\b[A-Za-z]{3,}\b")
 
+# The same source text is intentionally translated differently where the apps
+# use it for different business meanings.  Keep these visible in a separate
+# report instead of treating them as quality defects.
+EXPECTED_CROSS_APP_CONFLICTS = {
+	"Apply",       # apply settings vs apply for a job
+	"Cleared",     # bank reconciliation vs interview result
+	"Cr",          # credit abbreviation vs Indian number-system crore
+	"Posted On",   # ledger posting vs job-publication date
+	"Shift",       # asset depreciation shift vs employee work shift
+	"Transaction", # accounting movement vs generic framework transaction
+	"Utilization", # system resources vs employee/project utilization
+}
+
 
 @dataclass(frozen=True)
 class Entry:
@@ -126,17 +139,20 @@ def audit(locale_root: Path, glossary_path: Path, output_dir: Path) -> dict[str,
 		if entry.msgstr and not entry.fuzzy:
 			by_msgid[entry.msgid].append(entry)
 	cross_app_conflicts: list[dict[str, object]] = []
+	expected_cross_app_conflicts: list[dict[str, object]] = []
 	for msgid, matches in sorted(by_msgid.items()):
 		translations = sorted({match.msgstr for match in matches})
 		apps = sorted({match.app for match in matches})
 		if len(translations) > 1 and len(apps) > 1:
-			cross_app_conflicts.append(
-				{
-					"msgid": msgid,
-					"apps": " | ".join(apps),
-					"translations": " || ".join(translations),
-				}
-			)
+			row = {
+				"msgid": msgid,
+				"apps": " | ".join(apps),
+				"translations": " || ".join(translations),
+			}
+			if msgid in EXPECTED_CROSS_APP_CONFLICTS:
+				expected_cross_app_conflicts.append(row)
+			else:
+				cross_app_conflicts.append(row)
 
 	glossary_by_source = {row.get("source", ""): row for row in glossary if row.get("source")}
 	glossary_conflicts: list[dict[str, object]] = []
@@ -180,6 +196,11 @@ def audit(locale_root: Path, glossary_path: Path, output_dir: Path) -> dict[str,
 		cross_app_conflicts,
 	)
 	write_csv(
+		output_dir / "expected-cross-app-conflicts.csv",
+		["msgid", "apps", "translations"],
+		expected_cross_app_conflicts,
+	)
+	write_csv(
 		output_dir / "glossary-conflicts.csv",
 		entry_fields + ["approved_arabic", "rejected", "reason"],
 		glossary_conflicts,
@@ -193,6 +214,7 @@ def audit(locale_root: Path, glossary_path: Path, output_dir: Path) -> dict[str,
 			"placeholder_errors": len(placeholder_errors),
 			"english_residue": len(english_residue),
 			"cross_app_conflicts": len(cross_app_conflicts),
+			"expected_cross_app_conflicts": len(expected_cross_app_conflicts),
 			"glossary_conflicts": len(glossary_conflicts),
 		},
 	}
