@@ -20,6 +20,12 @@ class AuditTranslationsTest(unittest.TestCase):
 	def test_placeholder_detection(self):
 		self.assertEqual(placeholders("Invoice {0} for %(company)s: %s"), {"{0}", "%(company)s", "%s"})
 
+	def test_literal_percent_and_braces_are_not_placeholders(self):
+		self.assertEqual(placeholders("% Complete must be between 0 and 100"), set())
+		self.assertEqual(placeholders("Use % as wildcard and allow 10% of total"), set())
+		self.assertEqual(placeholders("Example {0.00, 0.04, 0.09}"), set())
+		self.assertEqual(placeholders('JavaScript {fieldname: "company"}'), set())
+
 	def test_reports_are_deterministic_and_find_defects(self):
 		with tempfile.TemporaryDirectory() as temp_dir:
 			root = Path(temp_dir)
