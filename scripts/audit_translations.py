@@ -213,7 +213,24 @@ def main() -> int:
 
 	summary = audit(args.locale_root, args.glossary, args.output_dir)
 	print(json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True))
-	return int(bool(args.fail_on_placeholder and summary["findings"]["placeholder_errors"]))
+	if args.fail_on_placeholder and summary["findings"]["placeholder_errors"]:
+		with (args.output_dir / "placeholder-errors.csv").open(encoding="utf-8", newline="") as handle:
+			for row in csv.DictReader(handle):
+				print(
+					"PLACEHOLDER_ERROR "
+					+ json.dumps(
+						{
+							"app": row["app"],
+							"msgid": row["msgid"],
+							"source_placeholders": row["source_placeholders"],
+							"translation_placeholders": row["translation_placeholders"],
+						},
+						ensure_ascii=False,
+						sort_keys=True,
+					)
+				)
+		return 1
+	return 0
 
 
 if __name__ == "__main__":
