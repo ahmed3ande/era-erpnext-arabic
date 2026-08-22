@@ -463,7 +463,7 @@ msgstr ""
 #: hrms/overrides/company.py:124
 #, python-brace-format
 msgid "Account {0} does not belong to company: {1}"
-msgstr "الحساب {0} لا يتنمى للشركة {1}\\n<br>\\nAccount {0} does not belong to company: {1}"
+msgstr "الحساب {0} لا ينتمي إلى الشركة: {1}"
 
 #: hrms/hr/doctype/expense_claim_type/expense_claim_type.py:29
 #, python-brace-format
@@ -9739,7 +9739,7 @@ msgstr "الرصيد الافتتاحي"
 #. 'Salary Structure Assignment'
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 msgid "Opening Balances"
-msgstr "أرصدة افتتاحية"
+msgstr "الأرصدة الافتتاحية"
 
 #: hrms/templates/generators/job_opening.html:38
 #: hrms/templates/generators/job_opening.html:218
@@ -12343,7 +12343,7 @@ msgstr "نفقات الصيانة"
 
 #: hrms/hr/report/vehicle_expenses/vehicle_expenses.py:168
 msgid "Service Expenses"
-msgstr "مصاريف الخدمة"
+msgstr "مصروفات الخدمة"
 
 #. Label of the service_item (Link) field in DocType 'Vehicle Service'
 #. Label of the service_item (Data) field in DocType 'Vehicle Service Item'
@@ -14097,7 +14097,7 @@ msgstr "إجمالي الإجازات المخصصة إلزامي لنوع ال�
 
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.py:148
 msgid "Total percentage against cost centers should be 100"
-msgstr "يجب أن يكون إجمالي النسبة المئوية مقابل مراكز التكلفة 100"
+msgstr "يجب أن يساوي إجمالي النسب المئوية الموزعة على مراكز التكلفة 100"
 
 #. Description of the 'Year To Date' (Currency) field in DocType 'Salary
 #. Detail'
