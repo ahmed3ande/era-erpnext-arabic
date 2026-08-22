@@ -13,7 +13,7 @@ from pathlib import Path
 from babel.messages.pofile import read_po
 
 BRACE_PLACEHOLDER = re.compile(
-	r"(?<!\{)\{(?:\d+|[A-Za-z_][\w.]*)(?:![rsa])?(?::[^{}]+)?\}(?!\})"
+	r"(?<!\{)\{(?:\d+|[A-Za-z_][\w.]*)(?:![rsa])?(?::[^{}\"'\r\n]+)?\}(?!\})"
 )
 NAMED_PERCENT_PLACEHOLDER = re.compile(r"%\([^)]+\)[#0 +\-]?(?:\d+|\*)?(?:\.\d+|\.\*)?[a-zA-Z]")
 POSITIONAL_PERCENT_PLACEHOLDER = re.compile(
