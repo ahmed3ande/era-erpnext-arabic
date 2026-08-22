@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html
 import json
 import re
 from pathlib import Path
@@ -79,6 +80,11 @@ HTML_TAG_RE = re.compile(r"<[^>]+>")
 JINJA_RE = re.compile(r"{{.*?}}|{%.*?%}|{#.*?#}", re.DOTALL)
 URL_RE = re.compile(r"(?:https?://|www\.)\S+|\b\S+@\S+\.\S+\b", re.IGNORECASE)
 CODE_RE = re.compile(r"`[^`]+`|\b[A-Za-z][A-Za-z0-9]*[_./:][A-Za-z0-9_.:/-]*\b")
+CODE_EXPRESSION_RE = re.compile(r"[^<\n]*==[^<\n]*")
+INLINE_IDENTIFIER_RE = re.compile(
+	r"<(?:b|code)\b[^>]*>\s*[a-z_][a-z0-9_.]*\s*</(?:b|code)>",
+	re.IGNORECASE,
+)
 PLACEHOLDER_RE = re.compile(r"%\([^)]+\)[a-zA-Z]|%[a-zA-Z]|{[^{}]+}")
 ENGLISH_WORD_RE = re.compile(r"[A-Za-z][A-Za-z'-]*")
 
@@ -96,7 +102,10 @@ def is_accounting_related(*values: str) -> bool:
 
 def visible_text(value: str) -> str:
 	"""Remove markup and machine tokens while preserving user-facing words."""
+	value = html.unescape(value).replace("\\n", " ").replace("\\r", " ").replace("\\t", " ")
 	value = JINJA_RE.sub(" ", value)
+	value = INLINE_IDENTIFIER_RE.sub(" ", value)
+	value = CODE_EXPRESSION_RE.sub(" ", value)
 	value = HTML_TAG_RE.sub(" ", value)
 	value = URL_RE.sub(" ", value)
 	value = CODE_RE.sub(" ", value)
@@ -108,7 +117,7 @@ def english_words(value: str) -> list[str]:
 	return [
 		word
 		for word in ENGLISH_WORD_RE.findall(visible_text(value))
-		if word.casefold() not in TECHNICAL_TOKENS
+		if word.casefold() not in TECHNICAL_TOKENS and not (word.isupper() and 2 <= len(word) <= 8)
 	]
 
 
