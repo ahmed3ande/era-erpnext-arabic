@@ -6596,9 +6596,7 @@ msgstr "يجب إدخال صنف واحد على الأقل بكمية سالب�
 #: erpnext/accounts/doctype/pos_invoice/pos_invoice.py:531
 #: erpnext/accounts/doctype/sales_invoice/sales_invoice.py:568
 msgid "At least one mode of payment is required for POS invoice."
-msgstr ""
-"يلزم وضع واحد نمط واحد للدفع لفاتورة نقطة البيع.\\n<br>\\nAt least one mode of "
-"payment is required for POS invoice."
+msgstr "يلزم تحديد طريقة دفع واحدة على الأقل لفاتورة نقطة البيع."
 
 #: erpnext/setup/doctype/terms_and_conditions/terms_and_conditions.py:35
 msgid "At least one of the Applicable Modules should be selected"
@@ -9330,7 +9328,7 @@ msgstr "حجم الشريحة"
 #: erpnext/accounts/workspace/invoicing/invoicing.json erpnext/desktop_icon/budget.json
 #: erpnext/workspace_sidebar/budget.json
 msgid "Budget"
-msgstr "ميزانية"
+msgstr "الميزانية"
 
 #. Name of a DocType
 #: erpnext/accounts/doctype/budget_account/budget_account.json
@@ -9411,7 +9409,7 @@ msgstr "تقرير إنحرافات الموازنة"
 
 #: erpnext/accounts/doctype/budget/budget.py:157
 msgid "Budget cannot be assigned against Group Account {0}"
-msgstr "لايمكن أسناد الميزانية للمجموعة Account {0}"
+msgstr "لا يمكن إسناد الميزانية إلى حساب المجموعة {0}."
 
 #: erpnext/accounts/doctype/budget/budget.py:162
 msgid "Budget cannot be assigned against {0}, as its Root Type is not of Income or Expense"
@@ -19351,7 +19349,7 @@ msgstr "معرف مستخدم الموظف"
 
 #: erpnext/setup/doctype/employee/employee.py:330
 msgid "Employee cannot report to himself."
-msgstr "الموظف لا يمكن أن يقدم تقريرا إلى نفسه.\\n<br>\\nEmployee cannot report to himself."
+msgstr "لا يمكن أن يكون الموظف مسؤولًا عن نفسه."
 
 #: erpnext/setup/doctype/employee/employee.py:574
 msgid "Employee is required"
@@ -20210,11 +20208,7 @@ msgid ""
 "then automatic batch number will be created based on this series. If you always want "
 "to explicitly mention Batch No for this item, leave this blank. Note: this setting "
 "will take priority over the Naming Series Prefix in Stock Settings."
-msgstr ""
-"مثال: ABCD. #####. إذا تم ضبط المسلسل ولم يتم ذكر رقم الدفعة في المعاملات ، فسيتم "
-"إنشاء رقم الدفعة تلقائيًا استنادًا إلى هذه السلسلة. إذا كنت تريد دائمًا الإشارة صراحة"
-" إلى Batch No لهذا العنصر ، فاترك هذا فارغًا. ملاحظة: سيأخذ هذا الإعداد الأولوية على "
-"بادئة Naming Series في إعدادات المخزون."
+msgstr "مثال: ABCD.#####. إذا تم تعيين السلسلة ولم يُذكر رقم الدفعة في المعاملات، فسيُنشأ رقم الدفعة تلقائيًا بناءً على هذه السلسلة. إذا كنت تريد إدخال رقم الدفعة صراحةً دائمًا لهذا الصنف، فاترك هذا الحقل فارغًا. ملاحظة: لهذا الإعداد أولوية على بادئة سلسلة التسمية في إعدادات المخزون."
 
 #: banking/src/components/features/BankReconciliation/Rules/RuleForm.tsx:468
 msgid "Example: If the transaction amount is 200, then this will be calculated as {} = {}"
@@ -26870,7 +26864,7 @@ msgstr "تم جلب الفواتير والمدفوعات وتخصيصها"
 #: erpnext/accounts/workspace/invoicing/invoicing.json erpnext/desktop_icon/invoicing.json
 #: erpnext/workspace_sidebar/invoicing.json
 msgid "Invoicing"
-msgstr "الفوترة"
+msgstr "الفواتير"
 
 #. Label of the invoicing_features_section (Section Break) field in DocType
 #. 'Accounts Settings'
@@ -28594,10 +28588,7 @@ msgstr "معدل ضريبة الصنف"
 
 #: erpnext/accounts/doctype/item_tax_template/item_tax_template.py:68
 msgid "Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable"
-msgstr ""
-"ضريبة البند يجب أن يكون الصف {0} حسابا من نوع الضريبة أو الدخل أو المصاريف أو "
-"الرسوم\\n<br>\\nItem Tax Row {0} must have account of type Tax or Income or Expense "
-"or Chargeable"
+msgstr "يجب أن يحتوي صف ضريبة الصنف {0} على حساب من نوع ضريبة أو دخل أو مصروف أو قابل للتحميل."
 
 #: erpnext/accounts/doctype/item_tax_template/item_tax_template.py:55
 msgid "Item Tax Row {0}: Account must belong to Company - {1}"
@@ -39427,7 +39418,7 @@ msgstr "الرجاء تحديد تاريخ النشر أولا\\n<br>\\nPlease s
 
 #: erpnext/manufacturing/doctype/bom/bom.py:1292
 msgid "Please select Price List"
-msgstr "الرجاء اختيار قائمة الأسعار\\n<br>\\nPlease select Price List"
+msgstr "يرجى اختيار قائمة الأسعار."
 
 #: erpnext/selling/doctype/sales_order/sales_order.py:1770
 msgid "Please select Qty against item {0}"
@@ -39817,9 +39808,7 @@ msgstr "يرجى تعيين قائمة عطلات افتراضية للشركة 
 
 #: erpnext/setup/doctype/employee/employee.py:389
 msgid "Please set a default Holiday List for Employee {0} or Company {1}"
-msgstr ""
-"يرجى تعيين قائمة العطل الافتراضية للموظف {0} أو الشركة {1}\\n<br>\\nPlease set a "
-"default Holiday List for Employee {0} or Company {1}"
+msgstr "يرجى تعيين قائمة عُطَل افتراضية للموظف {0} أو الشركة {1}."
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:1146
 msgid "Please set account in Warehouse {0}"
@@ -41019,9 +41008,7 @@ msgstr "طباعة وقرطاسية"
 
 #: erpnext/accounts/doctype/cheque_print_template/cheque_print_template.js:77
 msgid "Print settings updated in respective print format"
-msgstr ""
-"تم تحديث إعدادات الطباعة في تنسيق الطباعة الخاصة\\n<br>\\nPrint settings updated in "
-"respective print format"
+msgstr "تم تحديث إعدادات الطباعة في تنسيق الطباعة المعني."
 
 #: erpnext/setup/install.py:115
 msgid "Print taxes with zero amount"
@@ -45418,7 +45405,7 @@ msgstr "نموذج تقرير"
 
 #: erpnext/accounts/doctype/account/account.py:493
 msgid "Report Type is mandatory"
-msgstr "نوع التقرير إلزامي\\n<br>\\nReport Type is mandatory"
+msgstr "نوع التقرير إلزامي."
 
 #: erpnext/setup/install.py:241
 msgid "Report an Issue"
@@ -48215,9 +48202,7 @@ msgstr "الصف {0}: شرط الدفع إلزامي"
 
 #: erpnext/accounts/doctype/journal_entry/journal_entry.py:676
 msgid "Row {0}: Payment against Sales/Purchase Order should always be marked as advance"
-msgstr ""
-"الصف {0}: الدفع لطلب الشراء/البيع يجب أن يكون دائما معلم كمتقدم\\n<br>\\nRow {0}: "
-"Payment against Sales/Purchase Order should always be marked as advance"
+msgstr "الصف {0}: يجب دائمًا تحديد الدفعة المسددة مقابل أمر بيع أو شراء كدفعة مقدمة."
 
 #: erpnext/accounts/doctype/journal_entry/journal_entry.py:669
 msgid "Row {0}: Please check 'Is Advance' against Account {1} if this is an advance entry."
@@ -51672,7 +51657,7 @@ msgstr "مشاركة دفتر الأستاذ"
 #: erpnext/desktop_icon/share_management.json
 #: erpnext/workspace_sidebar/share_management.json
 msgid "Share Management"
-msgstr "إدارة المشاركة"
+msgstr "إدارة المساهمين"
 
 #. Name of a DocType
 #. Label of a Link in the Invoicing Workspace
@@ -54363,7 +54348,7 @@ msgstr "لا يمكن معالجة بطاقة العمل المُرحَّلة."
 #: erpnext/stock/doctype/purchase_receipt/purchase_receipt_dashboard.py:34
 #: erpnext/workspace_sidebar/subscription.json
 msgid "Subscription"
-msgstr "اشتراك"
+msgstr "الاشتراك"
 
 #. Label of the end_date (Date) field in DocType 'Subscription'
 #: erpnext/accounts/doctype/subscription/subscription.json
@@ -58257,9 +58242,7 @@ msgstr ""
 msgid ""
 "To allow over billing, update \"Over Billing Allowance\" in Accounts Settings or the "
 "Item."
-msgstr ""
-"للسماح بزيادة الفواتير ، حدّث \"Over Billing Allowance\" في إعدادات الحسابات أو "
-"العنصر."
+msgstr "للسماح بتجاوز قيمة الفوترة، حدّث «نسبة السماح بتجاوز الفوترة» في إعدادات الحسابات أو في الصنف."
 
 #: erpnext/controllers/status_updater.py:488
 msgid "To allow over ordering, update \"Over Order Allowance\" in Buying Settings."
@@ -61123,7 +61106,7 @@ msgstr ""
 
 #: erpnext/setup/doctype/employee/employee.py:298
 msgid "User {0} does not exist"
-msgstr "المستخدم {0} غير موجود\\n<br>\\nUser {0} does not exist"
+msgstr "المستخدم {0} غير موجود."
 
 #: erpnext/accounts/doctype/pos_profile/pos_profile.py:139
 msgid "User {0} doesn't have any default POS Profile. Check Default at Row {1} for this User."
@@ -63363,9 +63346,7 @@ msgstr "محطة العمل ساعة العمل"
 
 #: erpnext/manufacturing/doctype/workstation/workstation.py:464
 msgid "Workstation is closed on the following dates as per Holiday List: {0}"
-msgstr ""
-"محطة العمل مغلقة في التواريخ التالية وفقا لقائمة العطل: {0}\\n<br>\\nWorkstation is "
-"closed on the following dates as per Holiday List: {0}"
+msgstr "محطة العمل مغلقة في التواريخ التالية وفقًا لقائمة العُطَل: {0}"
 
 #. Label of the workstations_tab (Tab Break) field in DocType 'Plant Floor'
 #: erpnext/manufacturing/doctype/plant_floor/plant_floor.json
@@ -65070,3 +65051,11 @@ msgstr "تمت جدولة إنشاء المخزون الافتتاحي، وسي�
 #. source: erpnext
 msgid "Use Legacy Budget Controller"
 msgstr "استخدام وحدة التحكم القديمة في الميزانية"
+
+#. source: erpnext
+msgid "Allow User to Edit Warehouse"
+msgstr "السماح للمستخدم بتعديل المستودع"
+
+#. source: erpnext
+msgid "Subcontracting Inward Settings"
+msgstr "إعدادات عمليات التعاقد من الباطن الواردة"

@@ -253,33 +253,7 @@ msgid ""
 "<pre><code>Condition: employment_type==\"Intern\"</code></pre>\n"
 "<pre><code>Amount: 1000</code></pre></li>\n"
 "</ol>"
-msgstr ""
-"<h3> مساعدة </h3>\n"
-"\n"
-"<p> الملاحظات: </p>\n"
-"\n"
-"<ol>\n"
-"<li> استخدم الحقل <code> قاعدة </code> لاستخدام الراتب الأساسي للموظف </li>\n"
-"<li> استخدم اختصارات مكونات الراتب في الظروف والصيغ. <code> bs = الراتب الأساسي "
-"</code> </li>\n"
-"<li> استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code> نوع التوظيف = التوظيف "
-"_type </code> <code> الفرع = الفرع </code> </li>\n"
-"<li> استخدم اسم الحقل من قسيمة الراتب في الظروف والصيغ. <code> أيام الدفع = "
-"payment_days </code> <code> إجازة بدون دفع = LEED_WITHOUT_PAY </code> </li>\n"
-"يمكن أيضًا إدخال المبلغ المباشر بناءً على الحالة. انظر المثال 3 </li> </ol>\n"
-"\n"
-"<h4> أمثلة </h4>\n"
-"<ol>\n"
-"<li> حساب الراتب الأساسي على أساس <code> قاعدة </code>\n"
-"<pre> <code> الشرط: base & lt ؛ 10000 </code> </pre>\n"
-"<pre> <code> الصيغة: قاعدة * .2 </code> </pre> </li>\n"
-"<li> حساب HRA استنادًا إلى الراتب الأساسي <code> BS </code> \n"
-"<pre> <code> الشرط: bs & gt ؛ 2000 </code> </pre>\n"
-"<pre> <code> الصيغة: bs * .1 </code> </pre> </li>\n"
-"<li> حساب TDs استنادًا إلى نوع التوظيف <code> التوظيف _type </code> \n"
-"<pre> <code> الشرط: التوظيف _type == \"Intern\" </code> </pre>\n"
-"<pre> <code> المبلغ: 1000 </code> </pre> </li>\n"
-"</ol>"
+msgstr "<h3>مساعدة</h3>\n<p>ملاحظات:</p>\n<ol>\n<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف.</li>\n<li>استخدم اختصارات مكونات الراتب في الشروط والصيغ. <code>BS = Basic Salary</code></li>\n<li>استخدم اسم الحقل الخاص بتفاصيل الموظف في الشروط والصيغ. <code>Employment Type = employment_type</code> <code>Branch = branch</code></li>\n<li>استخدم اسم الحقل من مسير الراتب في الشروط والصيغ. <code>Payment Days = payment_days</code> <code>Leave without pay = leave_without_pay</code></li>\n<li>يمكن أيضًا إدخال مبلغ مباشر بناءً على الشرط. راجع المثال 3.</li>\n</ol>\n<h4>أمثلة</h4>\n<ol>\n<li>حساب الراتب الأساسي باستخدام <code>base</code><pre><code>Condition: base &lt; 10000</code></pre><pre><code>Formula: base * .2</code></pre></li>\n<li>حساب بدل السكن HRA بناءً على الراتب الأساسي <code>BS</code><pre><code>Condition: BS &gt; 2000</code></pre><pre><code>Formula: BS * .1</code></pre></li>\n<li>حساب ضريبة الخصم TDS بناءً على نوع التوظيف <code>employment_type</code><pre><code>Condition: employment_type==\"Intern\"</code></pre><pre><code>Amount: 1000</code></pre></li>\n</ol>"
 
 #. Content of the 'html_6' (HTML) field in DocType 'Taxable Salary Slab'
 #: hrms/payroll/doctype/taxable_salary_slab/taxable_salary_slab.json
@@ -293,17 +267,7 @@ msgid ""
 "<code>Condition: gender==\"Male\"</code></li><br>\n"
 "<li>Applying tax by Salary Component<br>\n"
 "<code>Condition: base &gt; 10000</code></li></ol>"
-msgstr ""
-"<h4> أمثلة الشرط </h4>\n"
-"<ol>\n"
-"<li> تطبيق الضريبة إذا ولد الموظف بين 31-12-1937 و 01-01-1958 (الموظفين الذين تتراوح "
-"أعمارهم بين 60 و 80) <br>\n"
-"<code> الشرط: date_of_birth & gt ؛ التاريخ (1937 ، 12 ، 31) و Date_of_birth & lt ؛ "
-"date (1958 ، 01 ، 01) </code> </li> <br> <li> تطبيق الضريبة حسب جنس الموظف <br> <br>"
-"\n"
-"<code> الشرط: الجنس == \"ذكر\" </code> </li> <br>\n"
-"<li> تطبيق الضريبة حسب مكون الراتب <br>\n"
-"<code> الشرط: BASE & GT ؛ 10000 </code> </li> </ol>"
+msgstr "<h4>أمثلة على الشروط</h4>\n<ol>\n<li>تطبيق الضريبة إذا كان تاريخ ميلاد الموظف بين 31-12-1937 و01-01-1958 (من 60 إلى 80 عامًا)<br><code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br>\n<li>تطبيق الضريبة حسب جنس الموظف<br><code>Condition: gender==\"Male\"</code></li><br>\n<li>تطبيق الضريبة حسب مكوّن الراتب<br><code>Condition: base &gt; 10000</code></li>\n</ol>"
 
 #. Header text in the Employee Lifecycle Workspace
 #. Header text in the Expense Claims Workspace
@@ -315,7 +279,7 @@ msgstr ""
 #: hrms/hr/workspace/leaves/leaves.json hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "<span class=\"h4\"><b>Masters &amp; Reports</b></span>"
-msgstr "<span class = \"h4\"> <b> التقارير وإدارة البيانات الرئيسية </b> </span>"
+msgstr "<span class=\"h4\"><b>البيانات الرئيسية والتقارير</b></span>"
 
 #. Header text in the Performance Workspace
 #: hrms/hr/workspace/performance/performance.json
@@ -325,7 +289,7 @@ msgstr "<span class = \"h4\"> <b> ادارة البيانات الرئيسية �
 #. Header text in the Overview Workspace
 #: hrms/hr/workspace/overview/overview.json
 msgid "<span class=\"h4\"><b>Reports &amp; Masters</b></span>"
-msgstr "<span class = \"h4\"> <b> التقارير وإدارة البيانات الرئيسية </b> </span>"
+msgstr "<span class=\"h4\"><b>التقارير والبيانات الرئيسية</b></span>"
 
 #. Header text in the Salary Payout Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
@@ -1794,7 +1758,7 @@ msgstr "سيتم تمييز الحضور تلقائيًا بعد هذا التا
 
 #: frontend/src/views/attendance/Dashboard.vue:19
 msgid "AttendanceRequestListView"
-msgstr "attencereQuestListView"
+msgstr "AttendanceRequestListView"
 
 #. Label of the section_break_18 (Section Break) field in DocType 'Training
 #. Event'
@@ -8970,7 +8934,7 @@ msgstr "طريقة السفر"
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:292
 msgid "Mode of payment is required to make a payment"
-msgstr "طريقه الدفع مطلوبه لإجراء الدفع\\n<br>\\nMode of payment is required to make a payment"
+msgstr "طريقة الدفع مطلوبة لإجراء الدفعة."
 
 #. Label of the model (Read Only) field in DocType 'Vehicle Log'
 #: hrms/hr/doctype/vehicle_log/vehicle_log.json
@@ -11541,7 +11505,7 @@ msgstr "صلاحية"
 #: hrms/hr/doctype/hr_settings/hr_settings.json
 #: hrms/hr/doctype/leave_application/leave_application.py:167
 msgid "Role Allowed to Create Backdated Leave Application"
-msgstr "الدور المسموح به لإنشاء تطبيق إجازة Backdated"
+msgstr "الدور المسموح له بإنشاء طلب إجازة بأثر رجعي"
 
 #. Label of a shortcut in the Shift & Attendance Workspace
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
@@ -14598,12 +14562,12 @@ msgstr "الإجازات المستخدمة"
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/interviewer/interviewer.json
 #: hrms/hr/report/daily_work_summary_replies/daily_work_summary_replies.py:20
 msgid "User"
-msgstr "المستعمل"
+msgstr "المستخدم"
 
 #. Label of the users (Table) field in DocType 'Daily Work Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "Users"
-msgstr "المستخدمين"
+msgstr "المستخدمون"
 
 #: hrms/hr/report/project_profitability/project_profitability.py:188
 msgid "Utilization"
