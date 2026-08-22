@@ -48,3 +48,17 @@ A translation batch should contain no more than 50 related entries and must reco
 ## Safety
 
 Queue generation never edits PO catalogs. A reviewed batch is applied separately to canonical source catalogs and regenerated using the existing build pipeline.
+
+## Apply an approved batch
+
+Approved rows are versioned under `review_batches/`. Each row records the expected current Arabic, approved Arabic, and rationale.
+
+```bash
+python scripts/apply_review_batch.py review_batches/accounting-001.csv --write
+python scripts/apply_review_batch.py review_batches/accounting-001.csv
+```
+
+The first command applies the batch to canonical source catalogs, matching shipped version bundles, v15 CSV bundles, and the runtime overlay. The second command is an idempotent check and is enforced in CI.
+
+The tool refuses stale current text, unknown apps, duplicate app/source rows, missing canonical messages, and placeholder mismatches. Messages absent from an older generated version bundle are allowed; the runtime overlay is always required and receives the approved entry.
+
