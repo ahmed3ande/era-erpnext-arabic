@@ -19,10 +19,12 @@ class ApplyReviewBatchTest(unittest.TestCase):
 		self._write_batch("فاتورة شراء", "فاتورة مشتريات")
 		for path in (
 			self.root / "arabic_translations/locale/source/erpnext/ar.po",
-			self.root / "arabic_translations/locale/other-apps/v16/erpnext/erpnext/locale/ar.po",
 			self.root / "arabic_translations/locale/ar.po",
 		):
 			self._write_po(path, "فاتورة شراء", fuzzy=True)
+		self._write_empty_po(
+			self.root / "arabic_translations/locale/other-apps/v16/erpnext/erpnext/locale/ar.po"
+		)
 		csv_path = (
 			self.root
 			/ "arabic_translations/locale/other-apps/v15/erpnext/erpnext/translations/ar.csv"
@@ -50,6 +52,11 @@ class ApplyReviewBatchTest(unittest.TestCase):
 			message.flags.add("fuzzy")
 		with path.open("wb") as handle:
 			write_po(handle, catalog)
+
+	def _write_empty_po(self, path: Path):
+		path.parent.mkdir(parents=True, exist_ok=True)
+		with path.open("wb") as handle:
+			write_po(handle, Catalog(locale="ar"))
 
 	def _translation(self, path: Path) -> tuple[str, set[str]]:
 		with path.open(encoding="utf-8") as handle:
@@ -86,4 +93,3 @@ class ApplyReviewBatchTest(unittest.TestCase):
 
 if __name__ == "__main__":
 	unittest.main()
-

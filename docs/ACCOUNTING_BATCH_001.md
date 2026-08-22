@@ -20,7 +20,10 @@ The batch concentrates on invoices, accounts, journal entries, payment entries, 
 - Duplicate app/message rejection
 - Fuzzy flag removal only for approved rows
 - Deterministic sync into the runtime overlay and matching shipped bundles
+- Required append of reviewed messages missing from ERPNext or HRMS v16 bundles
 - Idempotent CI verification
+
+The Arabic wording received a second independent accounting review before publication. In particular, the review aligned Stock Entry, ledger account, closing account, payment voucher, debit/credit movement, and grand-total terminology with their ERPNext context.
 
 ## Verified local audit delta
 
@@ -38,4 +41,3 @@ The broad cross-app audit decreased from 35 to 32 and English-residue candidates
 ## Deployment
 
 This batch is not deployed automatically. Production remains on the last verified 0.3.2 installation until the pull request passes CI and a separate deployment decision is made.
-

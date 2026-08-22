@@ -60,5 +60,4 @@ python scripts/apply_review_batch.py review_batches/accounting-001.csv
 
 The first command applies the batch to canonical source catalogs, matching shipped version bundles, v15 CSV bundles, and the runtime overlay. The second command is an idempotent check and is enforced in CI.
 
-The tool refuses stale current text, unknown apps, duplicate app/source rows, missing canonical messages, and placeholder mismatches. Messages absent from an older generated version bundle are allowed; the runtime overlay is always required and receives the approved entry.
-
+The tool refuses stale current text, unknown apps, duplicate app/source rows, missing canonical messages, and placeholder mismatches. A reviewed message missing from an ERPNext or HRMS v16 generated bundle is appended and then verified by CI. Missing v15 CSV rows remain allowed because a newer key may not exist in v15. The runtime overlay is always required and receives every approved entry.

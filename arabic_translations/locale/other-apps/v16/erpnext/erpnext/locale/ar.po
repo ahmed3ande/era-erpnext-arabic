@@ -1805,7 +1805,7 @@ msgstr "قيمة الحساب"
 msgid ""
 "Account balance already in Credit, you are not allowed to set 'Balance Must Be' as "
 "'Debit'"
-msgstr "رصيد الحساب دائن بالفعل، ولا يُسمح بتعيين «الرصيد يجب أن يكون» إلى «مدين»."
+msgstr "رصيد الحساب دائن بالفعل، لذلك لا يمكن ضبط «يجب أن يكون الرصيد» على «مدين»."
 
 #: erpnext/accounts/doctype/account/account.py:353
 msgid ""
@@ -3828,7 +3828,7 @@ msgstr "مقابل حساب الدخل"
 #: erpnext/accounts/doctype/journal_entry/journal_entry.py:744
 #: erpnext/accounts/doctype/payment_entry/payment_entry.py:792
 msgid "Against Journal Entry {0} does not have any unmatched {1} entry"
-msgstr "لا يحتوي قيد اليومية المقابل {0} على أي قيد {1} غير مُطابق."
+msgstr "لا يحتوي قيد اليومية المقابل {0} على أي حركة {1} غير مُسوّاة."
 
 #: erpnext/accounts/doctype/gl_entry/gl_entry.py:393
 msgid "Against Journal Entry {0} is already adjusted against some other voucher"
@@ -10602,7 +10602,7 @@ msgstr "النقدية الحاضرة"
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:329
 msgid "Cash or Bank Account is mandatory for making payment entry"
-msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء قيد الدفع."
+msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء سند دفع."
 
 #. Label of the cash_bank_account (Link) field in DocType 'POS Invoice'
 #. Label of the cash_bank_account (Link) field in DocType 'Purchase Invoice'
@@ -11359,7 +11359,7 @@ msgstr "اقفال حساب المركز الرئيسي"
 
 #: erpnext/accounts/doctype/period_closing_voucher/period_closing_voucher.py:133
 msgid "Closing Account {0} must be of type Liability / Equity"
-msgstr "يجب أن يكون الحساب الختامي {0} من نوع التزامات أو حقوق ملكية."
+msgstr "يجب أن يكون حساب الإقفال {0} من نوع التزامات أو حقوق ملكية."
 
 #. Label of the closing_amount (Currency) field in DocType 'POS Closing Entry
 #. Detail'
@@ -36410,7 +36410,7 @@ msgstr "نوع الحساب المدفوع إليه"
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:334
 #: erpnext/accounts/doctype/sales_invoice/sales_invoice.py:1204
 msgid "Paid amount + Write Off Amount can not be greater than Grand Total"
-msgstr "لا يمكن أن يكون مجموع المبلغ المدفوع ومبلغ الشطب أكبر من الإجمالي الكلي."
+msgstr "لا يمكن أن يتجاوز مجموع المبلغ المدفوع ومبلغ الشطب المجموع الإجمالي."
 
 #: banking/src/components/features/BankReconciliation/RecordPaymentModalContent.tsx:404
 msgid "Paid to"
@@ -65049,3 +65049,24 @@ msgstr "{} {} مرتبط بالفعل بـ {} {}"
 msgid "{} {} is not affecting bank account {}"
 msgstr "{} {} لا يؤثر على الحساب البنكي {}"
 
+
+
+#. source: erpnext
+msgid "Automatically Add Taxes from Taxes and Charges Template"
+msgstr "إضافة الضرائب والرسوم تلقائيًا من قالب الضرائب والرسوم"
+
+#. source: erpnext
+msgid "Fetch Valuation Rate for Internal Transaction"
+msgstr "جلب معدل التقييم للمعاملة الداخلية"
+
+#. source: erpnext
+msgid "Internal Supplier Accounting"
+msgstr "محاسبة المورد الداخلي"
+
+#. source: erpnext
+msgid "Opening stock creation has been queued and will be created in the background. Please check the stock entry after some time."
+msgstr "تمت جدولة إنشاء المخزون الافتتاحي، وسيتم إنشاؤه في الخلفية. يُرجى التحقق من حركة المخزون بعد قليل."
+
+#. source: erpnext
+msgid "Use Legacy Budget Controller"
+msgstr "استخدام وحدة التحكم القديمة في الميزانية"

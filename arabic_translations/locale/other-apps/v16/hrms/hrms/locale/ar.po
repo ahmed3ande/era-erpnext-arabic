@@ -12332,3 +12332,20 @@ msgstr "{0} يوم"
 msgid "{} {} open for this position."
 msgstr "{} {} مفتوح لهذا المنصب."
 
+
+
+#. source: hrms
+msgid "Opening Balances"
+msgstr "الأرصدة الافتتاحية"
+
+#. source: hrms
+msgid "Service Expenses"
+msgstr "مصروفات الخدمة"
+
+#. source: hrms
+msgid "Total percentage against cost centers should be 100"
+msgstr "يجب أن يساوي إجمالي النسب المئوية الموزعة على مراكز التكلفة 100"
+
+#. source: hrms
+msgid "Account {0} does not belong to company: {1}"
+msgstr "الحساب {0} لا ينتمي إلى الشركة: {1}"

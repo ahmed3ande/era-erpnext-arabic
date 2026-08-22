@@ -2982,7 +2982,7 @@ msgstr "قيمة الحساب"
 msgid ""
 "Account balance already in Credit, you are not allowed to set 'Balance Must Be' as "
 "'Debit'"
-msgstr "رصيد الحساب دائن بالفعل، ولا يُسمح بتعيين «الرصيد يجب أن يكون» إلى «مدين»."
+msgstr "رصيد الحساب دائن بالفعل، لذلك لا يمكن ضبط «يجب أن يكون الرصيد» على «مدين»."
 
 #. source: erpnext
 msgid ""
@@ -4965,7 +4965,7 @@ msgstr "مقابل حساب الدخل"
 
 #. source: erpnext
 msgid "Against Journal Entry {0} does not have any unmatched {1} entry"
-msgstr "لا يحتوي قيد اليومية المقابل {0} على أي قيد {1} غير مُطابق."
+msgstr "لا يحتوي قيد اليومية المقابل {0} على أي حركة {1} غير مُسوّاة."
 
 #. source: erpnext
 msgid "Against Journal Entry {0} is already adjusted against some other voucher"
@@ -13439,7 +13439,7 @@ msgstr "النقدية الحاضرة"
 
 #. source: erpnext
 msgid "Cash or Bank Account is mandatory for making payment entry"
-msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء قيد الدفع."
+msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء سند دفع."
 
 #. source: erpnext
 msgid "Cash/Bank Account"
@@ -14684,7 +14684,7 @@ msgstr "اقفال حساب المركز الرئيسي"
 
 #. source: erpnext
 msgid "Closing Account {0} must be of type Liability / Equity"
-msgstr "يجب أن يكون الحساب الختامي {0} من نوع التزامات أو حقوق ملكية."
+msgstr "يجب أن يكون حساب الإقفال {0} من نوع التزامات أو حقوق ملكية."
 
 #. source: erpnext
 msgid "Closing Amount"
@@ -47342,7 +47342,7 @@ msgstr "نوع الحساب المدفوع إليه"
 
 #. source: erpnext
 msgid "Paid amount + Write Off Amount can not be greater than Grand Total"
-msgstr "لا يمكن أن يكون مجموع المبلغ المدفوع ومبلغ الشطب أكبر من الإجمالي الكلي."
+msgstr "لا يمكن أن يتجاوز مجموع المبلغ المدفوع ومبلغ الشطب المجموع الإجمالي."
 
 #. source: erpnext
 msgid "Paid to"
@@ -82982,7 +82982,7 @@ msgstr "محاسبة المورد الداخلي"
 
 #. source: erpnext
 msgid "Opening stock creation has been queued and will be created in the background. Please check the stock entry after some time."
-msgstr "تمت جدولة إنشاء الرصيد الافتتاحي للمخزون وسيُنشأ في الخلفية. يُرجى التحقق من قيد المخزون بعد قليل."
+msgstr "تمت جدولة إنشاء المخزون الافتتاحي، وسيتم إنشاؤه في الخلفية. يُرجى التحقق من حركة المخزون بعد قليل."
 
 #. source: erpnext
 msgid "Use Legacy Budget Controller"

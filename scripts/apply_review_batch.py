@@ -132,6 +132,7 @@ def apply_po(
 	write: bool,
 	guard_current: bool,
 	require_all: bool = True,
+	append_missing: bool = False,
 ) -> int:
 	if not path.is_file():
 		raise BatchError(f"required catalog is missing: {path}")
@@ -146,6 +147,11 @@ def apply_po(
 	for row in rows:
 		message = messages.get(row["msgid"])
 		if message is None:
+			if append_missing:
+				if not write:
+					raise BatchError(f"{path}: batch is not applied for {row['msgid']!r}")
+				changed += 1
+				continue
 			if require_all:
 				raise BatchError(f"{path}: missing msgid {row['msgid']!r}")
 			continue  # Older generated version bundles may not contain a newer source key.
@@ -161,7 +167,12 @@ def apply_po(
 			message.flags.discard("fuzzy")
 			changed += 1
 	if write and changed:
-		rewrite_po_entries(path, rows, allow_missing=not require_all)
+		rewrite_po_entries(
+			path,
+			rows,
+			allow_missing=not require_all,
+			append_missing=append_missing,
+		)
 	return changed
 
 
@@ -233,12 +244,15 @@ def apply_batch(root: Path, batch_path: Path, *, write: bool) -> dict[str, int]:
 	counts: dict[str, int] = {}
 	for app, app_rows in sorted(by_app.items()):
 		for path in po_paths(root, app):
+			is_source = "locale/source" in path.as_posix()
+			is_v16 = "/v16/" in path.as_posix()
 			counts[path.relative_to(root).as_posix()] = apply_po(
 				path,
 				app_rows,
 				write=write,
-				guard_current="locale/source" in path.as_posix(),
-				require_all="locale/source" in path.as_posix(),
+				guard_current=is_source,
+				require_all=is_source,
+				append_missing=is_v16,
 			)
 		path = csv_path(root, app)
 		counts[path.relative_to(root).as_posix()] = apply_csv(path, app_rows, write=write)
@@ -262,4 +276,3 @@ def main() -> int:
 
 if __name__ == "__main__":
 	raise SystemExit(main())
-
