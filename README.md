@@ -1,3 +1,17 @@
+# Era ERPNext Arabic by Techno Era
+
+Professional, context-aware Arabic accounting translations for Frappe, ERPNext, and HRMS.
+
+This repository is a maintained fork of [Ibrahim's Arabic translation project](https://github.com/ibrahim317/erpnext-arabic-full-translation). The original Git history, MIT license, and attribution are preserved. Era focuses on accounting terminology, Egyptian professional usage, reproducible QA, and ERPNext v16 validation.
+
+- [Project status](docs/PROJECT_STATUS.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Translation guide](docs/TRANSLATION_GUIDE.md)
+- [Attribution](docs/ATTRIBUTION.md)
+- [Accounting glossary](glossary/accounting.csv)
+
+---
+
 # Arabic Translations for Frappe / ERPNext / HRMS
 
 Complete Arabic translations for **Frappe Framework**, **ERPNext**, and **HRMS**, packaged as an installable Frappe app supporting **v15 and v16**.
