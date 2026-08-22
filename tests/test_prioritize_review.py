@@ -5,7 +5,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.prioritize_review import build_queue, is_accounting_related, write_queue
+from scripts.prioritize_review import (
+	build_queue,
+	english_words,
+	has_duplicated_source,
+	is_accounting_related,
+	write_queue,
+)
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[list[str]]) -> None:
@@ -20,6 +26,20 @@ class PrioritizeReviewTest(unittest.TestCase):
 		self.assertTrue(is_accounting_related("Outstanding invoice balance"))
 		self.assertTrue(is_accounting_related("General Ledger"))
 		self.assertFalse(is_accounting_related("Employee birthday"))
+
+	def test_duplicated_source_detection(self):
+		self.assertTrue(
+			has_duplicated_source(
+				"Account {0} does not belong to company: {1}",
+				"الحساب {0} لا ينتمي إلى الشركة {1}<br>Account {0} does not belong to company: {1}",
+			)
+		)
+		self.assertFalse(has_duplicated_source("Sales Invoice", "فاتورة مبيعات"))
+
+	def test_markup_and_technical_tokens_are_not_residue(self):
+		value = '<b class="x">{{ doc.name }}</b> https://example.com FIFO UOM BOM DuckDB POS'
+		self.assertEqual(english_words(value), [])
+		self.assertEqual(english_words("فاتورة Sales"), ["Sales"])
 
 	def test_queue_order_and_filtering(self):
 		with tempfile.TemporaryDirectory() as temp_dir:
@@ -46,12 +66,22 @@ class PrioritizeReviewTest(unittest.TestCase):
 			write_csv(
 				root / "english-residue.csv",
 				["app", "msgid", "msgstr", "english_words"],
-				[["erpnext", "Sales Invoice", "فاتورة Sales", "Sales"]],
+				[
+					["erpnext", "Sales Invoice", "فاتورة Sales", "Sales"],
+					[
+						"erpnext",
+						"Account does not belong to company",
+						"الحساب لا ينتمي إلى الشركة<br>Account does not belong to company",
+						"Account | does | not | belong | to | company",
+					],
+					["erpnext", "Stock valuation", "التقييم FIFO عبر {{ method }}", "FIFO | method"],
+				],
 			)
 
 			queue = build_queue(root)
-			self.assertEqual([row["priority"] for row in queue], [100, 90, 85, 80, 60])
+			self.assertEqual([row["priority"] for row in queue], [100, 95, 90, 85, 80, 60])
 			self.assertNotIn("Employee birthday", {row["msgid"] for row in queue})
+			self.assertNotIn("Stock valuation", {row["msgid"] for row in queue})
 			output = root / "accounting-priority.csv"
 			write_queue(output, queue)
 			self.assertTrue(output.read_text(encoding="utf-8").startswith("priority,category"))
