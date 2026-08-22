@@ -34,10 +34,19 @@ class PrioritizeReviewTest(unittest.TestCase):
 				"الحساب {0} لا ينتمي إلى الشركة {1}<br>Account {0} does not belong to company: {1}",
 			)
 		)
+		self.assertTrue(
+			has_duplicated_source(
+				"Account with existing transaction can not be deleted",
+				"الحساب لديه معاملات موجودة لا يمكن حذفه\\n<br>\\nAccount with existing transaction can not be deleted",
+			)
+		)
 		self.assertFalse(has_duplicated_source("Sales Invoice", "فاتورة مبيعات"))
 
 	def test_markup_and_technical_tokens_are_not_residue(self):
-		value = '<b class="x">{{ doc.name }}</b> https://example.com FIFO UOM BOM DuckDB POS'
+		value = (
+			'<b class="x">{{ doc.name }}</b> https://example.com FIFO UOM BOM DuckDB POS CWIP '
+			'&lt;p&gt;نص عربي&lt;/p&gt; <b>customer</b> مثال: doc.item_code == "Stock Entry"'
+		)
 		self.assertEqual(english_words(value), [])
 		self.assertEqual(english_words("فاتورة Sales"), ["Sales"])
 
