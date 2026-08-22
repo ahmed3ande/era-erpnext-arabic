@@ -1,0 +1,207 @@
+batch_id,app,msgid,current_arabic,approved_arabic,rationale
+ui-core-001,erpnext,"<span class=""h4""><b>Masters &amp; Reports</b></span>","<span class=""h4""><b>البيانات الرئيسية والتقارير</b></span>","<span class=""h4""><b>البيانات الرئيسية والتقارير</b></span>",توحيد الترجمة بين ERPNext وHRMS مع الحفاظ على HTML.
+ui-core-001,erpnext,"<span class=""h4""><b>Reports &amp; Masters</b></span>","<span class=""h4""><b>التقارير والبيانات الرئيسية</b></span>","<span class=""h4""><b>التقارير والبيانات الرئيسية</b></span>",ترجمة النص الناقص مع الحفاظ على HTML.
+ui-core-001,erpnext,Allow User to Edit Warehouse,السماح للمستخدم بتعديل السعر,السماح للمستخدم بتعديل المستودع,الترجمة الحالية تقول «السعر» بدل «المستودع».
+ui-core-001,erpnext,At least one mode of payment is required for POS invoice.,يلزم وضع واحد نمط واحد للدفع لفاتورة نقطة البيع.\n<br>\nAt least one mode of payment is required for POS invoice.,يلزم تحديد طريقة دفع واحدة على الأقل لفاتورة نقطة البيع.,تصحيح الصياغة وحذف النص الإنجليزي المكرر.
+ui-core-001,erpnext,Budget,ميزانية,الميزانية,إضافة أداة التعريف تجعل اسم القسم طبيعيًا مع بقاء المصطلح مفردًا.
+ui-core-001,erpnext,Budget cannot be assigned against Group Account {0},لايمكن أسناد الميزانية للمجموعة Account {0},لا يمكن إسناد الميزانية إلى حساب المجموعة {0}.,ترجمة Account وتصحيح الإملاء وحرف الجر.
+ui-core-001,erpnext,Employee cannot report to himself.,الموظف لا يمكن أن يقدم تقريرا إلى نفسه.\n<br>\nEmployee cannot report to himself.,لا يمكن أن يكون الموظف مسؤولًا عن نفسه.,صياغة إدارية أدق وحذف الإنجليزية المكررة.
+ui-core-001,erpnext,"Example: ABCD.#####. If series is set and Batch No is not mentioned in transactions, then automatic batch number will be created based on this series. If you always want to explicitly mention Batch No for this item, leave this blank. Note: this setting will take priority over the Naming Series Prefix in Stock Settings.",مثال: ABCD. #####. إذا تم ضبط المسلسل ولم يتم ذكر رقم الدفعة في المعاملات ، فسيتم إنشاء رقم الدفعة تلقائيًا استنادًا إلى هذه السلسلة. إذا كنت تريد دائمًا الإشارة صراحة إلى Batch No لهذا العنصر ، فاترك هذا فارغًا. ملاحظة: سيأخذ هذا الإعداد الأولوية على بادئة Naming Series في إعدادات المخزون.,مثال: ABCD.#####. إذا تم تعيين السلسلة ولم يُذكر رقم الدفعة في المعاملات، فسيُنشأ رقم الدفعة تلقائيًا بناءً على هذه السلسلة. إذا كنت تريد إدخال رقم الدفعة صراحةً دائمًا لهذا الصنف، فاترك هذا الحقل فارغًا. ملاحظة: لهذا الإعداد أولوية على بادئة سلسلة التسمية في إعدادات المخزون.,تعريب Batch No وNaming Series وتصحيح الصياغة.
+ui-core-001,erpnext,Invoicing,الفوترة,الفواتير,اسم قسم الفواتير أوضح للمستخدم من المصدر الصناعي «الفوترة».
+ui-core-001,erpnext,Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable,ضريبة البند يجب أن يكون الصف {0} حسابا من نوع الضريبة أو الدخل أو المصاريف أو الرسوم\n<br>\nItem Tax Row {0} must have account of type Tax or Income or Expense or Chargeable,يجب أن يحتوي صف ضريبة الصنف {0} على حساب من نوع ضريبة أو دخل أو مصروف أو قابل للتحميل.,تصحيح ترتيب الجملة والمصطلحات وحذف الإنجليزية المكررة.
+ui-core-001,erpnext,Please select Price List,الرجاء اختيار قائمة الأسعار\n<br>\nPlease select Price List,يرجى اختيار قائمة الأسعار.,حذف النص الإنجليزي المكرر وتحسين الترقيم.
+ui-core-001,erpnext,Please set a default Holiday List for Employee {0} or Company {1},يرجى تعيين قائمة العطل الافتراضية للموظف {0} أو الشركة {1}\n<br>\nPlease set a default Holiday List for Employee {0} or Company {1},يرجى تعيين قائمة عُطَل افتراضية للموظف {0} أو الشركة {1}.,حذف النص الإنجليزي المكرر وتحسين الصياغة.
+ui-core-001,erpnext,Print settings updated in respective print format,تم تحديث إعدادات الطباعة في تنسيق الطباعة الخاصة\n<br>\nPrint settings updated in respective print format,تم تحديث إعدادات الطباعة في تنسيق الطباعة المعني.,تصحيح المطابقة وحذف النص الإنجليزي المكرر.
+ui-core-001,erpnext,Report Type is mandatory,نوع التقرير إلزامي\n<br>\nReport Type is mandatory,نوع التقرير إلزامي.,حذف النص الإنجليزي المكرر.
+ui-core-001,erpnext,Row {0}: Payment against Sales/Purchase Order should always be marked as advance,الصف {0}: الدفع لطلب الشراء/البيع يجب أن يكون دائما معلم كمتقدم\n<br>\nRow {0}: Payment against Sales/Purchase Order should always be marked as advance,الصف {0}: يجب دائمًا تحديد الدفعة المسددة مقابل أمر بيع أو شراء كدفعة مقدمة.,استبدال «معلم كمتقدم» بالمصطلح المالي الصحيح.
+ui-core-001,erpnext,Share Management,إدارة المشاركة,إدارة المساهمين,المقصود إدارة مساهمي الشركة وأسهمهم وليس المشاركة العامة.
+ui-core-001,erpnext,Subcontracting Inward Settings,إعدادات التعاقد من الباطن,إعدادات عمليات التعاقد من الباطن الواردة,توضيح اتجاه عمليات التعاقد من الباطن بدل صياغة عامة.
+ui-core-001,erpnext,Subscription,اشتراك,الاشتراك,المفتاح نفسه يُستخدم أيضًا اسمًا لنوع مستند؛ لذلك لا يُحوّل إلى جمع بلا اختبار شامل.
+ui-core-001,erpnext,"To allow over billing, update ""Over Billing Allowance"" in Accounts Settings or the Item.","للسماح بزيادة الفواتير ، حدّث ""Over Billing Allowance"" في إعدادات الحسابات أو العنصر.",للسماح بتجاوز قيمة الفوترة، حدّث «نسبة السماح بتجاوز الفوترة» في إعدادات الحسابات أو في الصنف.,ترجمة اسم الإعداد الظاهر للمستخدم.
+ui-core-001,erpnext,User {0} does not exist,المستخدم {0} غير موجود\n<br>\nUser {0} does not exist,المستخدم {0} غير موجود.,حذف النص الإنجليزي المكرر.
+ui-core-001,erpnext,Workstation is closed on the following dates as per Holiday List: {0},محطة العمل مغلقة في التواريخ التالية وفقا لقائمة العطل: {0}\n<br>\nWorkstation is closed on the following dates as per Holiday List: {0},محطة العمل مغلقة في التواريخ التالية وفقًا لقائمة العُطَل: {0},حذف النص الإنجليزي المكرر وتحسين الصياغة.
+ui-core-001,frappe,"<a href=""https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication"" target=""_blank"">
+  Click here to learn about token-based authentication
+</a>","<a href=""https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication"" target=""_blank"">
+  انقر هنا للتعرف على المصادقة القائمة على الرموز المميزة (Token-based authentication)
+</a>","<a href=""https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication"" target=""_blank"">
+  انقر هنا للتعرف على المصادقة باستخدام الرمز
+</a>",إزالة التكرار الإنجليزي مع الحفاظ على الرابط.
+ui-core-001,frappe,"<h4>Email Reply Example</h4>
+
+<pre>Order Overdue
+
+Transaction {{ name }} has exceeded Due Date. Please take necessary action.
+
+Details
+
+- Customer: {{ customer }}
+- Amount: {{ grand_total }}
+</pre>
+
+<h4>How to get fieldnames</h4>
+
+<p>The fieldnames you can use in your email template are the fields in the document from which you are sending the email. You can find out the fields of any documents via Setup &gt; Customize Form View and selecting the document type (e.g. Sales Invoice)</p>
+
+<h4>Templating</h4>
+
+<p>Templates are compiled using the Jinja Templating Language. To learn more about Jinja, <a class=""strong"" href=""http://jinja.pocoo.org/docs/dev/templates/"">read this documentation.</a></p>
+","<h4>مثال على الرد بالبريد الإلكتروني</h4>
+
+<pre>طلب متأخر
+
+تجاوزت المعاملة {{ name }} تاريخ الاستحقاق. يرجى اتخاذ الإجراء اللازم.
+
+التفاصيل
+
+- العميل: {{ customer }}
+- المبلغ: {{ grand_total }}
+</pre>
+
+<h4>كيفية الحصول على أسماء الحقول</h4>
+
+<p>أسماء الحقول التي يمكنك استخدامها في قالب البريد الإلكتروني هي الحقول الموجودة في المستند الذي ترسل منه البريد الإلكتروني. يمكنك معرفة حقول أي مستند من خلال الإعداد &gt; تخصيص طريقة عرض النموذج واختيار نوع المستند (مثلا: فاتورة المبيعات)</p>
+
+<h4>القوالب</h4>
+
+<p>يتم تجميع القوالب باستخدام لغة Jinja Templating Language. لمعرفة المزيد عن Jinja، <a class=""strong"" href=""http://jinja.pocoo.org/docs/dev/templates/"">اقرأ هذه التوثيقات</a>.</p>
+","<h4>مثال على الرد بالبريد الإلكتروني</h4>
+
+<pre>طلب متأخر
+
+تجاوزت المعاملة {{ name }} تاريخ الاستحقاق. يرجى اتخاذ الإجراء اللازم.
+
+التفاصيل
+
+- العميل: {{ customer }}
+- المبلغ: {{ grand_total }}
+</pre>
+
+<h4>كيفية الحصول على أسماء الحقول</h4>
+
+<p>أسماء الحقول التي يمكنك استخدامها في قالب البريد الإلكتروني هي الحقول الموجودة في المستند الذي ترسل منه البريد الإلكتروني. يمكنك معرفة حقول أي مستند من خلال الإعداد &gt; تخصيص طريقة عرض النموذج واختيار نوع المستند (مثلا: فاتورة المبيعات)</p>
+
+<h4>القوالب</h4>
+
+<p>يتم تجميع القوالب باستخدام لغة قوالب Jinja. لمعرفة المزيد عن Jinja، <a class=""strong"" href=""http://jinja.pocoo.org/docs/dev/templates/"">اقرأ هذا التوثيق</a>.</p>
+",تعريب Templating Language وتحسين نهاية رابط التوثيق.
+ui-core-001,frappe,"<span class=""h4""><b>Reports &amp; Masters</b></span>",,"<span class=""h4""><b>التقارير والبيانات الرئيسية</b></span>",ترجمة النص الناقص مع الحفاظ على HTML.
+ui-core-001,frappe,Dashboard View,عرض لوحة التحكم,لوحة المعلومات,صياغة اسمية طبيعية لنمط العرض مع تمييزها عن فعل «عرض».
+ui-core-001,frappe,DocType View,طريقة عرض DocType,طريقة عرض نوع المستند,تعريب DocType في تسمية الواجهة.
+ui-core-001,frappe,"Error connecting to QZ Tray Application...<br><br> You need to have QZ Tray application installed and running, to use the Raw Print feature.<br><br><a target=""_blank"" href=""https://qz.io/download/"">Click here to Download and install QZ Tray</a>.<br> <a target=""_blank"" href=""https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing"">Click here to learn more about Raw Printing</a>.","خطأ في الاتصال بـ QZ Tray Application ... <br><br> تحتاج إلى تثبيت تطبيق QZ Tray وتشغيله لاستخدام ميزة Raw Print. <br><br> <a href=""https://qz.io/download/"" target=""_blank"">انقر هنا لتنزيل وتثبيت QZ Tray</a> . <br> <a href=""https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing"" target=""_blank"">انقر هنا لمعرفة المزيد عن الطباعة الخام</a> .","خطأ في الاتصال بـ تطبيق QZ Tray ... <br><br> تحتاج إلى تثبيت تطبيق QZ Tray وتشغيله لاستخدام ميزة الطباعة المباشرة. <br><br> <a href=""https://qz.io/download/"" target=""_blank"">انقر هنا لتنزيل وتثبيت QZ Tray</a> . <br> <a href=""https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing"" target=""_blank"">انقر هنا لمعرفة المزيد عن الطباعة المباشرة</a> .",إبقاء اسم المنتج QZ Tray وتعريب أسماء الوظائف المحيطة.
+ui-core-001,frappe,"For help see <a href=""https://frappeframework.com/docs/user/en/guides/portal-development/web-forms"" target=""_blank"">Client Script API and Examples</a>","للحصول على المساعدة ، راجع <a href=""https://frappeframework.com/docs/user/en/guides/portal-development/web-forms"" target=""_blank"">أمثلة و API Script</a>","للمساعدة، راجع <a href=""https://frappeframework.com/docs/user/en/guides/portal-development/web-forms"" target=""_blank"">واجهة برمجة نص العميل وأمثلتها</a>.",تصحيح ترجمة عنوان الرابط مع الحفاظ عليه.
+ui-core-001,frappe,Github flavoured markdown syntax,صيغة ماركداون بنكهة Github,صياغة Markdown بنمط GitHub,توحيد اسم GitHub وإبقاء Markdown كمصطلح تقني.
+ui-core-001,frappe,Google Snippet Preview,معاينة Google Snippet,معاينة مقتطف Google,ترجمة Snippet مع إبقاء اسم المنتج.
+ui-core-001,frappe,"If enabled, users who login from Restricted IP Address, won't be prompted for Two Factor Auth",في حالة التمكين ، لن تتم مطالبة المستخدمين الذين يقومون بتسجيل الدخول من عنوان IP المقيد بـ Two Factor Auth,عند التمكين، لن يُطلب من المستخدمين الذين يسجلون الدخول من عنوان IP مقيّد إجراء المصادقة الثنائية.,ترجمة Two Factor Auth وتحسين الصياغة.
+ui-core-001,frappe,Image View,عرض الصورة,الصور,النمط يعرض مجموعة سجلات كصور وليس صورة واحدة.
+ui-core-001,frappe,"Invalid function argument type: {0}. Only strings, numbers, lists, and None are allowed.",نوع وسيط وظيفة غير صالح: {0}. يُسمح فقط بالنصوص والأرقام والقوائم و None.,نوع وسيط الدالة غير صالح: {0}. يُسمح فقط بالنصوص والأرقام والقوائم والقيمة None.,تصحيح «وسيط وظيفة» مع إبقاء None كقيمة برمجية.
+ui-core-001,frappe,Kanban View,عرض كانبان,لوحة كانبان,يوضح أنها لوحة كانبان لا فعل عرض.
+ui-core-001,frappe,List View,عرض القائمة,القائمة,القائمة المنسدلة تختار نوع العرض؛ الاسم المختصر أوضح.
+ui-core-001,frappe,Mandatory field: set role for,الحقل إلزامي :تعيين الدور ل\n<br>\nMandatory field: set role for,حقل إلزامي: عيّن الدور لـ,تصحيح ترتيب الكلمات وحذف الإنجليزية المكررة.
+ui-core-001,frappe,Meta image,صورة البيانات الوصفية (Meta),صورة البيانات الوصفية,إزالة الإنجليزية غير اللازمة من تسمية الواجهة.
+ui-core-001,frappe,"Naming Options:
+<ol><li><b>field:[fieldname]</b> - By Field</li><li><b>naming_series:</b> - By Naming Series (field called naming_series must be present)</li><li><b>Prompt</b> - Prompt user for a name</li><li><b>[series]</b> - Series by prefix (separated by a dot); for example PRE.#####</li>
+<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - Replace all braced words (fieldnames, date words (DD, MM, YY), series) with their value. Outside braces, any characters can be used.</li></ol>","خيارات التسمية:
+<ol><li><b>field:[fieldname]</b> - حسب الحقل</li><li><b>naming_series:</b> - حسب سلسلة التسمية (يجب أن يكون الحقل المسمى naming_series موجودًا)</li><li><b>Prompt</b> - مطالبة المستخدم باسم</li><li><b>[series]</b> - سلسلة حسب البادئة (مفصولة بنقطة)؛ على سبيل المثال PRE.#####</li>
+<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - استبدال جميع الكلمات بين الأقواس (أسماء الحقول، كلمات التاريخ (DD، MM، YY)، السلاسل) بقيمتها. خارج الأقواس، يمكن استخدام أي أحرف.</li></ol>","خيارات التسمية:
+<ol><li><b>field:[fieldname]</b> - حسب الحقل</li><li><b>naming_series:</b> - حسب سلسلة التسمية (يجب أن يكون الحقل المسمى naming_series موجودًا)</li><li><b>Prompt</b> - مطالبة المستخدم بإدخال اسم</li><li><b>[series]</b> - سلسلة حسب البادئة (مفصولة بنقطة)؛ على سبيل المثال PRE.#####</li>
+<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - استبدال جميع الكلمات بين الأقواس (أسماء الحقول، كلمات التاريخ (DD، MM، YY)، السلاسل) بقيمتها. خارج الأقواس، يمكن استخدام أي أحرف.</li></ol>",الرموز وأسماء الحقول أمثلة برمجية صحيحة ويجب إبقاؤها كما هي.
+ui-core-001,frappe,Navbar Settings,إعدادات Navbar,إعدادات شريط التنقل,تعريب Navbar في واجهة الإعدادات.
+ui-core-001,frappe,New line separated list of scope values.,قائمة مفصولة بأسطر جديدة لقيم النطاق (scope).,قائمة بقيم النطاق، تفصل بينها أسطر جديدة.,تعريب scope وصياغة التعليمات بوضوح.
+ui-core-001,frappe,No permission for {0},لا يوجد صلاحية لـ {0}<br>No permission for {0},لا توجد صلاحية للوصول إلى {0}.,صياغة أوضح وحذف الإنجليزية المكررة.
+ui-core-001,frappe,"Provide a list of allowed Doctypes for file uploads. Each line should contain one allowed Doctype. If unset, uploads to all doctypes are allowed. Example: <br>User<br>Item<br>Quotation",أدخل قائمة بأنواع المستندات المسموح بها لرفع الملفات. يجب أن يحتوي كل سطر على نوع مستند واحد. إذا تُرك فارغًا، يُسمح بالرفع لجميع الأنواع. مثال: <br>User<br>Item<br>Quotation,أدخل قائمة بأنواع المستندات المسموح بها لرفع الملفات. يجب أن يحتوي كل سطر على نوع مستند واحد. إذا تُرك فارغًا، يُسمح بالرفع لجميع أنواع المستندات. مثال: <br>User<br>Item<br>Quotation,User وItem وQuotation أمثلة لأسماء DocType فعلية ولا تُترجم داخل القائمة.
+ui-core-001,frappe,Report Reference Doctype,تقرير مرجع Doctype,نوع المستند المرجعي للتقرير,تصحيح تركيب التسمية وتعريب Doctype.
+ui-core-001,frappe,Report View,عرض التقرير,التقرير,القائمة المنسدلة تختار نوع العرض؛ الاسم المختصر أوضح.
+ui-core-001,frappe,Restore to default settings?,استعادة الإعدادات الافتراضية؟\n<br>\n?Restore to default settings,هل تريد استعادة الإعدادات الافتراضية؟,تحويلها إلى سؤال عربي طبيعي وحذف التكرار.
+ui-core-001,frappe,User,المستعمل,المستخدم,«المستخدم» هو المصطلح القياسي الطبيعي في واجهات البرمجيات.
+ui-core-001,frappe,User ,المستعمل,المستخدم,نسخة المفتاح ذات المسافة اللاحقة يجب توحيدها مع User.
+ui-core-001,frappe,User '{0}' already has the role '{1}',المستخدم{0} يملك بالفعل الدور {1}<br>User '{0}' already has the role '{1}',المستخدم «{0}» لديه الدور «{1}» بالفعل.,إضافة المسافات وعلامات الاقتباس وحذف الإنجليزية المكررة.
+ui-core-001,frappe,Users,المستخدمين,المستخدمون,العنوان المستقل في حالة الرفع ويُعرض «المستخدمون».
+ui-core-001,frappe,Validate Frappe Mail Settings,التحقق من صحة إعدادات Frappe Mail,التحقق من إعدادات بريد Frappe,تعريب Mail مع إبقاء اسم المنتج.
+ui-core-001,frappe,Which view of the associated DocType should this shortcut take you to?,ما هي طريقة عرض DocType المرتبطة التي يجب أن يأخذك إليها هذا الاختصار؟,إلى أي طريقة عرض لنوع المستند المرتبط يجب أن ينقلك هذا الاختصار؟,تعريب DocType وتحسين السؤال.
+ui-core-001,frappe,You cannot create a dashboard chart from single DocTypes,لا يمكنك إنشاء مخطط لوحة معلومات من أنواع DocTypes الفردية,لا يمكنك إنشاء مخطط لوحة معلومات من أنواع مستندات مفردة.,تعريب DocTypes وتصحيح الصياغة.
+ui-core-001,hrms,"<h3>Help</h3>
+
+<p>Notes:</p>
+
+<ol>
+<li>Use field <code>base</code> for using base salary of the Employee</li>
+<li>Use Salary Component abbreviations in conditions and formulas. <code>BS = Basic Salary</code></li>
+<li>Use field name for employee details in conditions and formulas. <code>Employment Type = employment_type</code><code>Branch = branch</code></li>
+<li>Use field name from Salary Slip in conditions and formulas. <code>Payment Days = payment_days</code><code>Leave without pay = leave_without_pay</code></li>
+<li>Direct Amount can also be entered based on Condition. See example 3</li></ol>
+
+<h4>Examples</h4>
+<ol>
+<li>Calculating Basic Salary based on <code>base</code>
+<pre><code>Condition: base &lt; 10000</code></pre>
+<pre><code>Formula: base * .2</code></pre></li>
+<li>Calculating HRA based on Basic Salary<code>BS</code> 
+<pre><code>Condition: BS &gt; 2000</code></pre>
+<pre><code>Formula: BS * .1</code></pre></li>
+<li>Calculating TDS based on Employment Type<code>employment_type</code> 
+<pre><code>Condition: employment_type==""Intern""</code></pre>
+<pre><code>Amount: 1000</code></pre></li>
+</ol>","<h3> مساعدة </h3>
+
+<p> الملاحظات: </p>
+
+<ol>
+<li> استخدم الحقل <code> قاعدة </code> لاستخدام الراتب الأساسي للموظف </li>
+<li> استخدم اختصارات مكونات الراتب في الظروف والصيغ. <code> bs = الراتب الأساسي </code> </li>
+<li> استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code> نوع التوظيف = التوظيف _type </code> <code> الفرع = الفرع </code> </li>
+<li> استخدم اسم الحقل من قسيمة الراتب في الظروف والصيغ. <code> أيام الدفع = payment_days </code> <code> إجازة بدون دفع = LEED_WITHOUT_PAY </code> </li>
+يمكن أيضًا إدخال المبلغ المباشر بناءً على الحالة. انظر المثال 3 </li> </ol>
+
+<h4> أمثلة </h4>
+<ol>
+<li> حساب الراتب الأساسي على أساس <code> قاعدة </code>
+<pre> <code> الشرط: base & lt ؛ 10000 </code> </pre>
+<pre> <code> الصيغة: قاعدة * .2 </code> </pre> </li>
+<li> حساب HRA استنادًا إلى الراتب الأساسي <code> BS </code> 
+<pre> <code> الشرط: bs & gt ؛ 2000 </code> </pre>
+<pre> <code> الصيغة: bs * .1 </code> </pre> </li>
+<li> حساب TDs استنادًا إلى نوع التوظيف <code> التوظيف _type </code> 
+<pre> <code> الشرط: التوظيف _type == ""Intern"" </code> </pre>
+<pre> <code> المبلغ: 1000 </code> </pre> </li>
+</ol>","<h3>مساعدة</h3>
+<p>ملاحظات:</p>
+<ol>
+<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف.</li>
+<li>استخدم اختصارات مكونات الراتب في الشروط والصيغ. <code>BS = Basic Salary</code></li>
+<li>استخدم اسم الحقل الخاص بتفاصيل الموظف في الشروط والصيغ. <code>Employment Type = employment_type</code> <code>Branch = branch</code></li>
+<li>استخدم اسم الحقل من مسير الراتب في الشروط والصيغ. <code>Payment Days = payment_days</code> <code>Leave without pay = leave_without_pay</code></li>
+<li>يمكن أيضًا إدخال مبلغ مباشر بناءً على الشرط. راجع المثال 3.</li>
+</ol>
+<h4>أمثلة</h4>
+<ol>
+<li>حساب الراتب الأساسي باستخدام <code>base</code><pre><code>Condition: base &lt; 10000</code></pre><pre><code>Formula: base * .2</code></pre></li>
+<li>حساب بدل السكن HRA بناءً على الراتب الأساسي <code>BS</code><pre><code>Condition: BS &gt; 2000</code></pre><pre><code>Formula: BS * .1</code></pre></li>
+<li>حساب ضريبة الخصم TDS بناءً على نوع التوظيف <code>employment_type</code><pre><code>Condition: employment_type==""Intern""</code></pre><pre><code>Amount: 1000</code></pre></li>
+</ol>",الترجمة الحالية أتلفت أسماء الحقول وعوامل المقارنة؛ الاقتراح يحافظ على الكود حرفيًا.
+ui-core-001,hrms,"<h4>Condition Examples</h4>
+<ol>
+<li>Applying tax if employee born between 31-12-1937 and 01-01-1958 (Employees aged 60 to 80)<br>
+<code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br><li>Applying tax by employee gender<br>
+<code>Condition: gender==""Male""</code></li><br>
+<li>Applying tax by Salary Component<br>
+<code>Condition: base &gt; 10000</code></li></ol>","<h4> أمثلة الشرط </h4>
+<ol>
+<li> تطبيق الضريبة إذا ولد الموظف بين 31-12-1937 و 01-01-1958 (الموظفين الذين تتراوح أعمارهم بين 60 و 80) <br>
+<code> الشرط: date_of_birth & gt ؛ التاريخ (1937 ، 12 ، 31) و Date_of_birth & lt ؛ date (1958 ، 01 ، 01) </code> </li> <br> <li> تطبيق الضريبة حسب جنس الموظف <br> <br>
+<code> الشرط: الجنس == ""ذكر"" </code> </li> <br>
+<li> تطبيق الضريبة حسب مكون الراتب <br>
+<code> الشرط: BASE & GT ؛ 10000 </code> </li> </ol>","<h4>أمثلة على الشروط</h4>
+<ol>
+<li>تطبيق الضريبة إذا كان تاريخ ميلاد الموظف بين 31-12-1937 و01-01-1958 (من 60 إلى 80 عامًا)<br><code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br>
+<li>تطبيق الضريبة حسب جنس الموظف<br><code>Condition: gender==""Male""</code></li><br>
+<li>تطبيق الضريبة حسب مكوّن الراتب<br><code>Condition: base &gt; 10000</code></li>
+</ol>",الحفاظ على الشروط البرمجية كما هي وتعريب الشرح فقط.
+ui-core-001,hrms,"<span class=""h4""><b>Masters &amp; Reports</b></span>","<span class = ""h4""> <b> التقارير وإدارة البيانات الرئيسية </b> </span>","<span class=""h4""><b>البيانات الرئيسية والتقارير</b></span>",توحيد الترجمة بين ERPNext وHRMS مع الحفاظ على HTML.
+ui-core-001,hrms,"<span class=""h4""><b>Reports &amp; Masters</b></span>","<span class = ""h4""> <b> التقارير وإدارة البيانات الرئيسية </b> </span>","<span class=""h4""><b>التقارير والبيانات الرئيسية</b></span>",ترجمة النص الناقص مع الحفاظ على HTML.
+ui-core-001,hrms,AttendanceRequestListView,attencereQuestListView,AttendanceRequestListView,إعادة المعرّف البرمجي الصحيح؛ الترجمة الحالية غيّرت حالة الأحرف وكتابة الاسم.
+ui-core-001,hrms,Mode of payment is required to make a payment,طريقه الدفع مطلوبه لإجراء الدفع\n<br>\nMode of payment is required to make a payment,طريقة الدفع مطلوبة لإجراء الدفعة.,تصحيح الإملاء وحذف الإنجليزية المكررة.
+ui-core-001,hrms,Role Allowed to Create Backdated Leave Application,الدور المسموح به لإنشاء تطبيق إجازة Backdated,الدور المسموح له بإنشاء طلب إجازة بأثر رجعي,ترجمة Backdated وتصحيح «تطبيق إجازة» إلى «طلب إجازة».
+ui-core-001,hrms,User,المستعمل,المستخدم,توحيد المصطلح مع Frappe.
+ui-core-001,hrms,Users,المستخدمين,المستخدمون,توحيد الصياغة النحوية مع Frappe.
+

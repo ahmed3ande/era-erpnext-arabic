@@ -916,12 +916,7 @@ msgid ""
 "authentication\" target=\"_blank\">\n"
 "  Click here to learn about token-based authentication\n"
 "</a>"
-msgstr ""
-"<a href=\"https://docs.frappe.io/framework/user/en/api/rest#1-token-based-"
-"authentication\" target=\"_blank\">\n"
-"  انقر هنا للتعرف على المصادقة القائمة على الرموز المميزة (Token-based "
-"authentication)\n"
-"</a>"
+msgstr "<a href=\"https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication\" target=\"_blank\">\n  انقر هنا للتعرف على المصادقة باستخدام الرمز\n</a>"
 
 #. source: hrms
 msgid "<b>Base</b> amount has not been set for the following employee(s): {0}"
@@ -1296,33 +1291,7 @@ msgid ""
 "<pre><code>Condition: employment_type==\"Intern\"</code></pre>\n"
 "<pre><code>Amount: 1000</code></pre></li>\n"
 "</ol>"
-msgstr ""
-"<h3> مساعدة </h3>\n"
-"\n"
-"<p> الملاحظات: </p>\n"
-"\n"
-"<ol>\n"
-"<li> استخدم الحقل <code> قاعدة </code> لاستخدام الراتب الأساسي للموظف </li>\n"
-"<li> استخدم اختصارات مكونات الراتب في الظروف والصيغ. <code> bs = الراتب الأساسي "
-"</code> </li>\n"
-"<li> استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code> نوع التوظيف = التوظيف "
-"_type </code> <code> الفرع = الفرع </code> </li>\n"
-"<li> استخدم اسم الحقل من قسيمة الراتب في الظروف والصيغ. <code> أيام الدفع = "
-"payment_days </code> <code> إجازة بدون دفع = LEED_WITHOUT_PAY </code> </li>\n"
-"يمكن أيضًا إدخال المبلغ المباشر بناءً على الحالة. انظر المثال 3 </li> </ol>\n"
-"\n"
-"<h4> أمثلة </h4>\n"
-"<ol>\n"
-"<li> حساب الراتب الأساسي على أساس <code> قاعدة </code>\n"
-"<pre> <code> الشرط: base & lt ؛ 10000 </code> </pre>\n"
-"<pre> <code> الصيغة: قاعدة * .2 </code> </pre> </li>\n"
-"<li> حساب HRA استنادًا إلى الراتب الأساسي <code> BS </code> \n"
-"<pre> <code> الشرط: bs & gt ؛ 2000 </code> </pre>\n"
-"<pre> <code> الصيغة: bs * .1 </code> </pre> </li>\n"
-"<li> حساب TDs استنادًا إلى نوع التوظيف <code> التوظيف _type </code> \n"
-"<pre> <code> الشرط: التوظيف _type == \"Intern\" </code> </pre>\n"
-"<pre> <code> المبلغ: 1000 </code> </pre> </li>\n"
-"</ol>"
+msgstr "<h3>مساعدة</h3>\n<p>ملاحظات:</p>\n<ol>\n<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف.</li>\n<li>استخدم اختصارات مكونات الراتب في الشروط والصيغ. <code>BS = Basic Salary</code></li>\n<li>استخدم اسم الحقل الخاص بتفاصيل الموظف في الشروط والصيغ. <code>Employment Type = employment_type</code> <code>Branch = branch</code></li>\n<li>استخدم اسم الحقل من مسير الراتب في الشروط والصيغ. <code>Payment Days = payment_days</code> <code>Leave without pay = leave_without_pay</code></li>\n<li>يمكن أيضًا إدخال مبلغ مباشر بناءً على الشرط. راجع المثال 3.</li>\n</ol>\n<h4>أمثلة</h4>\n<ol>\n<li>حساب الراتب الأساسي باستخدام <code>base</code><pre><code>Condition: base &lt; 10000</code></pre><pre><code>Formula: base * .2</code></pre></li>\n<li>حساب بدل السكن HRA بناءً على الراتب الأساسي <code>BS</code><pre><code>Condition: BS &gt; 2000</code></pre><pre><code>Formula: BS * .1</code></pre></li>\n<li>حساب ضريبة الخصم TDS بناءً على نوع التوظيف <code>employment_type</code><pre><code>Condition: employment_type==\"Intern\"</code></pre><pre><code>Amount: 1000</code></pre></li>\n</ol>"
 
 #. source: frappe
 msgid ""
@@ -1535,17 +1504,7 @@ msgid ""
 "<code>Condition: gender==\"Male\"</code></li><br>\n"
 "<li>Applying tax by Salary Component<br>\n"
 "<code>Condition: base &gt; 10000</code></li></ol>"
-msgstr ""
-"<h4> أمثلة الشرط </h4>\n"
-"<ol>\n"
-"<li> تطبيق الضريبة إذا ولد الموظف بين 31-12-1937 و 01-01-1958 (الموظفين الذين تتراوح "
-"أعمارهم بين 60 و 80) <br>\n"
-"<code> الشرط: date_of_birth & gt ؛ التاريخ (1937 ، 12 ، 31) و Date_of_birth & lt ؛ "
-"date (1958 ، 01 ، 01) </code> </li> <br> <li> تطبيق الضريبة حسب جنس الموظف <br> <br>"
-"\n"
-"<code> الشرط: الجنس == \"ذكر\" </code> </li> <br>\n"
-"<li> تطبيق الضريبة حسب مكون الراتب <br>\n"
-"<code> الشرط: BASE & GT ؛ 10000 </code> </li> </ol>"
+msgstr "<h4>أمثلة على الشروط</h4>\n<ol>\n<li>تطبيق الضريبة إذا كان تاريخ ميلاد الموظف بين 31-12-1937 و01-01-1958 (من 60 إلى 80 عامًا)<br><code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br>\n<li>تطبيق الضريبة حسب جنس الموظف<br><code>Condition: gender==\"Male\"</code></li><br>\n<li>تطبيق الضريبة حسب مكوّن الراتب<br><code>Condition: base &gt; 10000</code></li>\n</ol>"
 
 #. source: erpnext
 msgid ""
@@ -1676,30 +1635,7 @@ msgid ""
 "<p>Templates are compiled using the Jinja Templating Language. To learn more about "
 "Jinja, <a class=\"strong\" href=\"http://jinja.pocoo.org/docs/dev/templates/\">read "
 "this documentation.</a></p>\n"
-msgstr ""
-"<h4>مثال على الرد بالبريد الإلكتروني</h4>\n"
-"\n"
-"<pre>طلب متأخر\n"
-"\n"
-"تجاوزت المعاملة {{ name }} تاريخ الاستحقاق. يرجى اتخاذ الإجراء اللازم.\n"
-"\n"
-"التفاصيل\n"
-"\n"
-"- العميل: {{ customer }}\n"
-"- المبلغ: {{ grand_total }}\n"
-"</pre>\n"
-"\n"
-"<h4>كيفية الحصول على أسماء الحقول</h4>\n"
-"\n"
-"<p>أسماء الحقول التي يمكنك استخدامها في قالب البريد الإلكتروني هي الحقول الموجودة في "
-"المستند الذي ترسل منه البريد الإلكتروني. يمكنك معرفة حقول أي مستند من خلال الإعداد "
-"&gt; تخصيص طريقة عرض النموذج واختيار نوع المستند (مثلا: فاتورة المبيعات)</p>\n"
-"\n"
-"<h4>القوالب</h4>\n"
-"\n"
-"<p>يتم تجميع القوالب باستخدام لغة Jinja Templating Language. لمعرفة المزيد عن Jinja، "
-"<a class=\"strong\" href=\"http://jinja.pocoo.org/docs/dev/templates/\">اقرأ هذه "
-"التوثيقات</a>.</p>\n"
+msgstr "<h4>مثال على الرد بالبريد الإلكتروني</h4>\n\n<pre>طلب متأخر\n\nتجاوزت المعاملة {{ name }} تاريخ الاستحقاق. يرجى اتخاذ الإجراء اللازم.\n\nالتفاصيل\n\n- العميل: {{ customer }}\n- المبلغ: {{ grand_total }}\n</pre>\n\n<h4>كيفية الحصول على أسماء الحقول</h4>\n\n<p>أسماء الحقول التي يمكنك استخدامها في قالب البريد الإلكتروني هي الحقول الموجودة في المستند الذي ترسل منه البريد الإلكتروني. يمكنك معرفة حقول أي مستند من خلال الإعداد &gt; تخصيص طريقة عرض النموذج واختيار نوع المستند (مثلا: فاتورة المبيعات)</p>\n\n<h4>القوالب</h4>\n\n<p>يتم تجميع القوالب باستخدام لغة قوالب Jinja. لمعرفة المزيد عن Jinja، <a class=\"strong\" href=\"http://jinja.pocoo.org/docs/dev/templates/\">اقرأ هذا التوثيق</a>.</p>\n"
 
 #. source: erpnext
 msgid ""
@@ -2151,7 +2087,7 @@ msgstr "<span class=\"h2\">مرحبًا،</span>"
 
 #. source: hrms
 msgid "<span class=\"h4\"><b>Masters &amp; Reports</b></span>"
-msgstr "<span class = \"h4\"> <b> التقارير وإدارة البيانات الرئيسية </b> </span>"
+msgstr "<span class=\"h4\"><b>البيانات الرئيسية والتقارير</b></span>"
 
 #. source: hrms
 msgid "<span class=\"h4\"><b>Masters &amp; Transactions</b></span>"
@@ -2163,7 +2099,7 @@ msgstr "<span class=\"h4\"><b>وصول سريع</b></span>"
 
 #. source: hrms
 msgid "<span class=\"h4\"><b>Reports &amp; Masters</b></span>"
-msgstr "<span class = \"h4\"> <b> التقارير وإدارة البيانات الرئيسية </b> </span>"
+msgstr "<span class=\"h4\"><b>التقارير والبيانات الرئيسية</b></span>"
 
 #. source: erpnext
 msgid "<span class=\"h4\"><b>Subcontracting Inward and Outward</b></span>"
@@ -2982,10 +2918,7 @@ msgstr "قيمة الحساب"
 msgid ""
 "Account balance already in Credit, you are not allowed to set 'Balance Must Be' as "
 "'Debit'"
-msgstr ""
-"رصيد الحساب بالفعل دائن ، لا يسمح لك لتعيين ' الرصيد يجب ان يكون ' ك ' مدين "
-"'\\n<br>\\nAccount balance already in Credit, you are not allowed to set 'Balance "
-"Must Be' as 'Debit'"
+msgstr "رصيد الحساب دائن بالفعل، لذلك لا يمكن ضبط «يجب أن يكون الرصيد» على «مدين»."
 
 #. source: erpnext
 msgid ""
@@ -3061,15 +2994,11 @@ msgstr "الحساب الذي ستُقيَّد فيه تكلفة هذا الصن
 
 #. source: erpnext
 msgid "Account with child nodes cannot be converted to ledger"
-msgstr ""
-"لا يمكن تحويل الحساب إلى دفتر الأستاذ لأن لديه حسابات فرعية\\n<br>\\nAccount with "
-"child nodes cannot be converted to ledger"
+msgstr "لا يمكن تحويل حساب يحتوي على حسابات فرعية إلى حساب أستاذ"
 
 #. source: erpnext
 msgid "Account with child nodes cannot be set as ledger"
-msgstr ""
-"الحساب لديه حسابات فرعية لا يمكن إضافته لدفتر الأستاذ.\\n<br>\\nAccount with child "
-"nodes cannot be set as ledger"
+msgstr "لا يمكن تعيين الحساب كحساب أستاذ لوجود حسابات فرعية تحته."
 
 #. source: erpnext
 msgid "Account with existing transaction can not be converted to group."
@@ -3077,15 +3006,11 @@ msgstr "لا يمكن تحويل حساب جرت عليه أي عملية إلى
 
 #. source: erpnext
 msgid "Account with existing transaction can not be deleted"
-msgstr ""
-"الحساب لديه معاملات موجودة لا يمكن حذفه\\n<br>\\nAccount with existing transaction "
-"can not be deleted"
+msgstr "لا يمكن حذف الحساب لوجود معاملات مسجلة عليه."
 
 #. source: erpnext
 msgid "Account with existing transaction cannot be converted to ledger"
-msgstr ""
-"لا يمكن تحويل الحساب مع الحركة الموجودة إلى دفتر الأستاذ\\n<br>\\nAccount with "
-"existing transaction cannot be converted to ledger"
+msgstr "لا يمكن تحويل الحساب إلى حساب أستاذ لوجود معاملات مسجلة عليه."
 
 #. source: erpnext
 msgid "Account {0} added multiple times"
@@ -3105,7 +3030,7 @@ msgstr "الحساب {0} لا ينتمي إلى الشركة {1}"
 
 #. source: erpnext
 msgid "Account {0} does not belong to company: {1}"
-msgstr "الحساب {0} لا يتنمى للشركة {1}\\n<br>\\nAccount {0} does not belong to company: {1}"
+msgstr "الحساب {0} لا ينتمي إلى الشركة: {1}"
 
 #. source: erpnext
 msgid "Account {0} does not exist"
@@ -3145,7 +3070,7 @@ msgstr "الحساب {0} معطّل."
 
 #. source: erpnext
 msgid "Account {0} is frozen"
-msgstr "الحساب {0} مجمد\\n<br>\\nAccount {0} is frozen"
+msgstr "الحساب {0} مجمّد"
 
 #. source: erpnext
 msgid "Account {0} is invalid. Account Currency must be {1}"
@@ -3269,9 +3194,7 @@ msgstr "قيد محاسبي لـ {0}"
 
 #. source: erpnext
 msgid "Accounting Entry for {0}: {1} can only be made in currency: {2}"
-msgstr ""
-"المدخل المحاسبي ل {0}: {1} يمكن أن يكون فقط بالعملة {1}.\\n<br>\\nAccounting Entry "
-"for {0}: {1} can only be made in currency: {2}"
+msgstr "لا يمكن إجراء القيد المحاسبي لـ {0}: {1} إلا بالعملة: {2}"
 
 #. source: erpnext
 msgid "Accounting Ledger"
@@ -4978,15 +4901,11 @@ msgstr "مقابل حساب الدخل"
 
 #. source: erpnext
 msgid "Against Journal Entry {0} does not have any unmatched {1} entry"
-msgstr ""
-"قيد اليومية المقابل {0} لا يحتوى مدخل {1} غير مطابق\\n<br>\\nAgainst Journal Entry "
-"{0} does not have any unmatched {1} entry"
+msgstr "لا يحتوي قيد اليومية المقابل {0} على أي حركة {1} غير مُسوّاة."
 
 #. source: erpnext
 msgid "Against Journal Entry {0} is already adjusted against some other voucher"
-msgstr ""
-"مدخل قيد اليومية {0} تم تعديله بالفعل لقسيمة أخرى\\n<br>\\nAgainst Journal Entry {0} "
-"is already adjusted \\nagainst some other voucher"
+msgstr "تمت تسوية قيد اليومية المقابل {0} بالفعل مقابل مستند آخر."
 
 #. source: erpnext
 msgid "Against Pick List"
@@ -8509,9 +8428,7 @@ msgstr "يجب إدخال صنف واحد على الأقل بكمية سالب�
 
 #. source: erpnext
 msgid "At least one mode of payment is required for POS invoice."
-msgstr ""
-"يلزم وضع واحد نمط واحد للدفع لفاتورة نقطة البيع.\\n<br>\\nAt least one mode of "
-"payment is required for POS invoice."
+msgstr "يلزم تحديد طريقة دفع واحدة على الأقل لفاتورة نقطة البيع."
 
 #. source: erpnext
 msgid "At least one of the Applicable Modules should be selected"
@@ -8835,7 +8752,7 @@ msgstr "سيتم تمييز الحضور تلقائيًا بعد هذا التا
 
 #. source: hrms
 msgid "AttendanceRequestListView"
-msgstr "attencereQuestListView"
+msgstr "AttendanceRequestListView"
 
 #. source: frappe
 msgid "Attendee not found in this event."
@@ -11632,7 +11549,7 @@ msgstr "لم يتم العثور على الحاوية {0}."
 
 #. source: erpnext
 msgid "Budget"
-msgstr "ميزانية"
+msgstr "الميزانية"
 
 #. source: erpnext
 msgid "Budget Account"
@@ -11692,7 +11609,7 @@ msgstr "تقرير إنحرافات الموازنة"
 
 #. source: erpnext
 msgid "Budget cannot be assigned against Group Account {0}"
-msgstr "لايمكن أسناد الميزانية للمجموعة Account {0}"
+msgstr "لا يمكن إسناد الميزانية إلى حساب المجموعة {0}."
 
 #. source: erpnext
 msgid "Budget cannot be assigned against {0}, as it's not an Income or Expense account"
@@ -13456,9 +13373,7 @@ msgstr "النقدية الحاضرة"
 
 #. source: erpnext
 msgid "Cash or Bank Account is mandatory for making payment entry"
-msgstr ""
-"الحساب النقدي أو البنكي مطلوب لعمل مدخل بيع <br>Cash or Bank Account is mandatory for"
-" making payment entry"
+msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء سند دفع."
 
 #. source: erpnext
 msgid "Cash/Bank Account"
@@ -14703,9 +14618,7 @@ msgstr "اقفال حساب المركز الرئيسي"
 
 #. source: erpnext
 msgid "Closing Account {0} must be of type Liability / Equity"
-msgstr ""
-"يجب ان يكون الحساب الختامي {0} من النوع متطلبات/الأسهم\\n<br>\\nClosing Account {0} "
-"must be of type Liability / Equity"
+msgstr "يجب أن يكون حساب الإقفال {0} من نوع التزامات أو حقوق ملكية."
 
 #. source: erpnext
 msgid "Closing Amount"
@@ -16447,9 +16360,7 @@ msgstr "مركز التكلفة مطلوب"
 
 #. source: erpnext
 msgid "Cost Center is required in row {0} in Taxes table for type {1}"
-msgstr ""
-"مركز التكلفة مطلوب في الصف {0} في جدول الضرائب للنوع {1}\\n<br>\\nCost Center is "
-"required in row {0} in Taxes table for type {1}"
+msgstr "مركز التكلفة مطلوب في الصف {0} من جدول الضرائب للنوع {1}"
 
 #. source: erpnext
 msgid "Cost Center with Allocation records can not be converted to a group"
@@ -16457,9 +16368,7 @@ msgstr "لا يمكن تحويل مركز التكلفة الذي يحتوي ع�
 
 #. source: erpnext
 msgid "Cost Center with existing transactions can not be converted to group"
-msgstr ""
-"مركز التكلفة لديه حركات مالية, لا يمكن تحويه لمجموعة\\n<br>\\nCost Center with "
-"existing transactions can not be converted to group"
+msgstr "لا يمكن تحويل مركز التكلفة إلى مجموعة لوجود معاملات مسجلة عليه."
 
 #. source: erpnext
 msgid "Cost Center with existing transactions can not be converted to ledger"
@@ -17804,7 +17713,7 @@ msgstr "عوامل تصفية العملة غير مدعومة حالياً في
 
 #. source: erpnext
 msgid "Currency for {0} must be {1}"
-msgstr "العملة ل {0} يجب أن تكون {1} \\n<br>\\nCurrency for {0} must be {1}"
+msgstr "يجب أن تكون عملة {0} هي {1}"
 
 #. source: frappe
 msgid "Currency list stores the currency value, its symbol and fraction unit"
@@ -18690,7 +18599,7 @@ msgstr "اعدادات اللوحة الرئيسية"
 
 #. source: frappe
 msgid "Dashboard View"
-msgstr "عرض لوحة التحكم"
+msgstr "لوحة المعلومات"
 
 #. source: frappe
 msgid "Dashboards"
@@ -21587,7 +21496,7 @@ msgstr "حالة نوع المستند"
 
 #. source: frappe
 msgid "DocType View"
-msgstr "طريقة عرض DocType"
+msgstr "طريقة عرض نوع المستند"
 
 #. source: erpnext
 msgid "DocType can be one of them {0}"
@@ -23720,7 +23629,7 @@ msgstr ""
 
 #. source: erpnext
 msgid "Employee cannot report to himself."
-msgstr "الموظف لا يمكن أن يقدم تقريرا إلى نفسه.\\n<br>\\nEmployee cannot report to himself."
+msgstr "لا يمكن أن يكون الموظف مسؤولًا عن نفسه."
 
 #. source: erpnext
 msgid "Employee is required"
@@ -24992,12 +24901,7 @@ msgid ""
 "target=\"_blank\" href=\"https://qz.io/download/\">Click here to Download and install"
 " QZ Tray</a>.<br> <a target=\"_blank\" href=\"https://erpnext.com/docs/user/manual/en"
 "/setting-up/print/raw-printing\">Click here to learn more about Raw Printing</a>."
-msgstr ""
-"خطأ في الاتصال بـ QZ Tray Application ... <br><br> تحتاج إلى تثبيت تطبيق QZ Tray "
-"وتشغيله لاستخدام ميزة Raw Print. <br><br> <a href=\"https://qz.io/download/\" "
-"target=\"_blank\">انقر هنا لتنزيل وتثبيت QZ Tray</a> . <br> <a "
-"href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\" "
-"target=\"_blank\">انقر هنا لمعرفة المزيد عن الطباعة الخام</a> ."
+msgstr "خطأ في الاتصال بـ تطبيق QZ Tray ... <br><br> تحتاج إلى تثبيت تطبيق QZ Tray وتشغيله لاستخدام ميزة الطباعة المباشرة. <br><br> <a href=\"https://qz.io/download/\" target=\"_blank\">انقر هنا لتنزيل وتثبيت QZ Tray</a> . <br> <a href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\" target=\"_blank\">انقر هنا لمعرفة المزيد عن الطباعة المباشرة</a> ."
 
 #. source: frappe
 msgid "Error connecting via IMAP/POP3: {e}"
@@ -25355,11 +25259,7 @@ msgid ""
 "then automatic batch number will be created based on this series. If you always want "
 "to explicitly mention Batch No for this item, leave this blank. Note: this setting "
 "will take priority over the Naming Series Prefix in Stock Settings."
-msgstr ""
-"مثال: ABCD. #####. إذا تم ضبط المسلسل ولم يتم ذكر رقم الدفعة في المعاملات ، فسيتم "
-"إنشاء رقم الدفعة تلقائيًا استنادًا إلى هذه السلسلة. إذا كنت تريد دائمًا الإشارة صراحة"
-" إلى Batch No لهذا العنصر ، فاترك هذا فارغًا. ملاحظة: سيأخذ هذا الإعداد الأولوية على "
-"بادئة Naming Series في إعدادات المخزون."
+msgstr "مثال: ABCD.#####. إذا تم تعيين السلسلة ولم يُذكر رقم الدفعة في المعاملات، فسيُنشأ رقم الدفعة تلقائيًا بناءً على هذه السلسلة. إذا كنت تريد إدخال رقم الدفعة صراحةً دائمًا لهذا الصنف، فاترك هذا الحقل فارغًا. ملاحظة: لهذا الإعداد أولوية على بادئة سلسلة التسمية في إعدادات المخزون."
 
 #. source: erpnext
 msgid "Example: If the transaction amount is 200, then this will be calculated as {} = {}"
@@ -28140,9 +28040,7 @@ msgstr ""
 msgid ""
 "For help see <a href=\"https://frappeframework.com/docs/user/en/guides/portal-"
 "development/web-forms\" target=\"_blank\">Client Script API and Examples</a>"
-msgstr ""
-"للحصول على المساعدة ، راجع <a href=\"https://frappeframework.com/docs/user/en/guides"
-"/portal-development/web-forms\" target=\"_blank\">أمثلة و API Script</a>"
+msgstr "للمساعدة، راجع <a href=\"https://frappeframework.com/docs/user/en/guides/portal-development/web-forms\" target=\"_blank\">واجهة برمجة نص العميل وأمثلتها</a>."
 
 #. source: erpnext
 msgid "For how much spent = 1 Loyalty Point"
@@ -29627,7 +29525,7 @@ msgstr "جت هب (GITHUB)"
 
 #. source: frappe
 msgid "Github flavoured markdown syntax"
-msgstr "صيغة ماركداون بنكهة Github"
+msgstr "صياغة Markdown بنمط GitHub"
 
 #. source: erpnext
 msgid "Give free item for every N quantity"
@@ -29960,7 +29858,7 @@ msgstr ""
 
 #. source: frappe
 msgid "Google Snippet Preview"
-msgstr "معاينة Google Snippet"
+msgstr "معاينة مقتطف Google"
 
 #. source: erpnext
 msgid "Government"
@@ -32011,9 +31909,7 @@ msgstr ""
 msgid ""
 "If enabled, users who login from Restricted IP Address, won't be prompted for Two "
 "Factor Auth"
-msgstr ""
-"في حالة التمكين ، لن تتم مطالبة المستخدمين الذين يقومون بتسجيل الدخول من عنوان IP "
-"المقيد بـ Two Factor Auth"
+msgstr "عند التمكين، لن يُطلب من المستخدمين الذين يسجلون الدخول من عنوان IP مقيّد إجراء المصادقة الثنائية."
 
 #. source: frappe
 msgid ""
@@ -32632,7 +32528,7 @@ msgstr "رابط الصورة"
 
 #. source: frappe
 msgid "Image View"
-msgstr "عرض الصورة"
+msgstr "الصور"
 
 #. source: frappe
 msgid "Image Width"
@@ -34879,7 +34775,7 @@ msgstr "تنسيق غير صالح. التنسيقات المدعومة هي {0}
 msgid ""
 "Invalid function argument type: {0}. Only strings, numbers, lists, and None are "
 "allowed."
-msgstr "نوع وسيط وظيفة غير صالح: {0}. يُسمح فقط بالنصوص والأرقام والقوائم و None."
+msgstr "نوع وسيط الدالة غير صالح: {0}. يُسمح فقط بالنصوص والأرقام والقوائم والقيمة None."
 
 #. source: frappe
 msgid "Invalid input"
@@ -35258,7 +35154,7 @@ msgstr "تم جلب الفواتير والمدفوعات وتخصيصها"
 
 #. source: erpnext
 msgid "Invoicing"
-msgstr "الفوترة"
+msgstr "الفواتير"
 
 #. source: erpnext
 msgid "Invoicing Features"
@@ -36182,10 +36078,7 @@ msgstr "معدل ضريبة الصنف"
 
 #. source: erpnext
 msgid "Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable"
-msgstr ""
-"ضريبة البند يجب أن يكون الصف {0} حسابا من نوع الضريبة أو الدخل أو المصاريف أو "
-"الرسوم\\n<br>\\nItem Tax Row {0} must have account of type Tax or Income or Expense "
-"or Chargeable"
+msgstr "يجب أن يحتوي صف ضريبة الصنف {0} على حساب من نوع ضريبة أو دخل أو مصروف أو قابل للتحميل."
 
 #. source: erpnext
 msgid "Item Tax Row {0}: Account must belong to Company - {1}"
@@ -37049,7 +36942,7 @@ msgstr "إعدادات كانبان"
 
 #. source: frappe
 msgid "Kanban View"
-msgstr "عرض كانبان"
+msgstr "لوحة كانبان"
 
 #. source: frappe
 msgid "Keep Closed"
@@ -38719,7 +38612,7 @@ msgstr "إعدادات القائمة"
 
 #. source: frappe
 msgid "List View"
-msgstr "عرض القائمة"
+msgstr "القائمة"
 
 #. source: frappe
 msgid "List View Settings"
@@ -39737,7 +39630,7 @@ msgstr "قسم إلزامي"
 
 #. source: frappe
 msgid "Mandatory field: set role for"
-msgstr "الحقل إلزامي :تعيين الدور ل\\n<br>\\nMandatory field: set role for"
+msgstr "حقل إلزامي: عيّن الدور لـ"
 
 #. source: frappe
 msgid "Mandatory field: {0}"
@@ -40849,7 +40742,7 @@ msgstr "وصف الميتا"
 
 #. source: frappe
 msgid "Meta image"
-msgstr "صورة البيانات الوصفية (Meta)"
+msgstr "صورة البيانات الوصفية"
 
 #. source: frappe
 msgid "Meta title"
@@ -41371,7 +41264,7 @@ msgstr "طريقة السفر"
 
 #. source: hrms
 msgid "Mode of payment is required to make a payment"
-msgstr "طريقه الدفع مطلوبه لإجراء الدفع\\n<br>\\nMode of payment is required to make a payment"
+msgstr "طريقة الدفع مطلوبة لإجراء الدفعة."
 
 #. source: erpnext
 msgid "Model"
@@ -41949,15 +41842,7 @@ msgid ""
 "<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - Replace "
 "all braced words (fieldnames, date words (DD, MM, YY), series) with their value. "
 "Outside braces, any characters can be used.</li></ol>"
-msgstr ""
-"خيارات التسمية:\n"
-"<ol><li><b>field:[fieldname]</b> - حسب الحقل</li><li><b>naming_series:</b> - حسب "
-"سلسلة التسمية (يجب أن يكون الحقل المسمى naming_series موجودًا)</li><li><b>Prompt</b> "
-"- مطالبة المستخدم باسم</li><li><b>[series]</b> - سلسلة حسب البادئة (مفصولة بنقطة)؛ "
-"على سبيل المثال PRE.#####</li>\n"
-"<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - استبدال "
-"جميع الكلمات بين الأقواس (أسماء الحقول، كلمات التاريخ (DD، MM، YY)، السلاسل) بقيمتها."
-" خارج الأقواس، يمكن استخدام أي أحرف.</li></ol>"
+msgstr "خيارات التسمية:\n<ol><li><b>field:[fieldname]</b> - حسب الحقل</li><li><b>naming_series:</b> - حسب سلسلة التسمية (يجب أن يكون الحقل المسمى naming_series موجودًا)</li><li><b>Prompt</b> - مطالبة المستخدم بإدخال اسم</li><li><b>[series]</b> - سلسلة حسب البادئة (مفصولة بنقطة)؛ على سبيل المثال PRE.#####</li>\n<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - استبدال جميع الكلمات بين الأقواس (أسماء الحقول، كلمات التاريخ (DD، MM، YY)، السلاسل) بقيمتها. خارج الأقواس، يمكن استخدام أي أحرف.</li></ol>"
 
 #. source: frappe
 msgid "Naming Rule"
@@ -42033,7 +41918,7 @@ msgstr "عنصر Navbar"
 
 #. source: frappe
 msgid "Navbar Settings"
-msgstr "إعدادات Navbar"
+msgstr "إعدادات شريط التنقل"
 
 #. source: frappe
 msgid "Navbar Template"
@@ -42622,7 +42507,7 @@ msgstr ""
 
 #. source: frappe
 msgid "New line separated list of scope values."
-msgstr "قائمة مفصولة بأسطر جديدة لقيم النطاق (scope)."
+msgstr "قائمة بقيم النطاق، تفصل بينها أسطر جديدة."
 
 #. source: frappe
 msgid ""
@@ -43748,7 +43633,7 @@ msgstr "لم يتم العثور على طلبات المواد المعلقة �
 
 #. source: frappe
 msgid "No permission for {0}"
-msgstr "لا يوجد صلاحية لـ {0}<br>No permission for {0}"
+msgstr "لا توجد صلاحية للوصول إلى {0}."
 
 #. source: frappe
 msgctxt "{0} = verb, {1} = object"
@@ -44277,9 +44162,7 @@ msgstr "غير مصرح به لأن {0} يتجاوز الحدود"
 
 #. source: erpnext
 msgid "Not authorized to edit frozen Account {0}"
-msgstr ""
-"غير مصرح له بتحرير الحساب المجمد {0}\\n<br>\\nNot authorized to edit frozen Account "
-"{0}"
+msgstr "غير مصرح لك بتعديل الحساب المجمّد {0}"
 
 #. source: frappe
 msgid "Not configured"
@@ -45790,7 +45673,7 @@ msgstr "الرصيد الافتتاحي لحقوق الملكية"
 
 #. source: hrms
 msgid "Opening Balances"
-msgstr "أرصدة افتتاحية"
+msgstr "الأرصدة الافتتاحية"
 
 #. source: erpnext
 msgid "Opening Date"
@@ -47369,9 +47252,7 @@ msgstr "نوع الحساب المدفوع إليه"
 
 #. source: erpnext
 msgid "Paid amount + Write Off Amount can not be greater than Grand Total"
-msgstr ""
-"المبلغ المدفوع + المبلغ المشطوب لا يمكن ان يكون أكبر من المجموع الكلي\\n<br>\\nPaid "
-"amount + Write Off Amount can not be greater than Grand Total"
+msgstr "لا يمكن أن يتجاوز مجموع المبلغ المدفوع ومبلغ الشطب المجموع الإجمالي."
 
 #. source: erpnext
 msgid "Paid to"
@@ -48479,9 +48360,7 @@ msgstr "نوع الدفع"
 
 #. source: erpnext
 msgid "Payment Type must be one of Receive, Pay and Internal Transfer"
-msgstr ""
-"نوع الدفع يجب أن يكون إما استلام , دفع أو مناقلة داخلية\\n<br>\\nPayment Type must be"
-" one of Receive, Pay and Internal Transfer"
+msgstr "يجب أن يكون نوع الدفع أحد الخيارات: استلام أو دفع أو تحويل داخلي."
 
 #. source: erpnext
 msgid "Payment URL"
@@ -50037,7 +49916,7 @@ msgstr "الرجاء إدخال معرف الموظف الخاص بشخص الم
 
 #. source: erpnext
 msgid "Please enter Expense Account"
-msgstr "الرجاء إدخال حساب النفقات\\n<br>\\nPlease enter Expense Account"
+msgstr "يُرجى إدخال حساب المصروفات."
 
 #. source: erpnext
 msgid "Please enter Item Code to get Batch Number"
@@ -50552,7 +50431,7 @@ msgstr "الرجاء تحديد تاريخ النشر أولا\\n<br>\\nPlease s
 
 #. source: erpnext
 msgid "Please select Price List"
-msgstr "الرجاء اختيار قائمة الأسعار\\n<br>\\nPlease select Price List"
+msgstr "يرجى اختيار قائمة الأسعار."
 
 #. source: erpnext
 msgid "Please select Qty against item {0}"
@@ -51090,9 +50969,7 @@ msgstr "يرجى تعيين قائمة عطلات افتراضية للشركة 
 
 #. source: erpnext
 msgid "Please set a default Holiday List for Employee {0} or Company {1}"
-msgstr ""
-"يرجى تعيين قائمة العطل الافتراضية للموظف {0} أو الشركة {1}\\n<br>\\nPlease set a "
-"default Holiday List for Employee {0} or Company {1}"
+msgstr "يرجى تعيين قائمة عُطَل افتراضية للموظف {0} أو الشركة {1}."
 
 #. source: frappe
 msgid "Please set a printer mapping for this print format in the Printer Settings"
@@ -51138,9 +51015,7 @@ msgstr "يرجى تعيين التكلفة الإجمالية على الشرك�
 
 #. source: erpnext
 msgid "Please set default Cash or Bank account in Mode of Payment {0}"
-msgstr ""
-"الرجاء تحديد الحساب البنكي أو النقدي الافتراضي في نوع الدفع\\n<br>\\nPlease set "
-"default Cash or Bank account in Mode of Payment {0}"
+msgstr "يُرجى تعيين حساب نقدي أو بنكي افتراضي في طريقة الدفع {0}."
 
 #. source: erpnext
 msgid "Please set default Cash or Bank account in Mode of Payment {}"
@@ -52372,9 +52247,7 @@ msgstr "طباعة المستند"
 
 #. source: erpnext
 msgid "Print settings updated in respective print format"
-msgstr ""
-"تم تحديث إعدادات الطباعة في تنسيق الطباعة الخاصة\\n<br>\\nPrint settings updated in "
-"respective print format"
+msgstr "تم تحديث إعدادات الطباعة في تنسيق الطباعة المعني."
 
 #. source: erpnext
 msgid "Print taxes with zero amount"
@@ -53145,10 +53018,7 @@ msgid ""
 "Provide a list of allowed Doctypes for file uploads. Each line should contain one "
 "allowed Doctype. If unset, uploads to all doctypes are allowed. Example: "
 "<br>User<br>Item<br>Quotation"
-msgstr ""
-"أدخل قائمة بأنواع المستندات المسموح بها لرفع الملفات. يجب أن يحتوي كل سطر على نوع "
-"مستند واحد. إذا تُرك فارغًا، يُسمح بالرفع لجميع الأنواع. مثال: "
-"<br>User<br>Item<br>Quotation"
+msgstr "أدخل قائمة بأنواع المستندات المسموح بها لرفع الملفات. يجب أن يحتوي كل سطر على نوع مستند واحد. إذا تُرك فارغًا، يُسمح بالرفع لجميع أنواع المستندات. مثال: <br>User<br>Item<br>Quotation"
 
 #. source: frappe
 msgid ""
@@ -53346,7 +53216,7 @@ msgstr "مصروف الشراء للصنف {0}"
 
 #. source: erpnext
 msgid "Purchase Invoice"
-msgstr "فاتورة شراء"
+msgstr "فاتورة مشتريات"
 
 #. source: erpnext
 msgid "Purchase Invoice Advance"
@@ -56323,7 +56193,7 @@ msgstr "نوع مستند مرجع التقرير"
 
 #. source: frappe
 msgid "Report Reference Doctype"
-msgstr "تقرير مرجع Doctype"
+msgstr "نوع المستند المرجعي للتقرير"
 
 #. source: erpnext
 msgid "Report Template"
@@ -56335,11 +56205,11 @@ msgstr "نوع التقرير"
 
 #. source: erpnext
 msgid "Report Type is mandatory"
-msgstr "نوع التقرير إلزامي\\n<br>\\nReport Type is mandatory"
+msgstr "نوع التقرير إلزامي."
 
 #. source: frappe
 msgid "Report View"
-msgstr "عرض التقرير"
+msgstr "التقرير"
 
 #. source: erpnext
 msgid "Report an Issue"
@@ -57251,7 +57121,7 @@ msgstr "استعادة ضوابط الأصل"
 
 #. source: frappe
 msgid "Restore to default settings?"
-msgstr "استعادة الإعدادات الافتراضية؟\\n<br>\\n?Restore to default settings"
+msgstr "هل تريد استعادة الإعدادات الافتراضية؟"
 
 #. source: frappe
 msgid "Restored"
@@ -57751,7 +57621,7 @@ msgstr "الدور المسموح له بتجاوز قيد الفوترة الز
 
 #. source: hrms
 msgid "Role Allowed to Create Backdated Leave Application"
-msgstr "الدور المسموح به لإنشاء تطبيق إجازة Backdated"
+msgstr "الدور المسموح له بإنشاء طلب إجازة بأثر رجعي"
 
 #. source: erpnext
 msgid "Role Allowed to Create/Edit Back-dated Transactions"
@@ -59402,9 +59272,7 @@ msgstr "الصف {0}: شرط الدفع إلزامي"
 
 #. source: erpnext
 msgid "Row {0}: Payment against Sales/Purchase Order should always be marked as advance"
-msgstr ""
-"الصف {0}: الدفع لطلب الشراء/البيع يجب أن يكون دائما معلم كمتقدم\\n<br>\\nRow {0}: "
-"Payment against Sales/Purchase Order should always be marked as advance"
+msgstr "الصف {0}: يجب دائمًا تحديد الدفعة المسددة مقابل أمر بيع أو شراء كدفعة مقدمة."
 
 #. source: erpnext
 msgid "Row {0}: Please check 'Is Advance' against Account {1} if this is an advance entry."
@@ -63065,7 +62933,7 @@ msgstr "إجمالي مبلغ مصروفات الخدمة"
 
 #. source: hrms
 msgid "Service Expenses"
-msgstr "مصاريف الخدمة"
+msgstr "مصروفات الخدمة"
 
 #. source: hrms
 msgid "Service Item"
@@ -63868,7 +63736,7 @@ msgstr "مشاركة دفتر الأستاذ"
 
 #. source: erpnext
 msgid "Share Management"
-msgstr "إدارة المشاركة"
+msgstr "إدارة المساهمين"
 
 #. source: erpnext
 msgid "Share Transfer"
@@ -67121,7 +66989,7 @@ msgstr "تقديم {0}"
 
 #. source: erpnext
 msgid "Subscription"
-msgstr "اشتراك"
+msgstr "الاشتراك"
 
 #. source: erpnext
 msgid "Subscription End Date"
@@ -71778,9 +71646,7 @@ msgstr "للسماح بمزيد من التقارير، قم بتحديث الح
 msgid ""
 "To allow over billing, update \"Over Billing Allowance\" in Accounts Settings or the "
 "Item."
-msgstr ""
-"للسماح بزيادة الفواتير ، حدّث \"Over Billing Allowance\" في إعدادات الحسابات أو "
-"العنصر."
+msgstr "للسماح بتجاوز قيمة الفوترة، حدّث «نسبة السماح بتجاوز الفوترة» في إعدادات الحسابات أو في الصنف."
 
 #. source: erpnext
 msgid "To allow over ordering, update \"Over Order Allowance\" in Buying Settings."
@@ -73055,7 +72921,7 @@ msgstr "لا يمكن أن يكون إجمالي المدفوعات أكبر م�
 
 #. source: hrms
 msgid "Total percentage against cost centers should be 100"
-msgstr "يجب أن يكون إجمالي النسبة المئوية مقابل مراكز التكلفة 100"
+msgstr "يجب أن يساوي إجمالي النسب المئوية الموزعة على مراكز التكلفة 100"
 
 #. source: erpnext
 msgid "Total quantity in delivery schedule cannot be greater than the item quantity"
@@ -75420,15 +75286,15 @@ msgstr "يُستخدم مع نموذج التقرير المالي"
 
 #. source: frappe
 msgid "User"
-msgstr "المستعمل"
+msgstr "المستخدم"
 
 #. source: frappe
 msgid "User "
-msgstr "المستعمل"
+msgstr "المستخدم"
 
 #. source: frappe
 msgid "User '{0}' already has the role '{1}'"
-msgstr "المستخدم{0} يملك بالفعل الدور {1}<br>User '{0}' already has the role '{1}'"
+msgstr "المستخدم «{0}» لديه الدور «{1}» بالفعل."
 
 #. source: frappe
 msgid "User Activity Report"
@@ -75681,7 +75547,7 @@ msgstr "المستخدم {0} لا يمكن إعادة تسمية"
 
 #. source: erpnext
 msgid "User {0} does not exist"
-msgstr "المستخدم {0} غير موجود\\n<br>\\nUser {0} does not exist"
+msgstr "المستخدم {0} غير موجود."
 
 #. source: frappe
 msgid "User {0} does not have access to this document"
@@ -75757,7 +75623,7 @@ msgstr "اسم المستخدم {0} موجود بالفعل"
 
 #. source: frappe
 msgid "Users"
-msgstr "المستخدمين"
+msgstr "المستخدمون"
 
 #. source: frappe
 msgid ""
@@ -75961,7 +75827,7 @@ msgstr "تحقق من صحة الحقل"
 
 #. source: frappe
 msgid "Validate Frappe Mail Settings"
-msgstr "التحقق من صحة إعدادات Frappe Mail"
+msgstr "التحقق من إعدادات بريد Frappe"
 
 #. source: erpnext
 msgid "Validate Material Transfer warehouses"
@@ -77845,7 +77711,7 @@ msgstr ""
 
 #. source: frappe
 msgid "Which view of the associated DocType should this shortcut take you to?"
-msgstr "ما هي طريقة عرض DocType المرتبطة التي يجب أن يأخذك إليها هذا الاختصار؟"
+msgstr "إلى أي طريقة عرض لنوع المستند المرتبط يجب أن ينقلك هذا الاختصار؟"
 
 #. source: erpnext
 msgid ""
@@ -78446,9 +78312,7 @@ msgstr "محطة العمل ساعة العمل"
 
 #. source: erpnext
 msgid "Workstation is closed on the following dates as per Holiday List: {0}"
-msgstr ""
-"محطة العمل مغلقة في التواريخ التالية وفقا لقائمة العطل: {0}\\n<br>\\nWorkstation is "
-"closed on the following dates as per Holiday List: {0}"
+msgstr "محطة العمل مغلقة في التواريخ التالية وفقًا لقائمة العُطَل: {0}"
 
 #. source: erpnext
 msgid "Workstations"
@@ -79102,7 +78966,7 @@ msgstr "لا يمكنك تغيير السعر إذا تم ذكر قائمة ال
 
 #. source: frappe
 msgid "You cannot create a dashboard chart from single DocTypes"
-msgstr "لا يمكنك إنشاء مخطط لوحة معلومات من أنواع DocTypes الفردية"
+msgstr "لا يمكنك إنشاء مخطط لوحة معلومات من أنواع مستندات مفردة."
 
 #. source: erpnext
 msgid "You cannot create a {0} within the closed Accounting Period {1}"
@@ -82999,3 +82863,32 @@ msgstr "{} {} مفتوح لهذا المنصب."
 msgid "← Back to upload files"
 msgstr "← رجوع لتحميل الملفات"
 
+
+
+#. source: erpnext
+msgid "Automatically Add Taxes from Taxes and Charges Template"
+msgstr "إضافة الضرائب والرسوم تلقائيًا من قالب الضرائب والرسوم"
+
+#. source: erpnext
+msgid "Fetch Valuation Rate for Internal Transaction"
+msgstr "جلب معدل التقييم للمعاملة الداخلية"
+
+#. source: erpnext
+msgid "Internal Supplier Accounting"
+msgstr "محاسبة المورد الداخلي"
+
+#. source: erpnext
+msgid "Opening stock creation has been queued and will be created in the background. Please check the stock entry after some time."
+msgstr "تمت جدولة إنشاء المخزون الافتتاحي، وسيتم إنشاؤه في الخلفية. يُرجى التحقق من حركة المخزون بعد قليل."
+
+#. source: erpnext
+msgid "Use Legacy Budget Controller"
+msgstr "استخدام وحدة التحكم القديمة في الميزانية"
+
+#. source: erpnext
+msgid "Allow User to Edit Warehouse"
+msgstr "السماح للمستخدم بتعديل المستودع"
+
+#. source: erpnext
+msgid "Subcontracting Inward Settings"
+msgstr "إعدادات عمليات التعاقد من الباطن الواردة"

@@ -19,3 +19,6 @@ Purchase Invoice,فاتورة مشتريات,,,Buying,Document title,approved,,
 Payment Entry,سند دفع أو قبض,قيد دفع,إدخال الدفع,Accounting,Depends on payment direction,needs-context,,
 Stock Entry,حركة مخزون,قيد مخزون,,Stock,Document title,needs-context,,
 Write Off,شطب,إعدام,,Accounting,Debt or amount adjustment,needs-context,,
+Ledger Account,حساب أستاذ,حساب ترحيل,دفتر الأستاذ,Accounting,Posting account in Chart of Accounts,accounting-review,,ERPNext distinguishes posting ledgers from group accounts
+Expense Account,حساب المصروفات,حساب النفقات,,Accounting,Expense account field,accounting-review,,
+Closing Account,حساب الإقفال,الحساب الختامي,,Accounting,Period closing account,accounting-review,,

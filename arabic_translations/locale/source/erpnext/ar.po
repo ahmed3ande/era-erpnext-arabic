@@ -3412,10 +3412,7 @@ msgstr "قيمة الحساب"
 msgid ""
 "Account balance already in Credit, you are not allowed to set 'Balance Must Be' as "
 "'Debit'"
-msgstr ""
-"رصيد الحساب بالفعل دائن ، لا يسمح لك لتعيين ' الرصيد يجب ان يكون ' ك ' مدين "
-"'\\n<br>\\nAccount balance already in Credit, you are not allowed to set 'Balance "
-"Must Be' as 'Debit'"
+msgstr "رصيد الحساب دائن بالفعل، لذلك لا يمكن ضبط «يجب أن يكون الرصيد» على «مدين»."
 
 #: erpnext/accounts/doctype/account/account.py:322
 msgid ""
@@ -3452,15 +3449,11 @@ msgstr "الحساب غير موجود"
 
 #: erpnext/accounts/doctype/account/account.py:427
 msgid "Account with child nodes cannot be converted to ledger"
-msgstr ""
-"لا يمكن تحويل الحساب إلى دفتر الأستاذ لأن لديه حسابات فرعية\\n<br>\\nAccount with "
-"child nodes cannot be converted to ledger"
+msgstr "لا يمكن تحويل حساب يحتوي على حسابات فرعية إلى حساب أستاذ"
 
 #: erpnext/accounts/doctype/account/account.py:279
 msgid "Account with child nodes cannot be set as ledger"
-msgstr ""
-"الحساب لديه حسابات فرعية لا يمكن إضافته لدفتر الأستاذ.\\n<br>\\nAccount with child "
-"nodes cannot be set as ledger"
+msgstr "لا يمكن تعيين الحساب كحساب أستاذ لوجود حسابات فرعية تحته."
 
 #: erpnext/accounts/doctype/account/account.py:438
 msgid "Account with existing transaction can not be converted to group."
@@ -3468,16 +3461,12 @@ msgstr "لا يمكن تحويل حساب جرت عليه أي عملية إلى
 
 #: erpnext/accounts/doctype/account/account.py:467
 msgid "Account with existing transaction can not be deleted"
-msgstr ""
-"الحساب لديه معاملات موجودة لا يمكن حذفه\\n<br>\\nAccount with existing transaction "
-"can not be deleted"
+msgstr "لا يمكن حذف الحساب لوجود معاملات مسجلة عليه."
 
 #: erpnext/accounts/doctype/account/account.py:273
 #: erpnext/accounts/doctype/account/account.py:429
 msgid "Account with existing transaction cannot be converted to ledger"
-msgstr ""
-"لا يمكن تحويل الحساب مع الحركة الموجودة إلى دفتر الأستاذ\\n<br>\\nAccount with "
-"existing transaction cannot be converted to ledger"
+msgstr "لا يمكن تحويل الحساب إلى حساب أستاذ لوجود معاملات مسجلة عليه."
 
 #: erpnext/accounts/doctype/tax_withholding_category/tax_withholding_category.py:79
 #, python-brace-format
@@ -3502,7 +3491,7 @@ msgstr "الحساب {0} لا ينتمي إلى الشركة {1}"
 #: erpnext/setup/doctype/company/company.py:284
 #, python-brace-format
 msgid "Account {0} does not belong to company: {1}"
-msgstr "الحساب {0} لا يتنمى للشركة {1}\\n<br>\\nAccount {0} does not belong to company: {1}"
+msgstr "الحساب {0} لا ينتمي إلى الشركة: {1}"
 
 #: erpnext/accounts/doctype/account/account.py:587
 #, python-brace-format
@@ -3547,7 +3536,7 @@ msgstr "الحساب {0} معطّل."
 #: erpnext/accounts/doctype/gl_entry/gl_entry.py:428
 #, python-brace-format
 msgid "Account {0} is frozen"
-msgstr "الحساب {0} مجمد\\n<br>\\nAccount {0} is frozen"
+msgstr "الحساب {0} مجمّد"
 
 #: erpnext/controllers/accounts_controller.py:1467
 #, python-brace-format
@@ -3869,9 +3858,7 @@ msgstr "قيد محاسبي لـ {0}"
 #: erpnext/controllers/accounts_controller.py:2421
 #, python-brace-format
 msgid "Accounting Entry for {0}: {1} can only be made in currency: {2}"
-msgstr ""
-"المدخل المحاسبي ل {0}: {1} يمكن أن يكون فقط بالعملة {1}.\\n<br>\\nAccounting Entry "
-"for {0}: {1} can only be made in currency: {2}"
+msgstr "لا يمكن إجراء القيد المحاسبي لـ {0}: {1} إلا بالعملة: {2}"
 
 #: erpnext/accounts/doctype/invoice_discounting/invoice_discounting.js:193
 #: erpnext/assets/doctype/asset/asset.js:182
@@ -5327,16 +5314,12 @@ msgstr "مقابل حساب الدخل"
 #: erpnext/accounts/doctype/payment_entry/payment_entry.py:776
 #, python-brace-format
 msgid "Against Journal Entry {0} does not have any unmatched {1} entry"
-msgstr ""
-"قيد اليومية المقابل {0} لا يحتوى مدخل {1} غير مطابق\\n<br>\\nAgainst Journal Entry "
-"{0} does not have any unmatched {1} entry"
+msgstr "لا يحتوي قيد اليومية المقابل {0} على أي حركة {1} غير مُسوّاة."
 
 #: erpnext/accounts/doctype/gl_entry/gl_entry.py:393
 #, python-brace-format
 msgid "Against Journal Entry {0} is already adjusted against some other voucher"
-msgstr ""
-"مدخل قيد اليومية {0} تم تعديله بالفعل لقسيمة أخرى\\n<br>\\nAgainst Journal Entry {0} "
-"is already adjusted \\nagainst some other voucher"
+msgstr "تمت تسوية قيد اليومية المقابل {0} بالفعل مقابل مستند آخر."
 
 #. Label of the against_pick_list (Link) field in DocType 'Delivery Note Item'
 #: erpnext/stock/doctype/delivery_note_item/delivery_note_item.json
@@ -6097,9 +6080,8 @@ msgstr "السماح للمستخدم بتعديل السعر"
 
 #. Label of the allow_warehouse_change (Check) field in DocType 'POS Profile'
 #: erpnext/accounts/doctype/pos_profile/pos_profile.json
-#, fuzzy
 msgid "Allow User to Edit Warehouse"
-msgstr "السماح للمستخدم بتعديل السعر"
+msgstr "السماح للمستخدم بتعديل المستودع"
 
 #. Label of the allow_different_uom (Check) field in DocType 'Item Variant
 #. Settings'
@@ -7861,9 +7843,7 @@ msgstr "يجب إدخال صنف واحد على الأقل بكمية سالب�
 #: erpnext/accounts/doctype/pos_invoice/pos_invoice.py:530
 #: erpnext/accounts/doctype/sales_invoice/sales_invoice.py:545
 msgid "At least one mode of payment is required for POS invoice."
-msgstr ""
-"يلزم وضع واحد نمط واحد للدفع لفاتورة نقطة البيع.\\n<br>\\nAt least one mode of "
-"payment is required for POS invoice."
+msgstr "يلزم تحديد طريقة دفع واحدة على الأقل لفاتورة نقطة البيع."
 
 #: erpnext/setup/doctype/terms_and_conditions/terms_and_conditions.py:34
 msgid "At least one of the Applicable Modules should be selected"
@@ -8240,9 +8220,8 @@ msgstr "إضافة الضرائب والرسوم تلقائيا من قالب ا
 #. Label of the add_taxes_from_taxes_and_charges_template (Check) field in
 #. DocType 'Accounts Settings'
 #: erpnext/accounts/doctype/accounts_settings/accounts_settings.json
-#, fuzzy
 msgid "Automatically Add Taxes from Taxes and Charges Template"
-msgstr "إضافة الضرائب والرسوم تلقائيا من قالب الضريبة البند"
+msgstr "إضافة الضرائب والرسوم تلقائيًا من قالب الضرائب والرسوم"
 
 #. Label of the create_new_batch (Check) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
@@ -10324,7 +10303,7 @@ msgstr "حجم الشريحة"
 #: erpnext/accounts/report/budget_variance_report/budget_variance_report.py:448
 #: erpnext/accounts/workspace/invoicing/invoicing.json
 msgid "Budget"
-msgstr "ميزانية"
+msgstr "الميزانية"
 
 #. Name of a DocType
 #: erpnext/accounts/doctype/budget_account/budget_account.json
@@ -10402,7 +10381,7 @@ msgstr "تقرير إنحرافات الموازنة"
 #: erpnext/accounts/doctype/budget/budget.py:155
 #, python-brace-format
 msgid "Budget cannot be assigned against Group Account {0}"
-msgstr "لايمكن أسناد الميزانية للمجموعة Account {0}"
+msgstr "لا يمكن إسناد الميزانية إلى حساب المجموعة {0}."
 
 #: erpnext/accounts/doctype/budget/budget.py:160
 #, python-brace-format
@@ -11450,9 +11429,7 @@ msgstr "النقدية الحاضرة"
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:322
 msgid "Cash or Bank Account is mandatory for making payment entry"
-msgstr ""
-"الحساب النقدي أو البنكي مطلوب لعمل مدخل بيع <br>Cash or Bank Account is mandatory for"
-" making payment entry"
+msgstr "يجب تحديد حساب نقدي أو بنكي لإنشاء سند دفع."
 
 #. Label of the cash_bank_account (Link) field in DocType 'POS Invoice'
 #. Label of the cash_bank_account (Link) field in DocType 'Purchase Invoice'
@@ -12126,9 +12103,7 @@ msgstr "اقفال حساب المركز الرئيسي"
 #: erpnext/accounts/doctype/period_closing_voucher/period_closing_voucher.py:123
 #, python-brace-format
 msgid "Closing Account {0} must be of type Liability / Equity"
-msgstr ""
-"يجب ان يكون الحساب الختامي {0} من النوع متطلبات/الأسهم\\n<br>\\nClosing Account {0} "
-"must be of type Liability / Equity"
+msgstr "يجب أن يكون حساب الإقفال {0} من نوع التزامات أو حقوق ملكية."
 
 #. Label of the closing_amount (Currency) field in DocType 'POS Closing Entry
 #. Detail'
@@ -14044,9 +14019,7 @@ msgstr "مركز التكلفة جزء من تخصيص مركز التكلفة،
 #: erpnext/stock/doctype/purchase_receipt/purchase_receipt.py:896
 #, python-brace-format
 msgid "Cost Center is required in row {0} in Taxes table for type {1}"
-msgstr ""
-"مركز التكلفة مطلوب في الصف {0} في جدول الضرائب للنوع {1}\\n<br>\\nCost Center is "
-"required in row {0} in Taxes table for type {1}"
+msgstr "مركز التكلفة مطلوب في الصف {0} من جدول الضرائب للنوع {1}"
 
 #: erpnext/accounts/doctype/cost_center/cost_center.py:72
 msgid "Cost Center with Allocation records can not be converted to a group"
@@ -14054,9 +14027,7 @@ msgstr "لا يمكن تحويل مركز التكلفة الذي يحتوي ع�
 
 #: erpnext/accounts/doctype/cost_center/cost_center.py:78
 msgid "Cost Center with existing transactions can not be converted to group"
-msgstr ""
-"مركز التكلفة لديه حركات مالية, لا يمكن تحويه لمجموعة\\n<br>\\nCost Center with "
-"existing transactions can not be converted to group"
+msgstr "لا يمكن تحويل مركز التكلفة إلى مجموعة لوجود معاملات مسجلة عليه."
 
 #: erpnext/accounts/doctype/cost_center/cost_center.py:63
 msgid "Cost Center with existing transactions can not be converted to ledger"
@@ -15026,7 +14997,7 @@ msgstr "لا يمكن تغيير العملة بعد إجراء إدخالات �
 #: erpnext/accounts/utils.py:2457
 #, python-brace-format
 msgid "Currency for {0} must be {1}"
-msgstr "العملة ل {0} يجب أن تكون {1} \\n<br>\\nCurrency for {0} must be {1}"
+msgstr "يجب أن تكون عملة {0} هي {1}"
 
 #: erpnext/accounts/doctype/period_closing_voucher/period_closing_voucher.py:130
 #, python-brace-format
@@ -19296,7 +19267,7 @@ msgstr "معرف مستخدم الموظف"
 
 #: erpnext/setup/doctype/employee/employee.py:213
 msgid "Employee cannot report to himself."
-msgstr "الموظف لا يمكن أن يقدم تقريرا إلى نفسه.\\n<br>\\nEmployee cannot report to himself."
+msgstr "لا يمكن أن يكون الموظف مسؤولًا عن نفسه."
 
 #: erpnext/assets/doctype/asset_movement/asset_movement.py:109
 #, python-brace-format
@@ -19948,11 +19919,7 @@ msgid ""
 "then automatic batch number will be created based on this series. If you always want "
 "to explicitly mention Batch No for this item, leave this blank. Note: this setting "
 "will take priority over the Naming Series Prefix in Stock Settings."
-msgstr ""
-"مثال: ABCD. #####. إذا تم ضبط المسلسل ولم يتم ذكر رقم الدفعة في المعاملات ، فسيتم "
-"إنشاء رقم الدفعة تلقائيًا استنادًا إلى هذه السلسلة. إذا كنت تريد دائمًا الإشارة صراحة"
-" إلى Batch No لهذا العنصر ، فاترك هذا فارغًا. ملاحظة: سيأخذ هذا الإعداد الأولوية على "
-"بادئة Naming Series في إعدادات المخزون."
+msgstr "مثال: ABCD.#####. إذا تم تعيين السلسلة ولم يُذكر رقم الدفعة في المعاملات، فسيُنشأ رقم الدفعة تلقائيًا بناءً على هذه السلسلة. إذا كنت تريد إدخال رقم الدفعة صراحةً دائمًا لهذا الصنف، فاترك هذا الحقل فارغًا. ملاحظة: لهذا الإعداد أولوية على بادئة سلسلة التسمية في إعدادات المخزون."
 
 #: erpnext/stock/stock_ledger.py:2277
 #, python-brace-format
@@ -20647,9 +20614,8 @@ msgstr "جلب جدول الدوام في فاتورة المبيعات"
 #. Label of the fetch_valuation_rate_for_internal_transaction (Check) field in
 #. DocType 'Accounts Settings'
 #: erpnext/accounts/doctype/accounts_settings/accounts_settings.json
-#, fuzzy
 msgid "Fetch Valuation Rate for Internal Transaction"
-msgstr "تعيين معدل التقييم للمواد المرفوضة"
+msgstr "جلب معدل التقييم للمعاملة الداخلية"
 
 #. Label of the fetch_from_parent (Select) field in DocType 'Inventory
 #. Dimension'
@@ -25239,9 +25205,8 @@ msgstr "مرجع المبيعات الداخلية مفقود"
 #. Label of the internal_supplier_section (Section Break) field in DocType
 #. 'Supplier'
 #: erpnext/buying/doctype/supplier/supplier.json
-#, fuzzy
 msgid "Internal Supplier Accounting"
-msgstr "مورد داخلي"
+msgstr "محاسبة المورد الداخلي"
 
 #: erpnext/buying/doctype/supplier/supplier.py:181
 #, python-brace-format
@@ -25765,7 +25730,7 @@ msgstr "تم جلب الفواتير والمدفوعات وتخصيصها"
 #. Name of a Workspace
 #: erpnext/accounts/workspace/invoicing/invoicing.json
 msgid "Invoicing"
-msgstr "الفوترة"
+msgstr "الفواتير"
 
 #. Label of the invoicing_features_section (Section Break) field in DocType
 #. 'Accounts Settings'
@@ -27409,10 +27374,7 @@ msgstr "معدل ضريبة الصنف"
 #: erpnext/accounts/doctype/item_tax_template/item_tax_template.py:61
 #, python-brace-format
 msgid "Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable"
-msgstr ""
-"ضريبة البند يجب أن يكون الصف {0} حسابا من نوع الضريبة أو الدخل أو المصاريف أو "
-"الرسوم\\n<br>\\nItem Tax Row {0} must have account of type Tax or Income or Expense "
-"or Chargeable"
+msgstr "يجب أن يحتوي صف ضريبة الصنف {0} على حساب من نوع ضريبة أو دخل أو مصروف أو قابل للتحميل."
 
 #: erpnext/accounts/doctype/item_tax_template/item_tax_template.py:48
 #, python-brace-format
@@ -32400,9 +32362,7 @@ msgstr "غير مصرح به لأن {0} يتجاوز الحدود"
 #: erpnext/accounts/doctype/gl_entry/gl_entry.py:430
 #, python-brace-format
 msgid "Not authorized to edit frozen Account {0}"
-msgstr ""
-"غير مصرح له بتحرير الحساب المجمد {0}\\n<br>\\nNot authorized to edit frozen Account "
-"{0}"
+msgstr "غير مصرح لك بتعديل الحساب المجمّد {0}"
 
 #: erpnext/templates/form_grid/stock_entry_grid.html:26
 msgid "Not in Stock"
@@ -33231,11 +33191,10 @@ msgid "Opening and Closing"
 msgstr "افتتاح واختتام"
 
 #: erpnext/stock/doctype/item/item.py:191
-#, fuzzy
 msgid ""
 "Opening stock creation has been queued and will be created in the background. Please "
 "check the stock entry after some time."
-msgstr "تم وضع إنشاء قوائم المواد في قائمة الانتظار، يرجى التحقق من الحالة بعد بعض الوقت"
+msgstr "تمت جدولة إنشاء المخزون الافتتاحي، وسيتم إنشاؤه في الخلفية. يُرجى التحقق من حركة المخزون بعد قليل."
 
 #. Label of the operating_component (Link) field in DocType 'Workstation Cost'
 #: erpnext/manufacturing/doctype/workstation_cost/workstation_cost.json
@@ -34578,9 +34537,7 @@ msgstr "نوع الحساب المدفوع إليه"
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:327
 #: erpnext/accounts/doctype/sales_invoice/sales_invoice.py:1153
 msgid "Paid amount + Write Off Amount can not be greater than Grand Total"
-msgstr ""
-"المبلغ المدفوع + المبلغ المشطوب لا يمكن ان يكون أكبر من المجموع الكلي\\n<br>\\nPaid "
-"amount + Write Off Amount can not be greater than Grand Total"
+msgstr "لا يمكن أن يتجاوز مجموع المبلغ المدفوع ومبلغ الشطب المجموع الإجمالي."
 
 #. Name of a UOM
 #: erpnext/setup/setup_wizard/data/uom_data.json
@@ -35848,9 +35805,7 @@ msgstr "نوع الدفع"
 
 #: erpnext/accounts/doctype/payment_entry/payment_entry.py:608
 msgid "Payment Type must be one of Receive, Pay and Internal Transfer"
-msgstr ""
-"نوع الدفع يجب أن يكون إما استلام , دفع أو مناقلة داخلية\\n<br>\\nPayment Type must be"
-" one of Receive, Pay and Internal Transfer"
+msgstr "يجب أن يكون نوع الدفع أحد الخيارات: استلام أو دفع أو تحويل داخلي."
 
 #. Label of the payment_url (Data) field in DocType 'Payment Request'
 #: erpnext/accounts/doctype/payment_request/payment_request.json
@@ -36972,7 +36927,7 @@ msgstr "الرجاء إدخال معرف الموظف الخاص بشخص الم
 
 #: erpnext/stock/doctype/stock_reconciliation/stock_reconciliation.py:979
 msgid "Please enter Expense Account"
-msgstr "الرجاء إدخال حساب النفقات\\n<br>\\nPlease enter Expense Account"
+msgstr "يُرجى إدخال حساب المصروفات."
 
 #: erpnext/assets/doctype/asset_capitalization/asset_capitalization.js:83
 #: erpnext/stock/doctype/stock_entry/stock_entry.js:87
@@ -37318,7 +37273,7 @@ msgstr "الرجاء تحديد تاريخ النشر أولا\\n<br>\\nPlease s
 
 #: erpnext/manufacturing/doctype/bom/bom.py:1237
 msgid "Please select Price List"
-msgstr "الرجاء اختيار قائمة الأسعار\\n<br>\\nPlease select Price List"
+msgstr "يرجى اختيار قائمة الأسعار."
 
 #: erpnext/selling/doctype/sales_order/sales_order.py:1784
 #, python-brace-format
@@ -37684,9 +37639,7 @@ msgstr "يرجى تعيين قائمة عطلات افتراضية للشركة 
 #: erpnext/setup/doctype/employee/employee.py:272
 #, python-brace-format
 msgid "Please set a default Holiday List for Employee {0} or Company {1}"
-msgstr ""
-"يرجى تعيين قائمة العطل الافتراضية للموظف {0} أو الشركة {1}\\n<br>\\nPlease set a "
-"default Holiday List for Employee {0} or Company {1}"
+msgstr "يرجى تعيين قائمة عُطَل افتراضية للموظف {0} أو الشركة {1}."
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:1115
 #, python-brace-format
@@ -37718,9 +37671,7 @@ msgstr "يرجى تعيين كل من رقم التعريف الضريبي وا�
 #: erpnext/accounts/doctype/sales_invoice/sales_invoice.py:2418
 #, python-brace-format
 msgid "Please set default Cash or Bank account in Mode of Payment {0}"
-msgstr ""
-"الرجاء تحديد الحساب البنكي أو النقدي الافتراضي في نوع الدفع\\n<br>\\nPlease set "
-"default Cash or Bank account in Mode of Payment {0}"
+msgstr "يُرجى تعيين حساب نقدي أو بنكي افتراضي في طريقة الدفع {0}."
 
 #: erpnext/accounts/doctype/pos_opening_entry/pos_opening_entry.py:94
 #: erpnext/accounts/doctype/pos_profile/pos_profile.py:198
@@ -38789,9 +38740,7 @@ msgstr "طباعة وقرطاسية"
 
 #: erpnext/accounts/doctype/cheque_print_template/cheque_print_template.js:75
 msgid "Print settings updated in respective print format"
-msgstr ""
-"تم تحديث إعدادات الطباعة في تنسيق الطباعة الخاصة\\n<br>\\nPrint settings updated in "
-"respective print format"
+msgstr "تم تحديث إعدادات الطباعة في تنسيق الطباعة المعني."
 
 #: erpnext/setup/install.py:111
 msgid "Print taxes with zero amount"
@@ -39870,7 +39819,7 @@ msgstr "مصروف الشراء للصنف {0}"
 #: erpnext/stock/doctype/quality_inspection/quality_inspection.json
 #: erpnext/stock/doctype/stock_entry/stock_entry.js:336
 msgid "Purchase Invoice"
-msgstr "فاتورة شراء"
+msgstr "فاتورة مشتريات"
 
 #. Name of a DocType
 #: erpnext/accounts/doctype/purchase_invoice_advance/purchase_invoice_advance.json
@@ -42889,7 +42838,7 @@ msgstr "نموذج تقرير"
 
 #: erpnext/accounts/doctype/account/account.py:462
 msgid "Report Type is mandatory"
-msgstr "نوع التقرير إلزامي\\n<br>\\nReport Type is mandatory"
+msgstr "نوع التقرير إلزامي."
 
 #: erpnext/setup/install.py:206
 msgid "Report an Issue"
@@ -45505,9 +45454,7 @@ msgstr "الصف {0}: شرط الدفع إلزامي"
 #: erpnext/accounts/doctype/journal_entry/journal_entry.py:661
 #, python-brace-format
 msgid "Row {0}: Payment against Sales/Purchase Order should always be marked as advance"
-msgstr ""
-"الصف {0}: الدفع لطلب الشراء/البيع يجب أن يكون دائما معلم كمتقدم\\n<br>\\nRow {0}: "
-"Payment against Sales/Purchase Order should always be marked as advance"
+msgstr "الصف {0}: يجب دائمًا تحديد الدفعة المسددة مقابل أمر بيع أو شراء كدفعة مقدمة."
 
 #: erpnext/accounts/doctype/journal_entry/journal_entry.py:654
 #, python-brace-format
@@ -48784,7 +48731,7 @@ msgstr "مشاركة دفتر الأستاذ"
 #. Label of a Card Break in the Invoicing Workspace
 #: erpnext/accounts/workspace/invoicing/invoicing.json
 msgid "Share Management"
-msgstr "إدارة المشاركة"
+msgstr "إدارة المساهمين"
 
 #. Name of a DocType
 #. Label of a Link in the Invoicing Workspace
@@ -51042,9 +50989,8 @@ msgstr "بند خدمة طلب داخلي للتعاقد من الباطن"
 #. Label of the section_break_zwh6 (Section Break) field in DocType 'Selling
 #. Settings'
 #: erpnext/selling/doctype/selling_settings/selling_settings.json
-#, fuzzy
 msgid "Subcontracting Inward Settings"
-msgstr "إعدادات التعاقد من الباطن"
+msgstr "إعدادات عمليات التعاقد من الباطن الواردة"
 
 #. Label of a Link in the Manufacturing Workspace
 #. Label of the subcontracting_order (Link) field in DocType 'Stock Entry'
@@ -51223,7 +51169,7 @@ msgstr "قدم عرض سعرك"
 #: erpnext/stock/doctype/delivery_note/delivery_note_dashboard.py:25
 #: erpnext/stock/doctype/purchase_receipt/purchase_receipt_dashboard.py:34
 msgid "Subscription"
-msgstr "اشتراك"
+msgstr "الاشتراك"
 
 #. Label of the end_date (Date) field in DocType 'Subscription'
 #: erpnext/accounts/doctype/subscription/subscription.json
@@ -54641,9 +54587,7 @@ msgstr ""
 msgid ""
 "To allow over billing, update \"Over Billing Allowance\" in Accounts Settings or the "
 "Item."
-msgstr ""
-"للسماح بزيادة الفواتير ، حدّث \"Over Billing Allowance\" في إعدادات الحسابات أو "
-"العنصر."
+msgstr "للسماح بتجاوز قيمة الفوترة، حدّث «نسبة السماح بتجاوز الفوترة» في إعدادات الحسابات أو في الصنف."
 
 #: erpnext/controllers/status_updater.py:449
 msgid ""
@@ -55596,7 +55540,7 @@ msgstr "لا يمكن أن يكون إجمالي المدفوعات أكبر م�
 
 #: erpnext/accounts/doctype/cost_center_allocation/cost_center_allocation.py:66
 msgid "Total percentage against cost centers should be 100"
-msgstr "يجب أن تكون النسبة المئوية الإجمالية مقابل مراكز التكلفة 100"
+msgstr "يجب أن يساوي إجمالي النسب المئوية الموزعة على مراكز التكلفة 100"
 
 #: erpnext/selling/doctype/sales_order/sales_order.js:665
 msgid "Total quantity in delivery schedule cannot be greater than the item quantity"
@@ -57049,9 +56993,8 @@ msgstr "استخدام التفاعلية القديمة (من جانب العم
 #. Label of the use_legacy_budget_controller (Check) field in DocType 'Accounts
 #. Settings'
 #: erpnext/accounts/doctype/accounts_settings/accounts_settings.json
-#, fuzzy
 msgid "Use Legacy Budget Controller"
-msgstr "استخدام وحدة تحكم الميزانية الجديدة"
+msgstr "استخدام وحدة التحكم القديمة في الميزانية"
 
 #. Label of the use_legacy_controller_for_pcv (Check) field in DocType
 #. 'Accounts Settings'
@@ -57171,7 +57114,7 @@ msgstr "لم يطبق المستخدم قاعدة على الفاتورة {0}"
 #: erpnext/setup/doctype/employee/employee.py:190
 #, python-brace-format
 msgid "User {0} does not exist"
-msgstr "المستخدم {0} غير موجود\\n<br>\\nUser {0} does not exist"
+msgstr "المستخدم {0} غير موجود."
 
 #: erpnext/accounts/doctype/pos_profile/pos_profile.py:140
 #, python-brace-format
@@ -59069,9 +59012,7 @@ msgstr "محطة العمل ساعة العمل"
 #: erpnext/manufacturing/doctype/workstation/workstation.py:453
 #, python-brace-format
 msgid "Workstation is closed on the following dates as per Holiday List: {0}"
-msgstr ""
-"محطة العمل مغلقة في التواريخ التالية وفقا لقائمة العطل: {0}\\n<br>\\nWorkstation is "
-"closed on the following dates as per Holiday List: {0}"
+msgstr "محطة العمل مغلقة في التواريخ التالية وفقًا لقائمة العُطَل: {0}"
 
 #. Label of the workstations_tab (Tab Break) field in DocType 'Plant Floor'
 #: erpnext/manufacturing/doctype/plant_floor/plant_floor.json

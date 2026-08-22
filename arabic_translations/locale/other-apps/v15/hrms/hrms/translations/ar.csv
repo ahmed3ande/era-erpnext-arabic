@@ -56,28 +56,20 @@
 <li>Calculating TDS based on Employment Type<code>employment_type</code> 
 <pre><code>Condition: employment_type==""Intern""</code></pre>
 <pre><code>Amount: 1000</code></pre></li>
-</ol>","<h3> مساعدة </h3>
-
-<p> الملاحظات: </p>
-
+</ol>","<h3>مساعدة</h3>
+<p>ملاحظات:</p>
 <ol>
-<li> استخدم الحقل <code> قاعدة </code> لاستخدام الراتب الأساسي للموظف </li>
-<li> استخدم اختصارات مكونات الراتب في الظروف والصيغ. <code> bs = الراتب الأساسي </code> </li>
-<li> استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code> نوع التوظيف = التوظيف _type </code> <code> الفرع = الفرع </code> </li>
-<li> استخدم اسم الحقل من قسيمة الراتب في الظروف والصيغ. <code> أيام الدفع = payment_days </code> <code> إجازة بدون دفع = LEED_WITHOUT_PAY </code> </li>
-يمكن أيضًا إدخال المبلغ المباشر بناءً على الحالة. انظر المثال 3 </li> </ol>
-
-<h4> أمثلة </h4>
+<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف.</li>
+<li>استخدم اختصارات مكونات الراتب في الشروط والصيغ. <code>BS = Basic Salary</code></li>
+<li>استخدم اسم الحقل الخاص بتفاصيل الموظف في الشروط والصيغ. <code>Employment Type = employment_type</code> <code>Branch = branch</code></li>
+<li>استخدم اسم الحقل من مسير الراتب في الشروط والصيغ. <code>Payment Days = payment_days</code> <code>Leave without pay = leave_without_pay</code></li>
+<li>يمكن أيضًا إدخال مبلغ مباشر بناءً على الشرط. راجع المثال 3.</li>
+</ol>
+<h4>أمثلة</h4>
 <ol>
-<li> حساب الراتب الأساسي على أساس <code> قاعدة </code>
-<pre> <code> الشرط: base & lt ؛ 10000 </code> </pre>
-<pre> <code> الصيغة: قاعدة * .2 </code> </pre> </li>
-<li> حساب HRA استنادًا إلى الراتب الأساسي <code> BS </code> 
-<pre> <code> الشرط: bs & gt ؛ 2000 </code> </pre>
-<pre> <code> الصيغة: bs * .1 </code> </pre> </li>
-<li> حساب TDs استنادًا إلى نوع التوظيف <code> التوظيف _type </code> 
-<pre> <code> الشرط: التوظيف _type == ""Intern"" </code> </pre>
-<pre> <code> المبلغ: 1000 </code> </pre> </li>
+<li>حساب الراتب الأساسي باستخدام <code>base</code><pre><code>Condition: base &lt; 10000</code></pre><pre><code>Formula: base * .2</code></pre></li>
+<li>حساب بدل السكن HRA بناءً على الراتب الأساسي <code>BS</code><pre><code>Condition: BS &gt; 2000</code></pre><pre><code>Formula: BS * .1</code></pre></li>
+<li>حساب ضريبة الخصم TDS بناءً على نوع التوظيف <code>employment_type</code><pre><code>Condition: employment_type==""Intern""</code></pre><pre><code>Amount: 1000</code></pre></li>
 </ol>",
 "<h4>Condition Examples</h4>
 <ol>
@@ -85,16 +77,15 @@
 <code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br><li>Applying tax by employee gender<br>
 <code>Condition: gender==""Male""</code></li><br>
 <li>Applying tax by Salary Component<br>
-<code>Condition: base &gt; 10000</code></li></ol>","<h4> أمثلة الشرط </h4>
+<code>Condition: base &gt; 10000</code></li></ol>","<h4>أمثلة على الشروط</h4>
 <ol>
-<li> تطبيق الضريبة إذا ولد الموظف بين 31-12-1937 و 01-01-1958 (الموظفين الذين تتراوح أعمارهم بين 60 و 80) <br>
-<code> الشرط: date_of_birth & gt ؛ التاريخ (1937 ، 12 ، 31) و Date_of_birth & lt ؛ date (1958 ، 01 ، 01) </code> </li> <br> <li> تطبيق الضريبة حسب جنس الموظف <br> <br>
-<code> الشرط: الجنس == ""ذكر"" </code> </li> <br>
-<li> تطبيق الضريبة حسب مكون الراتب <br>
-<code> الشرط: BASE & GT ؛ 10000 </code> </li> </ol>",
-"<span class=""h4""><b>Masters &amp; Reports</b></span>","<span class = ""h4""> <b> التقارير وإدارة البيانات الرئيسية </b> </span>",
+<li>تطبيق الضريبة إذا كان تاريخ ميلاد الموظف بين 31-12-1937 و01-01-1958 (من 60 إلى 80 عامًا)<br><code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br>
+<li>تطبيق الضريبة حسب جنس الموظف<br><code>Condition: gender==""Male""</code></li><br>
+<li>تطبيق الضريبة حسب مكوّن الراتب<br><code>Condition: base &gt; 10000</code></li>
+</ol>",
+"<span class=""h4""><b>Masters &amp; Reports</b></span>","<span class=""h4""><b>البيانات الرئيسية والتقارير</b></span>",
 "<span class=""h4""><b>Masters &amp; Transactions</b></span>","<span class = ""h4""> <b> ادارة البيانات الرئيسية والمعاملات </b> </span>",
-"<span class=""h4""><b>Reports &amp; Masters</b></span>","<span class = ""h4""> <b> التقارير وإدارة البيانات الرئيسية </b> </span>",
+"<span class=""h4""><b>Reports &amp; Masters</b></span>","<span class=""h4""><b>التقارير والبيانات الرئيسية</b></span>",
 "<span class=""h4""><b>Transactions &amp; Reports</b></span>","<span class = ""h4""> <b> المعاملات والتقارير </b> </span>",
 "<span class=""h4""><b>Your Shortcuts</b></span>","<span class = ""h4""> <b> اختصاراتك </b> </span>",
 "<span style=""font-size: 18px;""><b>Masters &amp; Reports</b></span>","<span style = ""font-size: 18px ؛""> <b> التقارير وإدارة البيانات الرئيسية </b> </span>",
@@ -112,7 +103,7 @@ Account,حساب,
 Account Head,رئيس حساب,
 Account No,رقم الحساب,
 "Account type cannot be set for payroll payable account {0}, please remove and try again",لا يمكن تعيين نوع الحساب لحساب كشوف المرتبات المستحقة الدفع {0} ، يرجى الإزالة والمحاولة مرة أخرى,
-Account {0} does not belong to company: {1},الحساب {0} لا يتنمى للشركة {1}\n<br>\nAccount {0} does not belong to company: {1},
+Account {0} does not belong to company: {1},الحساب {0} لا ينتمي إلى الشركة: {1},
 Account {0} does not match with Company {1},الحساب {0} لا يتطابق مع الشركة {1},
 Accounting,المحاسبة,
 Accounting & Payment,المحاسبة والدفع,
@@ -317,7 +308,7 @@ Attendance marked successfully,يحمل الحضور بنجاح,
 Attendance not submitted for {0} as it is a Holiday.,لم يتم إرسال الحضور إلى {0} لأنه عطلة.,
 Attendance not submitted for {0} as {1} is on leave.,لم يتم تقديم الحضور لـ {0} لأن {1} في إجازة.,
 Attendance will be marked automatically only after this date.,سيتم تمييز الحضور تلقائيًا بعد هذا التاريخ فقط.,
-AttendanceRequestListView,attencereQuestListView,
+AttendanceRequestListView,AttendanceRequestListView,
 Attendees,الحضور,
 Attrition Count,عدد الاستنزاف,
 Aug,أغسطس,
@@ -1363,7 +1354,7 @@ Missing Tax Slab,شريحة ضريبية مفقودة,
 Mode Of Payment,طريقة الدفع,
 Mode of Payment,طريقة الدفع,
 Mode of Travel,طريقة السفر,
-Mode of payment is required to make a payment,طريقه الدفع مطلوبه لإجراء الدفع\n<br>\nMode of payment is required to make a payment,
+Mode of payment is required to make a payment,طريقة الدفع مطلوبة لإجراء الدفعة.,
 Model,الموديل,
 Monday,يوم الاثنين,
 Month,شهر,
@@ -1508,7 +1499,7 @@ Open & Approved,مفتوح وموافق عليه,
 Open Feedback,تقييم مفتوح,
 Open Now,افتح الآن,
 Opening Balance,الرصيد الافتتاحي,
-Opening Balances,أرصدة افتتاحية,
+Opening Balances,الأرصدة الافتتاحية,
 Opening closed.,الافتتاح مغلق.,
 Optional Holiday List not set for leave period {0},لم يتم تعيين قائمة العطلات الاختيارية لفترة الإجازة {0},
 Optional Leaves are holidays that Employees can choose to avail from a list of holidays published by the company.,الإجازات الاختيارية هي عطلات يمكن للموظفين اختيار الاستفادة منها من قائمة العطلات التي تنشرها الشركة.,
@@ -1820,7 +1811,7 @@ Reviewer Name,اسم المراجع,
 Revised CTC,إجمالي الراتب المنقح,
 Right,حق,
 Role,صلاحية,
-Role Allowed to Create Backdated Leave Application,الدور المسموح به لإنشاء تطبيق إجازة Backdated,
+Role Allowed to Create Backdated Leave Application,الدور المسموح له بإنشاء طلب إجازة بأثر رجعي,
 Roster,قائمة المناوبات,
 Roster Color,لون قائمة المناوبات,
 Round Name,اسم الجولة,
@@ -1960,7 +1951,7 @@ Series,سلسلة التسمية,
 Service,خدمة,
 Service Details,تفاصيل الخدمة,
 Service Expense,نفقات الصيانة,
-Service Expenses,مصاريف الخدمة,
+Service Expenses,مصروفات الخدمة,
 Service Item,بند الخدمة,
 "Set ""From(Year)"" and ""To(Year)"" to 0 for no upper and lower limit.","عيّن ""من (سنة)"" و ""إلى (سنة)"" إلى 0 لعدم وجود حد أعلى وأدنى.",
 Set Assignment Details,تعيين تفاصيل التعيين,
@@ -2228,7 +2219,7 @@ Total in words,إجمالي بالحروف,
 Total in words (Company Currency),الإجمالي بالكلمات (بعملة الشركة),
 Total leaves allocated cannot exceed annual allocation of {0}.,لا يمكن أن يتجاوز إجمالي الإجازات المخصصة التخصيص السنوي البالغ {0}.,
 Total leaves allocated is mandatory for Leave Type {0},إجمالي الإجازات المخصصة إلزامي لنوع الإجازة {0},
-Total percentage against cost centers should be 100,يجب أن يكون إجمالي النسبة المئوية مقابل مراكز التكلفة 100,
+Total percentage against cost centers should be 100,يجب أن يساوي إجمالي النسب المئوية الموزعة على مراكز التكلفة 100,
 Total salary booked against this component for this employee from the beginning of the year (payroll period or fiscal year) up to the current salary slip's end date.,إجمالي الراتب المحجوز مقابل هذا المكون لهذا الموظف من بداية العام (فترة الرواتب أو السنة المالية) حتى تاريخ انتهاء قسيمة الراتب الحالية.,
 Total salary booked for this employee from the beginning of the month up to the current salary slip's end date.,إجمالي الراتب المحجوز لهذا الموظف من بداية الشهر حتى تاريخ انتهاء قسيمة الراتب الحالية.,
 Total salary booked for this employee from the beginning of the year (payroll period or fiscal year) up to the current salary slip's end date.,إجمالي الراتب المحجوز لهذا الموظف من بداية العام (فترة الرواتب أو السنة المالية) حتى تاريخ انتهاء قسيمة الراتب الحالية.,
@@ -2311,8 +2302,8 @@ Uploading...,جاري التحميل...,
 Upper Range,النطاق الأعلى,
 Used Leave(s),الإجازات المستخدمة,
 Used Leaves,الإجازات المستخدمة,
-User,المستعمل,
-Users,المستخدمين,
+User,المستخدم,
+Users,المستخدمون,
 Utilization,الاستغلال,
 Vacancies,الشواغر,
 Vacancies cannot be lower than the current openings,لا يمكن أن تكون الوظائف الشاغرة أقل من الفتحات الحالية,
