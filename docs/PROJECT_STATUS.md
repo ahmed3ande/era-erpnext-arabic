@@ -18,7 +18,7 @@ This file is the single resume point for the Era Arabic translation project.
 - Active branch: `feature/project-governance`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: In progress
+- Status: In progress — CI enabled and awaiting validation
 
 ## Completed
 
@@ -30,6 +30,7 @@ This file is the single resume point for the Era Arabic translation project.
 - [x] Governance branch created
 - [ ] Governance documentation reviewed
 - [ ] Initial glossary reviewed
+- [x] Draft PR opened as #2
 - [ ] Draft PR checks passed
 
 ## Next action
