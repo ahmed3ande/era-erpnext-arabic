@@ -13,12 +13,12 @@ This file is the single resume point for the Era Arabic translation project.
 ## Current position
 
 - Milestone: M0 — Project foundation
-- Checkpoint: CP-00 — Upstream baseline recorded
+- Checkpoint: CP-01 — Project governance ready
 - Active issue: #1
 - Active branch: `feature/project-governance`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: In progress — CI enabled and awaiting validation
+- Status: CP-01 complete — CI validation passed
 
 ## Completed
 
@@ -28,14 +28,14 @@ This file is the single resume point for the Era Arabic translation project.
 - [x] Production and rebuild sites upgraded to 0.3.2
 - [x] Project bootstrap issue created
 - [x] Governance branch created
-- [ ] Governance documentation reviewed
-- [ ] Initial glossary reviewed
+- [x] Governance documentation reviewed
+- [x] Initial glossary scaffold reviewed
 - [x] Draft PR opened as #2
-- [ ] Draft PR checks passed
+- [x] Draft PR checks passed
 
 ## Next action
 
-Complete CP-01 by reviewing the governance documents and initial accounting glossary, then merge the draft PR into `develop`.
+Merge PR #2 into `develop`, then open CP-02 for automated translation auditing.
 
 ## Resume protocol
 
