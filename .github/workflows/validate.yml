@@ -24,6 +24,9 @@ jobs:
         run: |
           python -m unittest -v tests/test_audit_translations.py
           python -m unittest -v tests/test_prioritize_review.py
+          python -m unittest -v tests/test_apply_review_batch.py
+      - name: Verify approved review batches are applied
+        run: python scripts/apply_review_batch.py review_batches/accounting-001.csv
       - name: Generate translation audit reports
         run: python scripts/audit_translations.py
       - name: Generate accounting review queue
@@ -39,3 +42,4 @@ jobs:
         run: |
           pip install ruff
           ruff check arabic_translations scripts
+
