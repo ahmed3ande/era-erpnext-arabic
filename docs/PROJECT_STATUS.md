@@ -18,7 +18,7 @@ This file is the single resume point for the Era Arabic translation project.
 - Active branch: `feature/accounting-batch-001`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: Draft PR #8 independently reviewed and locally validated; refreshed GitHub Actions run pending
+- Status: Draft PR #8 is v16-complete; validation commit `701df721` passed GitHub Actions run 26
 
 ## Completed
 
@@ -47,7 +47,7 @@ This file is the single resume point for the Era Arabic translation project.
 
 ## Next action
 
-Publish the reviewed v16-complete changes to Draft PR #8, verify the refreshed GitHub Actions run, then decide whether to merge Batch 001. Do not deploy to production until the merged commit is separately verified.
+Perform the final human review of Draft PR #8, then decide whether to merge Batch 001. Do not deploy to production until the merged commit is separately verified.
 
 ## Resume protocol
 
