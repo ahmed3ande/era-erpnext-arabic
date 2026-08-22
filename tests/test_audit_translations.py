@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from audit_translations import audit, placeholders
+from scripts.audit_translations import audit, placeholders
 
 
 PO_HEADER = '''msgid ""
