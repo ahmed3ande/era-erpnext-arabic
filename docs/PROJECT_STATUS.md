@@ -12,13 +12,13 @@ This file is the single resume point for the Era Arabic translation project.
 
 ## Current position
 
-- Milestone: M1 — Translation quality audit
+- Milestone: M2 — Accounting terminology review
 - Checkpoint: CP-02 — Translation audit operational
-- Active issue: #3
-- Active branch: `feature/translation-audit`
+- Active issue: #5
+- Active branch: `feature/accounting-review-queue`
 - Target: Frappe 16 / ERPNext 16 / HRMS 16
 - Production reference: Arabic Translations 0.3.2
-- Status: CP-02 complete — audit CI validation passed
+- Status: CP-03A in progress — accounting review queue implementation
 
 ## Completed
 
@@ -39,7 +39,7 @@ This file is the single resume point for the Era Arabic translation project.
 
 ## Next action
 
-Merge PR #4 into `develop`, then create CP-03 accounting review batches from the audit queues.
+Validate and merge the accounting review queue, then open the first 50-entry accounting terminology batch.
 
 ## Resume protocol
 
