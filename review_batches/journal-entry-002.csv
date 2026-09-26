@@ -1,0 +1,6 @@
+batch_id,app,msgid,current_arabic,approved_arabic,rationale
+journal-entry-002,erpnext,Inter Company Journal Entry,قيد يومية بين الشركات,قيد يومية بين الشركات,User requested label verified against Journal Entry voucher_type in ERPNext v16.20.0
+journal-entry-002,erpnext,Contra Entry,قيد مقابل,قيد تحويلات داخلية,User requested description for internal cash and bank transfers
+journal-entry-002,erpnext,Write Off Entry,قيد الشطب,قيد شطب,User requested wording for Journal Entry voucher_type
+journal-entry-002,erpnext,Opening Entry,قيد افتتاحي,قيد افتتاحي,User requested label already supplied by upstream
+journal-entry-002,erpnext,Asset Disposal,التخلص من الأصول,قيد استبعاد الأصول,User requested accounting wording verified as Journal Entry option

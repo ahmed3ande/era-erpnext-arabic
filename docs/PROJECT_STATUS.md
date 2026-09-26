@@ -1,5 +1,38 @@
 # Project Status
 
+## Current checkpoint CP-06 — 2026-09-26
+
+- User approved the September recommendations and requested implementation plus HRMS.
+- Release prepared: `0.5.0`; integrated upstream through `7168aaf`.
+- Reviewed the previous 115 conservative choices and 42 newer source conflicts.
+  Era terminology is retained where preferable; incorrect retained sentences were rewritten.
+- Added HR dashboard labels, Egyptian HR wording and four approved Journal Entry proposals.
+- Full details and deployment/rollback prerequisites: [RELEASE_0_5_0.md](RELEASE_0_5_0.md).
+- No server deployment performed. Verify actual HRMS version/site and app order before deployment.
+- CP-05 below is historical, including its pending-review counts and development version.
+
+## Current checkpoint CP-05 — 2026-09-18
+
+- Local branch: `integration/upstream-sep-2026`; candidate `0.5.0.dev0`.
+- Published Era baseline: `d1c9de72bba94171ac52bbdf473ab53841f04dc6` (0.4.0, PR #11).
+- Upstream reviewed: `da80a5d38d82be41041e0ab3ef8bcbbce8e94714`.
+- Rollback tag: `checkpoint/era-0.4.0-before-upstream-sep-2026`.
+- Isolated three-way merge prepared; 115 divergent source choices retain Era for review.
+- Runtime: 1,123 existing messages changed, 223 added, none removed.
+- All 18 Journal Entry options inspected. Five user labels applied and guarded in `journal-entry-002.csv`.
+- GNU gettext (8 PO / 3 CSV), 13 tests, four batches, placeholder and glossary gates passed.
+- Ruff 0.12.12: corrected inherited UP038 syntax in `message_text`; full lint passed after verification.
+- Overlay rebuild is deterministic and semantically matches the candidate.
+- Report: [UPSTREAM_REVIEW_2026_09.md](UPSTREAM_REVIEW_2026_09.md).
+- Workbook in workspace: `outputs/upstream-sep-2026/Era-Upstream-Review-2026-09.xlsx`.
+- No remote update, live-site test or deployment performed.
+
+Next: review the report, resolve 115 retained choices and four additional journal-label proposals, then test the agreed ERPNext site. Verify current server versions before deployment. Sixteen fuzzy and two empty source entries remain inherited from the baseline.
+
+The August status below is retained as historical context, not the current next action.
+
+---
+
 This file is the single resume point for the Era Arabic translation project.
 
 ## Identity
