@@ -68,7 +68,10 @@ def _harvest():
 
 def report(as_po=False, lang="ar"):
 	"""Print every harvested label that has no translation in `lang`."""
-	translations = frappe.translate.get_all_translations(lang) or {}
+	# A fresh bench execute process need not have loaded frappe.translate yet.
+	from frappe.translate import get_all_translations
+
+	translations = get_all_translations(lang) or {}
 	harvested = _harvest()
 
 	missing, identical = [], []
