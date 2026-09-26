@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.1 — Techno Era, 2026-09-26
+
+- Fix live-site audit in a fresh `bench execute` process by importing the
+  translation loader explicitly. No catalog, database or application-order changes.
+- Add regression tests for absent `frappe.translate` package attribute, alternate
+  language forwarding, empty translations and PO output mode.
+
 ## 0.5.0 — Techno Era, 2026-09-26
 
 - Integrate Ibrahim's translation updates through `7168aaf`, retaining Era's
