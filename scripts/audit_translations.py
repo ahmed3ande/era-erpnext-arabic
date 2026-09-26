@@ -54,7 +54,7 @@ def placeholders(value: str) -> set[str]:
 
 
 def message_text(value: str | tuple[str, ...] | list[str] | None) -> str:
-	if isinstance(value, (tuple, list)):
+	if isinstance(value, tuple | list):
 		return " | ".join(part for part in value if part)
 	return value or ""
 

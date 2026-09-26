@@ -1,0 +1,9 @@
+{
+  "release": "0.5.0",
+  "baseline": "d1c9de72bba94171ac52bbdf473ab53841f04dc6",
+  "upstream": "7168aaf4c5169ee0f477990dbc143b70f74587cc",
+  "overlay_total": 19629,
+  "existing_changed": 2195,
+  "added": 322,
+  "removed": 0
+}

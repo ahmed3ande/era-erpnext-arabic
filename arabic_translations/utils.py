@@ -149,6 +149,13 @@ def apply_overlay() -> None:
 
 	compile_locale(APP_NAME)
 	clear_translation_cache()
+	shadowing = check_overlay_precedence()
+	if shadowing:
+		_LOGGER.warning(
+			"Apps installed after Arabic Translations may override Era wording: %s. "
+			"Run arabic_translations.utils.deployment_report before accepting the update.",
+			", ".join(shadowing),
+		)
 	_LOGGER.info("Arabic overlay catalog activated")
 
 
@@ -161,6 +168,39 @@ def check_overlay_precedence() -> list[str]:
 	if APP_NAME not in apps:
 		return []
 	return apps[apps.index(APP_NAME) + 1 :]
+
+
+def deployment_report() -> dict:
+	"""Read-only, site-specific check of HRMS and effective Arabic labels.
+
+	Run with bench --site SITE execute arabic_translations.utils.deployment_report.
+	Does not reorder applications or edit custom database translations.
+	"""
+	from frappe.translate import get_all_translations
+
+	from arabic_translations import __version__
+
+	apps = _installed_apps()
+	translations = get_all_translations(LOCALE)
+	expected = {
+		"Customer": "العميل",
+		"Opening Entry": "قيد افتتاحي",
+		"Contra Entry": "قيد تحويلات داخلية",
+		"Designation": "المسمى الوظيفي",
+		"Shift Assignment": "تعيين الوردية",
+		"Salary Slip": "مفردات المرتب",
+	}
+	return {
+		"version": __version__,
+		"mode": get_mode(),
+		"installed_apps": apps,
+		"hrms_installed": "hrms" in apps,
+		"apps_after_era": check_overlay_precedence(),
+		"labels": {
+			key: {"expected": value, "actual": translations.get(key), "matches": translations.get(key) == value}
+			for key, value in expected.items()
+		},
+	}
 
 
 # --------------------------------------------------------------------------- #
